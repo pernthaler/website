@@ -11,8 +11,8 @@ export default {
         [
             "nuxt-matomo",
             {
-                matomoUrl: process.env.MATOMO_URL,
-                siteId: process.env.SITE_ID
+                matomoUrl: context.env.MATOMO_URL,
+                siteId: context.env.SITE_ID
             }
         ]
     ]
