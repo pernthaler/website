@@ -11,9 +11,12 @@ export default {
         [
             "nuxt-matomo",
             {
-                matomoUrl: context.env.MATOMO_URL,
-                siteId: context.env.SITE_ID
+                matomoUrl: process.env.MATOMO_URL,
+                siteId: process.env.SITE_ID
             }
         ]
+    ],
+    buildModules: [
+        '@nuxtjs/dotenv'
     ]
 }
