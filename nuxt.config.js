@@ -5,7 +5,7 @@ export default {
         host: "0"
     },
     plugins: [
-        "~/plugins/fontawesome.js"
+        "~/plugins/fontawesome.ts"
     ],
     css: [
         "@getbase/base/core.css",
@@ -33,5 +33,8 @@ export default {
                 siteId: process.env.SITE_ID
             }
         ]
+    ],
+    buildModules: [
+        "@nuxt/typescript-build"
     ]
 }
