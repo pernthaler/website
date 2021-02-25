@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 export default {
     srcDir: "src",
     target: "static",
@@ -15,8 +13,5 @@ export default {
                 siteId: process.env.SITE_ID
             }
         ]
-    ],
-    buildModules: [
-        "@nuxtjs/dotenv"
     ]
 }
