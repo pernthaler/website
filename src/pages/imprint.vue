@@ -4,8 +4,7 @@
       <h1>Impressum</h1>
       <p>Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.</p>
       <p>Sebastian Pernthaler</p>
-      <p>Adresse auf Anfrage</p>
-      <p>sebastian@pernthaler.me</p>
+      <p><a href="mailto:sebastian@pernthaler.me">sebastian@pernthaler.me</a></p>
       <p>Quelle: Erstellt mit dem <a href="https://www.firmenwebseiten.at/impressum-generator/" target="_blank" rel="noopener">Impressum Generator</a> von firmenwebseiten.at</p>
 
       <h2>EU-Streitschlichtung</h2>
@@ -26,10 +25,6 @@
 
       <h2>Bildernachweis</h2>
       <p>Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.</p>
-      <p>Die Bilderrechte liegen bei den folgenden Fotografen und Unternehmen:</p>
-      <ul>
-        <li>Sebastian Pernthaler</li>
-      </ul>
       <p>Quelle: Erstellt mit dem <a href="https://www.firmenwebseiten.at/datenschutz-generator/" target="_blank" rel="noopener">Datenschutz Generator</a> von firmenwebseiten.at</p>
     </div>
   </div>
