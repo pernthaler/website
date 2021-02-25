@@ -24,7 +24,7 @@
 
       <h2>Bildernachweis</h2>
       <p>Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.</p>
-      <p>Quelle: Erstellt mit dem <a href="https://www.firmenwebseiten.at/datenschutz-generator/" target="_blank" rel="noopener">Datenschutz Generator</a> von firmenwebseiten.at</p>
+      <p>Quelle: Erstellt mit dem <a href="https://www.firmenwebseiten.at/impressum-generator/" target="_blank" rel="noopener">Impressum Generator</a> von firmenwebseiten.at</p>
     </div>
   </div>
 </template>
