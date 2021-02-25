@@ -47,19 +47,19 @@
       <p>Die Frage welche Cookies wir im Speziellen verwenden, hängt von den verwendeten Diensten ab und wird in den folgenden Abschnitten der Datenschutzerklärung geklärt. An dieser Stelle möchten wir kurz auf die verschiedenen Arten von HTTP-Cookies eingehen.</p>
       <p>Man kann 4 Arten von Cookies unterscheiden:</p>
     <p>
-      <strong class="adsimple-211142478">Unerlässliche Cookies<br />
+      <strong>Unerlässliche Cookies<br />
       </strong>Diese Cookies sind nötig, um grundlegende Funktionen der Webseite sicherzustellen. Zum Beispiel braucht es diese Cookies, wenn ein User ein Produkt in den Warenkorb legt, dann auf anderen Seiten weitersurft und später erst zur Kasse geht. Durch diese Cookies wird der Warenkorb nicht gelöscht, selbst wenn der User sein Browserfenster schließt.</p>
     <p>
-      <strong class="adsimple-211142478">Zweckmäßige Cookies<br />
+      <strong>Zweckmäßige Cookies<br />
       </strong>Diese Cookies sammeln Infos über das Userverhalten und ob der User etwaige Fehlermeldungen bekommt. Zudem werden mithilfe dieser Cookies auch die Ladezeit und das Verhalten der Webseite bei verschiedenen Browsern gemessen.</p>
     <p>
-    <strong class="adsimple-211142478">Zielorientierte Cookies<br />
+    <strong>Zielorientierte Cookies<br />
     </strong>Diese Cookies sorgen für eine bessere Nutzerfreundlichkeit. Beispielsweise werden eingegebene Standorte, Schriftgrößen oder Formulardaten gespeichert.</p>
   <p>
-    <strong class="adsimple-211142478">Werbe-Cookies<br />
+    <strong>Werbe-Cookies<br />
     </strong>Diese Cookies werden auch Targeting-Cookies genannt. Sie dienen dazu dem User individuell angepasste Werbung zu liefern. Das kann sehr praktisch, aber auch sehr nervig sein.</p>
   <p>Üblicherweise werden Sie beim erstmaligen Besuch einer Webseite gefragt, welche dieser Cookiearten Sie zulassen möchten. Und natürlich wird diese Entscheidung auch in einem Cookie gespeichert.</p>
-  <h3 class="adsimple-211142478">Wie kann ich Cookies löschen?</h3>
+  <h3>Wie kann ich Cookies löschen?</h3>
   <p>Wie und ob Sie Cookies verwenden wollen, entscheiden Sie selbst. Unabhängig von welchem Service oder welcher Webseite die Cookies stammen, haben Sie immer die Möglichkeit Cookies zu löschen, zu deaktivieren oder nur teilweise zuzulassen. Zum Beispiel können Sie Cookies von Drittanbietern blockieren, aber alle anderen Cookies zulassen.</p>
   <p>Wenn Sie feststellen möchten, welche Cookies in Ihrem Browser gespeichert wurden, wenn Sie Cookie-Einstellungen ändern oder löschen wollen, können Sie dies in Ihren Browser-Einstellungen finden:</p>
   <p>
@@ -78,10 +78,10 @@
     <a  href="https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=211142478" target="_blank" rel="noopener noreferrer nofollow" class="external">Microsoft Edge: Löschen und Verwalten von Cookies</a>
   </p>
   <p>Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser so einrichten, dass er Sie immer informiert, wenn ein Cookie gesetzt werden soll. So können Sie bei jedem einzelnen Cookie entscheiden, ob Sie das Cookie erlauben oder nicht. Die Vorgangsweise ist je nach Browser verschieden. Am besten Sie suchen die Anleitung in Google mit dem Suchbegriff “Cookies löschen Chrome” oder „Cookies deaktivieren Chrome“ im Falle eines Chrome Browsers.</p>
-  <h3 class="adsimple-211142478">Wie sieht es mit meinem Datenschutz aus?</h3>
+  <h3>Wie sieht es mit meinem Datenschutz aus?</h3>
   <p>Seit 2009 gibt es die sogenannten „Cookie-Richtlinien“. Darin ist festgehalten, dass das Speichern von Cookies eine Einwilligung von Ihnen verlangt. Innerhalb der EU-Länder gibt es allerdings noch sehr unterschiedliche Reaktionen auf diese Richtlinien. In Österreich erfolgte aber die Umsetzung dieser Richtlinie in § 96 Abs. 3 des Telekommunikationsgesetzes (TKG).</p>
   <p>Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir <a href="https://tools.ietf.org/html/rfc6265" target="_blank" rel="nofollow noopener noreferrer" class="external">https://tools.ietf.org/html/rfc6265</a>, dem Request for Comments der Internet Engineering Task Force (IETF) namens „HTTP State Management Mechanism“.</p>
-  <h2 class="adsimple-211142478">Rechte laut Datenschutzgrundverordnung</h2>
+  <h2>Rechte laut Datenschutzgrundverordnung</h2>
   <p>Ihnen stehen laut den Bestimmungen der DSGVO und des österreichischen <a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597&tid=211142478" target="_blank" rel="noopener noreferrer nofollow" class="external">Datenschutzgesetzes (DSG)</a> grundsätzlich die folgende Rechte zu:</p>
   <ul>
     <li>Recht auf Berichtigung (Artikel 16 DSGVO)</li>
@@ -93,45 +93,45 @@
     <li>Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung — einschließlich Profiling — beruhenden Entscheidung unterworfen zu werden (Artikel 22 DSGVO)</li>
   </ul>
   <p>Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren, welche in Österreich die Datenschutzbehörde ist, deren Webseite Sie unter <a href="https://www.dsb.gv.at/?tid=211142478" class="external" rel="nofollow">https://www.dsb.gv.at/</a> finden.</p>
-  <h2 class="adsimple-211142478">Auswertung des Besucherverhaltens</h2>
+  <h2>Auswertung des Besucherverhaltens</h2>
   <p>In der folgenden Datenschutzerklärung informieren wir Sie darüber, ob und wie wir Daten Ihres Besuchs dieser Website auswerten. Die Auswertung der gesammelten Daten erfolgt in der Regel anonym und wir können von Ihrem Verhalten auf dieser Website nicht auf Ihre Person schließen.</p>
   <p>Mehr über Möglichkeiten dieser Auswertung der Besuchsdaten zu widersprechen erfahren Sie in der folgenden Datenschutzerklärung.</p>
-  <h2 class="adsimple-211142478">TLS-Verschlüsselung mit https</h2>
+  <h2>TLS-Verschlüsselung mit https</h2>
   <p>TLS, Verschlüsselung und https klingen sehr technisch und sind es auch. Wir verwenden HTTPS (das Hypertext Transfer Protocol Secure steht für „sicheres Hypertext-Übertragungsprotokoll“) um Daten abhörsicher im Internet zu übertragen.<br />
     Das bedeutet, dass die komplette Übertragung aller Daten von Ihrem Browser zu unserem Webserver abgesichert ist – niemand kann „mithören“.</p>
   <p>Damit haben wir eine zusätzliche Sicherheitsschicht eingeführt und erfüllen Datenschutz durch Technikgestaltung <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE&tid=211142478" target="_blank" rel="noopener noreferrer nofollow" class="external">Artikel 25 Absatz 1 DSGVO</a>). Durch den Einsatz von TLS (Transport Layer Security), einem Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet können wir den Schutz vertraulicher Daten sicherstellen.<br />
     Sie erkennen die Benutzung dieser Absicherung der Datenübertragung am kleinen Schlosssymbol links oben im Browser links von der Internetadresse (z. B. beispielseite.de) und der Verwendung des Schemas https (anstatt http) als Teil unserer Internetadresse.<br />
     Wenn Sie mehr zum Thema Verschlüsselung wissen möchten, empfehlen wir die Google Suche nach „Hypertext Transfer Protocol Secure wiki“ um gute Links zu weiterführenden Informationen zu erhalten.</p>
-  <h2 class="adsimple-211142478">Google Fonts Lokal Datenschutzerklärung</h2>
+  <h2>Google Fonts Lokal Datenschutzerklärung</h2>
   <p>Auf unserer Website nutzen wir Google Fonts der Firma Google Inc. Für den europäischen Raum ist das Unternehmen Google Ireland Limited (Gordon House, Barrow Street Dublin 4, Irland) verantwortlich. Wir haben die Google-Schriftarten lokal, d.h. auf unserem Webserver – nicht auf den Servern von Google – eingebunden. Dadurch gibt es keine Verbindung zu Google-Servern und somit auch keine Datenübertragung oder Speicherung.</p>
-  <h3 class="adsimple-211142478">Was sind Google Fonts?</h3>
+  <h3>Was sind Google Fonts?</h3>
   <p>Früher nannte man Google Fonts auch Google Web Fonts. Dabei handelt es sich um ein interaktives Verzeichnis mit über 800 Schriftarten, die <a class="adsimple-211142478" href="https://de.wikipedia.org/wiki/Google_LLC?tid=211142478" rel="nofollow">Google</a> kostenlos bereitstellt. Mit Google Fonts könnte man Schriften nutzen, ohne sie auf den eigenen Server hochzuladen. Doch um diesbezüglich jede Informationsübertragung zu Google-Servern zu unterbinden, haben wir die Schriftarten auf unseren Server heruntergeladen. Auf diese Weise handeln wir datenschutzkonform und senden keine Daten an Google Fonts weiter.</p>
   <p>Anders als andere Web-Schriften erlaubt uns Google uneingeschränkten Zugriff auf alle Schriftarten. Wir können also unlimitiert auf ein Meer an Schriftarten zugreifen und so das Optimum für unsere Webseite rausholen. Mehr zu Google Fonts und weiteren Fragen finden Sie auf <a class="adsimple-211142478" href="https://developers.google.com/fonts/faq?tid=211142478" rel="nofollow">https://developers.google.com/fonts/faq?tid=211142478</a>.</p>
-  <h2 class="adsimple-211142478">Font Awesome Datenschutzerklärung</h2>
+  <h2>Font Awesome Datenschutzerklärung</h2>
   <p>Wir verwenden auf unserer Website Font Awesome des amerikanischen Unternehmens Fonticons (307 S. Main St., Suite 202, Bentonville, AR 72712, USA). Wenn Sie eine unserer Webseiten aufrufen, wird die Web-Schriftart Font Awesome (im Speziellen Icons) über das Font Awesome Content Delivery Netzwerk (CDN) geladen. So werden die Texte bzw. Schriften und Icons auf jedem Endgerät passend angezeigt. In dieser Datenschutzerklärung gehen wir näher auf die Datenspeicherung und Datenverarbeitung durch diesen Service ein.</p>
-  <h3 class="adsimple-211142478">Was ist Font Awesome?</h3>
+  <h3>Was ist Font Awesome?</h3>
   <p>Icons spielen für Websites eine immer wichtigere Rolle. Font Awesome ist eine Web-Schriftart, die speziell für Webdesigner und Webentwickler entwickelt wurde. Mit Font Awesome können etwa Icons mit Hilfe der Stylesheet-Sprache CSS nach Belieben skaliert und gefärbt werden. Sie ersetzen so alte Bild-Icons. Font Awesome CDN ist der einfachste Weg die Icons oder Schriftarten auf Ihre Website zu laden. Dafür mussten wir nur eine kleine Code-Zeile in unsere Website einbinden.</p>
-  <h3 class="adsimple-211142478">Warum verwenden wir Font Awesome auf unserer Website?</h3>
+  <h3>Warum verwenden wir Font Awesome auf unserer Website?</h3>
   <p>Durch Font Awesome können Inhalte auf unserer Website besser aufbereitet werden. So können Sie sich auf unserer Website besser orientieren und die Inhalte leichter erfassen. Mit den Icons kann man sogar manchmal ganze Wörter ersetzen und Platz sparen. Da ist besonders praktisch, wenn wir Inhalte speziell für Smartphones optimieren.  Diese Icons werden statt als Bild als HMTL-Code eingefügt. Dadurch können wir die Icons mit CSS genauso bearbeiten, wie wir wollen. Gleichzeitig verbessern wir mit Font Awesome auch unsere Ladegeschwindigkeit, weil es sich nur um HTML-Elemente handelt und nicht um Icon-Bilder. All diese Vorteile helfen uns, die Website für Sie noch übersichtlicher, frischer und schneller zu machen.</p>
-  <h3 class="adsimple-211142478">Welche Daten werden von Font Awesome gespeichert?</h3>
+  <h3>Welche Daten werden von Font Awesome gespeichert?</h3>
   <p>Zum Laden von Icons und Symbolen wird das Font Awesome Content Delivery Network (CDN) verwendet. CDNs sind Netzwerke von Servern, die weltweit verteilt sind und es möglich machen, schnell Dateien aus der Nähe zu laden. So werden auch, sobald Sie eine unserer Seiten aufrufen, die entsprechenden Icons von Font Awesome bereitgestellt.</p>
   <p>Damit die Web-Schriftarten geladen werden können, muss Ihr Browser eine Verbindung zu den Servern des Unternehmens Fonticons, Inc. herstellen. Dabei wird Ihre IP-Adresse erkannt. Font Awesome sammelt auch Daten darüber, welche Icon-Dateien wann heruntergeladen werden. Weiters werden auch technische Daten wie etwa Ihre Browser-Version, Bildschirmauflösung oder der Zeitpunkt der ausgerufenen Seite übertragen.</p>
   <p>Aus folgenden Gründen werden diese Daten gesammelt und gespeichert:</p>
-  <ul class="adsimple-211142478">
-    <li class="adsimple-211142478">um Content Delivery Netzwerke zu optimieren</li>
-    <li class="adsimple-211142478">um technische Fehler zu erkennen und zu beheben</li>
-    <li class="adsimple-211142478">um CDNs vor Missbrauch und Angriffen zu schützen</li>
-    <li class="adsimple-211142478">um Gebühren von Font Awesome Pro-Kunden berechnen zu können</li>
-    <li class="adsimple-211142478">um die Beliebtheit von Icons zu erfahren</li>
-    <li class="adsimple-211142478">um zu wissen, welchen Computer und welche Software Sie verwenden</li>
+  <ul>
+    <li>um Content Delivery Netzwerke zu optimieren</li>
+    <li>um technische Fehler zu erkennen und zu beheben</li>
+    <li>um CDNs vor Missbrauch und Angriffen zu schützen</li>
+    <li>um Gebühren von Font Awesome Pro-Kunden berechnen zu können</li>
+    <li>um die Beliebtheit von Icons zu erfahren</li>
+    <li>um zu wissen, welchen Computer und welche Software Sie verwenden</li>
   </ul>
   <p>Falls Ihr Browser Web-Schriftarten nicht zulässt, wird automatisch eine Standardschrift Ihres PCs verwendet. Nach derzeitigem Stand unserer Erkenntnis werden keine Cookies gesetzt. Wir sind mit der Datenschutzabteilung von Font Awesome in Kontakt und geben Ihnen Bescheid, sobald wir näheres in Erfahrung bringen.</p>
-  <h3 class="adsimple-211142478">Wie lange und wo werden die Daten gespeichert?</h3>
+  <h3>Wie lange und wo werden die Daten gespeichert?</h3>
   <p>Font Awesome speichert Daten über die Nutzung des Content Delivery Network auf Servern auch in den Vereinigten Staaten von Amerika. Die CDN-Server befinden sich allerdings weltweit und speichern Userdaten, wo Sie sich befinden. In identifizierbarer Form werden die Daten in der Regel nur wenige Wochen gespeichert. Aggregierte Statistiken über die Nutzung von den CDNs können auch länger gespeichert werden. Personenbezogene Daten sind hier nicht enthalten.</p>
-  <h3 class="adsimple-211142478">Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?</h3>
+  <h3>Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?</h3>
   <p>Font Awesome speichert nach aktuellem Stand unseres Wissens keine personenbezogenen Daten über die Content Delivery Netzwerke. Wenn Sie nicht wollen, dass Daten über die verwendeten Icons gespeichert werden, können Sie leider unsere Website nicht besuchen. Wenn Ihr Browser keine Web-Schriftarten erlaubt, werden auch keine Daten übertragen oder gespeichert. In diesem Fall wird einfach die Standard-Schrift Ihres Computers verwendet.</p>
   <p>Wenn Sie mehr über Font Awesome und deren Umgang mit Daten erfahren wollen, empfehlen wir Ihnen die Datenschutzerklärung unter <a href="https://fontawesome.com/privacy" class="external" rel="nofollow">https://fontawesome.com/privacy</a> und die Hilfeseite unter <a href="https://fontawesome.com/help?tid=211142478" class="external" rel="nofollow">https://fontawesome.com/help</a>.</p>
-  <h2 class="adsimple-211142478">LinkedIn Datenschutzerklärung</h2>
+  <h2>LinkedIn Datenschutzerklärung</h2>
   <p>Wir nutzen auf unserer Webseite Social-Plug-ins des Social-Media-Netzwerks LinkedIn, der Firma LinkedIn Corporation, 2029 Stierlin Court, Mountain View, CA 94043, USA. Bei den Social-Plug-ins kann es sich um Feeds, das Teilen von Inhalten oder um die Verlinkung zu unserer LinkedIn-Seite handeln. Die Social-Plug-ins sind eindeutig mit dem bekannten LinkedIn-Logo gekennzeichnet und erlauben beispielsweise interessante Inhalte direkt über unsere Webseite zu teilen. Für den Europäischen Wirtschaftsraum und die Schweiz ist die Firma LinkedIn Ireland Unlimited Company Wilton Place in Dublin für die Datenverarbeitung verantwortlich.</p>
   <p>Durch die Einbettung solcher Plug-ins können Daten an LinkedIn versandt, gespeichert und dort verarbeitet werden. In dieser Datenschutzerklärung wollen wir Sie informieren, um welche Daten es sich handelt, wie das Netzwerk diese Daten verwendet und wie Sie die Datenspeicherung verwalten bzw. unterbinden können.</p>
   <h3 class="adsimple-211142478">Was ist LinkedIn?</h3>

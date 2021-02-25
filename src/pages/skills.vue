@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Skills</h1>
+    <h1>Kenntnisse</h1>
     <ul>
       <li>Test 1</li>
       <li>Test 2</li>
