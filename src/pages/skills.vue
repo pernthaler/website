@@ -2,7 +2,8 @@
   <div>
     <h1>Skills</h1>
     <ul>
-      <li>test</li>
+      <li>test 1</li>
+      <li>test 2</li>
     </ul>
   </div>
 </template>
