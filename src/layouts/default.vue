@@ -46,36 +46,38 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: TitilliumWeb;
-  src: url("/fonts/TitilliumWeb/TitilliumWeb-Regular.ttf");
-}
-@font-face {
-  font-family: Anton;
-  src: url("/fonts/Anton/Anton-Regular.ttf");
-}
+@import "~assets/scss/theme.scss";
 
 html, body, #__nuxt, #__layout, #__layout > div {
-  #__layout > div {
-    padding: 0;
-    margin: 0;
-    display:flex;
-    flex-direction:column;
-  }
   min-height: 100vh;
 }
-
 html {
   scroll-behavior: smooth;
 }
 body {
   word-wrap: break-word;
+  background-color: $background-dark;
 }
+#__layout > div {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arimo, sans-serif;
+  font-family: $font-header, sans-serif;
 }
 p, span, li {
-  font-family: TitilliumWeb, sans-serif;
+  font-family: $font-default, sans-serif;
   text-align: justify;
+}
+a {
+  color: $primary-light;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $primary-dark;
+  }
 }
 </style>

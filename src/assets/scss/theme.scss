@@ -1,0 +1,17 @@
+$primary-light: red;
+$primary-dark: darkred;
+$secondary-light: black;
+$secondary-dark: darkgray;
+$background-light: white;
+$background-dark: whitesmoke;
+$font-header: Overpass;
+$font-default: TitilliumWeb;
+
+@font-face {
+  font-family: $font-header;
+  src: url("~assets/fonts/" + $font-header + "/" + $font-header + "-Regular.ttf");
+}
+@font-face {
+  font-family: $font-default;
+  src: url("~assets/fonts/" + $font-default + "/" + $font-default + "-Regular.ttf");
+}
