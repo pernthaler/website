@@ -1,9 +1,11 @@
 <template>
   <div>
     <Navbar/>
-    <div class="container">
-      <Nuxt/>
-    </div>
+    <main>
+      <div class="container">
+        <Nuxt/>
+      </div>
+    </main>
     <Footer/>
   </div>
 </template>
@@ -68,6 +70,16 @@ export default {
 @font-face {
   font-family: Anton;
   src: url("/fonts/Anton/Anton-Regular.ttf");
+}
+
+html, body, #__nuxt, #__layout, #__layout > div {
+  #__layout > div {
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction:column;
+  }
+  min-height: 100vh;
 }
 
 html {
