@@ -4,6 +4,9 @@ export default {
     server: {
         host: "0"
     },
+    plugins: [
+        "~/plugins/fontawesome.js"
+    ],
     css: [
         "@getbase/base/core.css",
         "@getbase/base/code.css",
@@ -21,9 +24,6 @@ export default {
         "@getbase/base/position-helpers.css",
         "@getbase/base/typography-helpers.css",
         "@fortawesome/fontawesome-svg-core/styles.css"
-    ],
-    plugins: [
-        "~/plugins/fontawesome.js"
     ],
     modules: [
         [

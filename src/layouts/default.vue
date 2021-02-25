@@ -76,7 +76,7 @@ a {
   color: $primary-light;
   text-decoration: none;
 
-  &:hover, &:focus {
+  &:hover {
     color: $primary-dark;
   }
 }
