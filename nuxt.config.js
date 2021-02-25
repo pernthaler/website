@@ -7,6 +7,18 @@ export default {
     plugins: [
         "~/plugins/fontawesome.ts"
     ],
+    modules: [
+        [
+            "nuxt-matomo",
+            {
+                matomoUrl: process.env.MATOMO_URL,
+                siteId: process.env.SITE_ID
+            }
+        ]
+    ],
+    buildModules: [
+        "@nuxt/typescript-build"
+    ],
     css: [
         "@getbase/base/core.css",
         "@getbase/base/code.css",
@@ -24,17 +36,5 @@ export default {
         "@getbase/base/position-helpers.css",
         "@getbase/base/typography-helpers.css",
         "@fortawesome/fontawesome-svg-core/styles.css"
-    ],
-    modules: [
-        [
-            "nuxt-matomo",
-            {
-                matomoUrl: process.env.MATOMO_URL,
-                siteId: process.env.SITE_ID
-            }
-        ]
-    ],
-    buildModules: [
-        "@nuxt/typescript-build"
     ]
 }
