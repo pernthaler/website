@@ -1,0 +1,10 @@
+/* TEAM */
+	Developer: Sebastian Pernthaler
+	Contact: sebastian@pernthaler.me
+	Location: Österreich
+
+/* SITE */
+	Language: Deutsch
+	Standards: HTML, CSS, SASS, JavaScript, TypeScript
+	Components: Vue.js, Node.js, Webpack.js
+	Software: IntelliJ IDEA Ultimate Edition

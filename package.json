@@ -1,0 +1,26 @@
+{
+  "name": "website",
+  "author": "Sebastian Pernthaler",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pernthaler/Website.git"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@getbase/base": "^5.2.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "node-sass": "^5.0.0",
+    "nuxt": "^2.14.12",
+    "nuxt-matomo": "^1.2.4",
+    "sass-loader": "^10.1.1"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.12"
+  }
+}
