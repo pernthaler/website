@@ -11,3 +11,20 @@
     </div>
   </footer>
 </template>
+
+<style lang="scss" scoped>
+p, a, ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline;
+  }
+}
+</style>

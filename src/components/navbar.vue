@@ -1,8 +1,10 @@
 <template>
   <nav class="container">
     <div class="row">
-      <div class="col-12">
-        <NuxtLink to="/"><div class="logo"><span>Sebastian Pernhtaler</span></div></NuxtLink>
+      <div class="col-6">
+        <NuxtLink to="/"><span>Sebastian Pernhtaler</span></NuxtLink>
+      </div>
+      <div class="col-6">
         <ul>
           <li><NuxtLink to="/skills">Skills</NuxtLink></li>
           <li><a href="https://www.linkedin.com/in/pernthaler/" target="_blank" ref="noopener">LinkedIn</a></li>
@@ -12,3 +14,20 @@
     </div>
   </nav>
 </template>
+
+<style lang="scss" scoped>
+ul, a {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline;
+  }
+}
+</style>
