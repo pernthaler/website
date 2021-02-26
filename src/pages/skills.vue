@@ -19,18 +19,26 @@
 
 <script lang="ts">
 const categories = [
-  {name: "Programmiersprachen", languages: [
+  {
+    name: "Programmiersprachen",
+    languages: [
       "Java",
       "Rust",
       "C++"
-    ]},
-  {name: "Skriptsprachen", languages: [
+    ]
+  },
+  {
+    name: "Skriptsprachen",
+    languages: [
       "Bash",
       "Batch",
       "JavaScript",
       "TypeScript"
-    ]},
-  {name: "Andere Sprachen", languages: [
+    ]
+  },
+  {
+    name: "Andere Sprachen",
+    languages: [
       "Markdown",
       "CSS",
       "HTML",
@@ -39,7 +47,8 @@ const categories = [
       "SQL",
       "JSON",
       "XML"
-    ]}
+    ]
+  }
 ];
 
 categories.forEach(category => category.languages.sort());
