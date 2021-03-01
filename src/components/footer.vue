@@ -21,10 +21,10 @@
       <div class="row">
         <div class="col-12">
           <ul>
-            <li><nuxt-link :to="switchLocalePath('en')"><span class="flag-icon flag-icon-us"/></nuxt-link></li>
-            <li><nuxt-link :to="switchLocalePath('de')"><span class="flag-icon flag-icon-de"/></nuxt-link></li>
+            <li><nuxt-link :to="switchLocalePath('en')"><span aria-label="English" class="flag-icon flag-icon-us"/></nuxt-link></li>
+            <li><nuxt-link :to="switchLocalePath('de')"><span aria-label="German" class="flag-icon flag-icon-de"/></nuxt-link></li>
           </ul>
-          <p>{{ $t("notice-1") }} <a href="https://vuejs.org/" target="_blank" ref="noopener noreferrer nofollow">Vue.js</a> {{ $t("notice-2") }} <a href="https://github.com/Pernthaler/Website" target="_blank" ref="noopener noreferrer nofollow">Open Source</a>.</p>
+          <p>{{ $t("notice-1") }} <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue.js</a> {{ $t("notice-2") }} <a href="https://github.com/Pernthaler/Website" target="_blank" rel="noopener">Open Source</a>.</p>
 
           <ul>
             <li><nuxt-link :to="localePath('imprint')">{{ $t("imprint") }}</nuxt-link></li>

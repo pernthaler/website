@@ -38,6 +38,16 @@ export default {
         {
           rel: "author",
           href: "/humans.txt"
+        },
+        {
+          rel: "preload",
+          as: "font",
+          href: "/_nuxt/fonts/Overpass/Overpass-Regular.ttf"
+        },
+        {
+          rel: "preload",
+          as: "font",
+          href: "/_nuxt/fonts/TitilliumWeb/TitilliumWeb-Regular.ttf"
         }
       ],
       meta: [

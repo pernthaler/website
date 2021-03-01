@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-12">
       <h1>Datenschutzerklärung</h1>
-      <p>Wir haben diese Datenschutzerklärung verfasst, um Ihnen gemäß der Vorgaben der <a href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&tid=211142478" target="_blank" rel="noopener noreferrer nofollow">Datenschutz-Grundverordnung (EU) 2016/679</a> zu erklären, welche Informationen wir sammeln, wie wir Daten verwenden und welche Entscheidungsmöglichkeiten Sie als Besucher dieser Webseite haben.</p>
+      <p>Wir haben diese Datenschutzerklärung verfasst, um Ihnen gemäß der Vorgaben der <a href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&tid=211142478" target="_blank" rel="noopener">Datenschutz-Grundverordnung (EU) 2016/679</a> zu erklären, welche Informationen wir sammeln, wie wir Daten verwenden und welche Entscheidungsmöglichkeiten Sie als Besucher dieser Webseite haben.</p>
       <p>Datenschutzerklärungen klingen für gewöhnlich sehr technisch. Diese Version soll Ihnen hingegen die wichtigsten Dinge so einfach und klar wie möglich beschreiben. Soweit es möglich ist, werden technische Begriffe leserfreundlich erklärt. Außerdem möchten wir vermitteln, dass wir mit dieser Website nur dann Informationen sammeln und verwenden, wenn eine entsprechende gesetzliche Grundlage gegeben ist. Das ist sicher nicht möglich, wenn man möglichst knappe, technische Erklärungen abgibt, so wie sie im Internet oft Standard sind, wenn es um Datenschutz geht. Ich hoffe Sie finden die folgenden Erläuterungen interessant und informativ und vielleicht ist die eine oder andere Information dabei, die Sie noch nicht kannten.</p>
       <p>Wenn trotzdem Fragen bleiben, möchten wir Sie bitten den vorhandenen Links zu folgen und sich weitere Informationen auf Drittseiten anzusehen, oder uns einfach eine E-Mail zu schreiben. Unsere Kontaktdaten finden Sie im Impressum.</p>
 
@@ -63,26 +63,26 @@
   <p>Wie und ob Sie Cookies verwenden wollen, entscheiden Sie selbst. Unabhängig von welchem Service oder welcher Webseite die Cookies stammen, haben Sie immer die Möglichkeit Cookies zu löschen, zu deaktivieren oder nur teilweise zuzulassen. Zum Beispiel können Sie Cookies von Drittanbietern blockieren, aber alle anderen Cookies zulassen.</p>
   <p>Wenn Sie feststellen möchten, welche Cookies in Ihrem Browser gespeichert wurden, wenn Sie Cookie-Einstellungen ändern oder löschen wollen, können Sie dies in Ihren Browser-Einstellungen finden:</p>
   <p>
-    <a href="https://support.google.com/chrome/answer/95647?tid=211142478" target="_blank" rel="noopener noreferrer nofollow">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
+    <a href="https://support.google.com/chrome/answer/95647?tid=211142478" target="_blank" rel="noopener">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
   </p>
   <p>
-    <a href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=211142478" target="_blank" rel="noopener noreferrer nofollow">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
+    <a href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=211142478" target="_blank" rel="noopener">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
   </p>
   <p>
-    <a href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=211142478" target="_blank" rel="noopener noreferrer nofollow">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
+    <a href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=211142478" target="_blank" rel="noopener">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
   </p>
   <p>
-    <a href="https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=211142478" target="_blank" rel="noopener noreferrer nofollow">Internet Explorer: Löschen und Verwalten von Cookies</a>
+    <a href="https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=211142478" target="_blank" rel="noopener">Internet Explorer: Löschen und Verwalten von Cookies</a>
   </p>
   <p>
-    <a href="https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=211142478" target="_blank" rel="noopener noreferrer nofollow">Microsoft Edge: Löschen und Verwalten von Cookies</a>
+    <a href="https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=211142478" target="_blank" rel="noopener">Microsoft Edge: Löschen und Verwalten von Cookies</a>
   </p>
   <p>Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser so einrichten, dass er Sie immer informiert, wenn ein Cookie gesetzt werden soll. So können Sie bei jedem einzelnen Cookie entscheiden, ob Sie das Cookie erlauben oder nicht. Die Vorgangsweise ist je nach Browser verschieden. Am besten Sie suchen die Anleitung in Google mit dem Suchbegriff “Cookies löschen Chrome” oder „Cookies deaktivieren Chrome“ im Falle eines Chrome Browsers.</p>
   <h3>Wie sieht es mit meinem Datenschutz aus?</h3>
   <p>Seit 2009 gibt es die sogenannten „Cookie-Richtlinien“. Darin ist festgehalten, dass das Speichern von Cookies eine Einwilligung von Ihnen verlangt. Innerhalb der EU-Länder gibt es allerdings noch sehr unterschiedliche Reaktionen auf diese Richtlinien. In Österreich erfolgte aber die Umsetzung dieser Richtlinie in § 96 Abs. 3 des Telekommunikationsgesetzes (TKG).</p>
-  <p>Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir <a href="https://tools.ietf.org/html/rfc6265" target="_blank" rel="nofollow noopener noreferrer">https://tools.ietf.org/html/rfc6265</a>, dem Request for Comments der Internet Engineering Task Force (IETF) namens „HTTP State Management Mechanism“.</p>
+  <p>Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir <a href="https://tools.ietf.org/html/rfc6265" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc6265</a>, dem Request for Comments der Internet Engineering Task Force (IETF) namens „HTTP State Management Mechanism“.</p>
   <h2>Rechte laut Datenschutzgrundverordnung</h2>
-  <p>Ihnen stehen laut den Bestimmungen der DSGVO und des österreichischen <a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597&tid=211142478" target="_blank" rel="noopener noreferrer nofollow">Datenschutzgesetzes (DSG)</a> grundsätzlich die folgende Rechte zu:</p>
+  <p>Ihnen stehen laut den Bestimmungen der DSGVO und des österreichischen <a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597&tid=211142478" target="_blank" rel="noopener">Datenschutzgesetzes (DSG)</a> grundsätzlich die folgende Rechte zu:</p>
   <ul>
     <li>Recht auf Berichtigung (Artikel 16 DSGVO)</li>
     <li>Recht auf Löschung („Recht auf Vergessenwerden“) (Artikel 17 DSGVO)</li>
@@ -99,7 +99,7 @@
   <h2>TLS-Verschlüsselung mit https</h2>
   <p>TLS, Verschlüsselung und https klingen sehr technisch und sind es auch. Wir verwenden HTTPS (das Hypertext Transfer Protocol Secure steht für „sicheres Hypertext-Übertragungsprotokoll“) um Daten abhörsicher im Internet zu übertragen.<br />
     Das bedeutet, dass die komplette Übertragung aller Daten von Ihrem Browser zu unserem Webserver abgesichert ist – niemand kann „mithören“.</p>
-  <p>Damit haben wir eine zusätzliche Sicherheitsschicht eingeführt und erfüllen Datenschutz durch Technikgestaltung <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE&tid=211142478" target="_blank" rel="noopener noreferrer nofollow">Artikel 25 Absatz 1 DSGVO</a>). Durch den Einsatz von TLS (Transport Layer Security), einem Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet können wir den Schutz vertraulicher Daten sicherstellen.<br />
+  <p>Damit haben wir eine zusätzliche Sicherheitsschicht eingeführt und erfüllen Datenschutz durch Technikgestaltung <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE&tid=211142478" target="_blank" rel="noopener">Artikel 25 Absatz 1 DSGVO</a>). Durch den Einsatz von TLS (Transport Layer Security), einem Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet können wir den Schutz vertraulicher Daten sicherstellen.<br />
     Sie erkennen die Benutzung dieser Absicherung der Datenübertragung am kleinen Schlosssymbol links oben im Browser links von der Internetadresse (z. B. beispielseite.de) und der Verwendung des Schemas https (anstatt http) als Teil unserer Internetadresse.<br />
     Wenn Sie mehr zum Thema Verschlüsselung wissen möchten, empfehlen wir die Google Suche nach „Hypertext Transfer Protocol Secure wiki“ um gute Links zu weiterführenden Informationen zu erhalten.</p>
   <h2>Google Fonts Lokal Datenschutzerklärung</h2>
@@ -188,13 +188,13 @@
   <p>Klicken Sie in LinkedIn auf Ihr Profilsymbol und wählen Sie die Rubrik „Einstellungen und Datenschutz“. Klicken Sie nun auf „Datenschutz“ und dann im Abschnitt „So verwendet LinkedIn Ihre Daten auf „Ändern“. In nur kurzer Zeit können Sie ausgewählte Daten zu Ihrer Web-Aktivität und Ihrem Kontoverlauf herunterladen.</p>
   <p>Sie haben auch in Ihrem Browser die Möglichkeit, die Datenverarbeitung durch LinkedIn zu unterbinden. Wie oben bereits erwähnt, speichert LinkedIn die meisten Daten über Cookies, die in Ihrem Browser gesetzt werden. Diese Cookies können Sie verwalten, deaktivieren oder löschen. Je nachdem, welchen Browser Sie haben, funktioniert die Verwaltung etwas anders. Die Anleitungen der gängigsten Browser finden Sie hier:</p>
   <p>
-    <a href="https://support.google.com/chrome/answer/95647?tid=211142478" target="_blank" rel="noopener" class="external">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
+    <a href="https://support.google.com/chrome/answer/95647?tid=211142478" target="_blank" rel="noopener">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
   </p>
   <p>
-    <a href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=211142478" target="_blank" rel="noopener noreferrer nofollow" class="external">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
+    <a href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=211142478" target="_blank" rel="noopener">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
   </p>
   <p>
-    <a href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=211142478" target="_blank" rel="noopener noreferrer nofollow" class="external">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
+    <a href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=211142478" target="_blank" rel="noopener" class="external">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
   </p>
   <p>
     <a href="https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=211142478" target="_blank" rel="noopener noreferrer nofollow" class="external">Internet Explorer: Löschen und Verwalten von Cookies</a>
