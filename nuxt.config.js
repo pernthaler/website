@@ -56,5 +56,12 @@ export default {
         "@getbase/base/scss/position-helpers.scss",
         "@fortawesome/fontawesome-svg-core/styles.css",
         "flag-icon-css/sass/flag-icon.scss"
-    ]
+    ],
+    render: {
+        bundleRenderer: {
+            shouldPreload: (file, type) => {
+                return ["script", "style", "font"].includes(type);
+            }
+        }
+    }
 }
