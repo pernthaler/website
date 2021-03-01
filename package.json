@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "description": "Diese Website wurde mit Vue.js erstellt und ist Open Source.",
+  "description": "This website was created with Vue.js and is Open Source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
   "private": true,

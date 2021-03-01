@@ -2,6 +2,6 @@
 
 https://sebastian.pernthaler.me
 
-## Lizenz
+## License
 
 [Apache License 2.0](LICENSE)

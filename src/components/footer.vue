@@ -9,7 +9,7 @@
   "de": {
     "imprint": "Impressum",
     "privacy": "Datenschutzerklärung",
-    "notice-1": "Diese Website wurde mit",
+    "notice-1": "Diese Webseite wurde mit",
     "notice-2": "erstellt und ist"
   }
 }
