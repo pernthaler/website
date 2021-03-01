@@ -15,7 +15,7 @@ export default {
   head: {
     title: "Sebastian Pernthaler",
     htmlAttrs: {
-      lang: "de",
+      lang: "en",
     },
     link: [
       {
@@ -38,7 +38,7 @@ export default {
       },
       {
         name: "description",
-        content: "Software-Entwickler"
+        content: "Software-Developer"
       }
     ]
   }

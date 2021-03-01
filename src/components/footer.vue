@@ -1,12 +1,34 @@
+<i18n>
+{
+  "en": {
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "notice-1": "This website was created with",
+    "notice-2": "and is"
+  },
+  "de": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutzerklärung",
+    "notice-1": "Diese Website wurde mit",
+    "notice-2": "erstellt und ist"
+  }
+}
+</i18n>
+
 <template>
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <p>Diese Website wurde mit <a href="https://vuejs.org/" target="_blank" ref="noopener noreferrer nofollow">Vue.js</a> erstellt und ist <a href="https://github.com/Pernthaler/Website" target="_blank" ref="noopener noreferrer nofollow">Open Source</a>.</p>
           <ul>
-            <li><NuxtLink to="/imprint">Impressum</NuxtLink></li>
-            <li><NuxtLink to="/privacy">Datenschutzerklärung</NuxtLink></li>
+            <li><nuxt-link :to="switchLocalePath('en')">English</nuxt-link></li>
+            <li><nuxt-link :to="switchLocalePath('de')">German</nuxt-link></li>
+          </ul>
+          <p>{{ $t("notice-1") }} <a href="https://vuejs.org/" target="_blank" ref="noopener noreferrer nofollow">Vue.js</a> {{ $t("notice-2") }} <a href="https://github.com/Pernthaler/Website" target="_blank" ref="noopener noreferrer nofollow">Open Source</a>.</p>
+
+          <ul>
+            <li><nuxt-link :to="localePath('imprint')">{{ $t("imprint") }}</nuxt-link></li>
+            <li><nuxt-link :to="localePath('privacy')">{{ $t("privacy") }}</nuxt-link></li>
           </ul>
         </div>
       </div>

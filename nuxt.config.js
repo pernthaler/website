@@ -9,6 +9,12 @@ export default {
     ],
     modules: [
         [
+            "nuxt-i18n",
+            {
+                vueI18nLoader: true
+            }
+        ],
+        [
             "nuxt-matomo",
             {
                 matomoUrl: process.env.MATOMO_URL,
@@ -16,6 +22,16 @@ export default {
             }
         ]
     ],
+    i18n: {
+        locales: [ "en", "de" ],
+        detectBrowserLanguage: {
+            fallbackLocale: "en",
+            useCookie: true,
+            alwaysRedirect: true,
+            onlyOnRoot: true,
+            cookieKey: "language"
+        }
+    },
     buildModules: [
         "@nuxt/typescript-build"
     ],
