@@ -8,19 +8,13 @@ export default {
         "~/plugins/fontawesome.ts"
     ],
     modules: [
-        [
-            "nuxt-i18n",
-            {
-                vueI18nLoader: true
-            }
-        ],
-        [
-            "nuxt-matomo",
-            {
-                matomoUrl: process.env.MATOMO_URL,
-                siteId: process.env.SITE_ID
-            }
-        ]
+        [ "nuxt-i18n", {
+            vueI18nLoader: true
+        }],
+        [ "nuxt-matomo", {
+            matomoUrl: process.env.MATOMO_URL,
+            siteId: process.env.SITE_ID
+        }]
     ],
     i18n: {
         locales: [

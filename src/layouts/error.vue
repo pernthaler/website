@@ -10,7 +10,7 @@
 <script lang="ts">
 export default {
   props: [
-      "error"
+    "error"
   ]
 }
 </script>

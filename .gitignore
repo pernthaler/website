@@ -1,5 +1,5 @@
-.idea/
-node_modules/
-dist/
-.nuxt/
+.idea
+node_modules
+dist
+.nuxt
 .env

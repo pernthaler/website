@@ -22,7 +22,6 @@
         <h1>{{ $t("title") }}</h1>
       </div>
     </div>
-
     <div class="row">
       <div class="col-4-m col-12" v-for="category of categories">
         <h2>{{category.name}}</h2>
