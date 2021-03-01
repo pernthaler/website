@@ -31,7 +31,6 @@ export default {
             fallbackLocale: "en",
             useCookie: true,
             alwaysRedirect: true,
-            onlyOnRoot: true,
             cookieKey: "language"
         }
     },
