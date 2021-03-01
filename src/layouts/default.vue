@@ -30,28 +30,22 @@ export default {
         lang: this.$i18n.locale
       },
       link: [
-        {
-          rel: "icon",
-          type: "image/x-icon",
-          href: "/favicon.ico"
-        },
-        {
-          rel: "author",
-          href: "/humans.txt"
-        }
+        { rel: "icon",  type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "author", href: "/humans.txt" }
       ],
       meta: [
-        {
-          charset: "utf-8"
-        },
-        {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1.0"
-        },
-        {
-          name: "description",
-          content: this.$t("description")
-        }
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+        { name: "author", content: "Sebastian Pernthaler" },
+        { name: "description", content: this.$t("description") },
+        { name: "color-scheme", content: "light" },
+        { property: "og:title", content: "Sebastian Pernthaler" },
+        { property: "og:type", content: "website" },
+        { property: "og:site_name", content: "Sebastian Pernthaler" },
+        { property: "og:description", content: this.$t("description") },
+        { name: "twitter:card", content: "summary" },
+        { name: "twitter:title", content: "Sebastian Pernthaler" },
+        { name: "twitter:description", content: this.$t("description") }
       ]
     };
   }
