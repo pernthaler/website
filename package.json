@@ -1,6 +1,7 @@
 {
   "name": "website",
-  "author": "Sebastian Pernthaler",
+  "author": "Pernthaler <sebastian@pernthaler.me>",
+  "description": "Diese Website wurde mit Vue.js erstellt und ist Open Source.",
   "license" : "Apache-2.0",
   "private": true,
   "repository": {

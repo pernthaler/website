@@ -8,10 +8,10 @@ $font-header: Overpass;
 $font-default: TitilliumWeb;
 
 @font-face {
-  font-family: $font-header;
-  src: url("~assets/fonts/" + $font-header + "/" + $font-header + "-Regular.ttf");
-}
-@font-face {
   font-family: $font-default;
   src: url("~assets/fonts/" + $font-default + "/" + $font-default + "-Regular.ttf");
+}
+@font-face {
+  font-family: $font-header;
+  src: url("~assets/fonts/" + $font-header + "/" + $font-header + "-Regular.ttf");
 }
