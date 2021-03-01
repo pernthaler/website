@@ -1,7 +1,18 @@
+<i18n>
+{
+  "en": {
+    "title": "Imprint"
+  },
+  "de": {
+    "title": "Impressum"
+  }
+}
+</i18n>
+
 <template>
   <div class="row">
     <div class="col-12">
-      <h1>Impressum</h1>
+      <h1>{{ $t("title") }}</h1>
       <p>Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.</p>
       <p>Sebastian Pernthaler</p>
       <p><a href="mailto:sebastian@pernthaler.me">sebastian@pernthaler.me</a></p>
