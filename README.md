@@ -4,4 +4,4 @@ https://sebastian.pernthaler.me
 
 ## Lizenz
 
-[Apache-2.0 License](LICENSE)
+[Apache-2.0](LICENSE)
