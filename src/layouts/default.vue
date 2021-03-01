@@ -1,3 +1,14 @@
+<i18n>
+{
+  "en": {
+    "description": "Software-Developer"
+  },
+  "de": {
+    "description": "Software-Entwickler"
+  }
+}
+</i18n>
+
 <template>
   <div>
     <Navbar/>
@@ -10,37 +21,39 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 export default {
-  head: {
-    title: "Sebastian Pernthaler",
-    htmlAttrs: {
-      lang: "en",
-    },
-    link: [
-      {
-        rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
+  head() {
+    return {
+      title: "Sebastian Pernthaler",
+      htmlAttrs: {
+        lang: this.$i18n.locale
       },
-      {
-        rel: "author",
-        href: "/humans.txt"
-      }
-    ],
-    meta: [
-      {
-        charset: "utf-8"
-      },
-      {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1.0"
-      },
-      {
-        name: "description",
-        content: "Software-Developer"
-      }
-    ]
+      link: [
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico"
+        },
+        {
+          rel: "author",
+          href: "/humans.txt"
+        }
+      ],
+      meta: [
+        {
+          charset: "utf-8"
+        },
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1.0"
+        },
+        {
+          name: "description",
+          content: this.$t("description")
+        }
+      ]
+    };
   }
 }
 </script>

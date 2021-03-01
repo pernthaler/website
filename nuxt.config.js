@@ -23,7 +23,10 @@ export default {
         ]
     ],
     i18n: {
-        locales: [ "en", "de" ],
+        locales: [
+            { code: "en", iso: "en-US" },
+            { code: "de", iso: "de-DE" }
+        ],
         detectBrowserLanguage: {
             fallbackLocale: "en",
             useCookie: true,
