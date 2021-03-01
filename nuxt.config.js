@@ -55,6 +55,7 @@ export default {
         "@getbase/base/scss/display-helpers.scss",
         "@getbase/base/scss/flex-helpers.scss",
         "@getbase/base/scss/position-helpers.scss",
-        "@fortawesome/fontawesome-svg-core/styles.css"
+        "@fortawesome/fontawesome-svg-core/styles.css",
+        "flag-icon-css/sass/flag-icon.scss"
     ]
 }

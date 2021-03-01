@@ -1,8 +1,25 @@
+<i18n>
+{
+  "en": {
+    "title": "Skills",
+    "programming": "Programming languages",
+    "scripting": "Scripting languages",
+    "other": "Other languages"
+  },
+  "de": {
+    "title": "Kenntnisse",
+    "programming": "Programmiersprachen",
+    "scripting": "Skriptsprachen",
+    "other": "Andere Sprachen"
+  }
+}
+</i18n>
+
 <template>
   <div>
     <div class="row">
       <div class="col-12">
-        <h1>Kenntnisse</h1>
+        <h1>{{ $t("title") }}</h1>
       </div>
     </div>
 
@@ -18,43 +35,36 @@
 </template>
 
 <script lang="ts">
-const categories = [
-  {
-    name: "Programmiersprachen",
-    languages: [
-      "Java",
-      "Rust",
-      "C++"
-    ]
-  },
-  {
-    name: "Skriptsprachen",
-    languages: [
-      "Bash",
-      "Batch",
-      "JavaScript",
-      "TypeScript"
-    ]
-  },
-  {
-    name: "Andere Sprachen",
-    languages: [
-      "Markdown",
-      "CSS",
-      "HTML",
-      "SASS",
-      "BBCode",
-      "SQL",
-      "JSON",
-      "XML"
-    ]
-  }
-];
-
-categories.forEach(category => category.languages.sort());
-
 export default {
   data() {
+    const categories = [
+      { name: this.$t("programming"), languages: [
+          "Java",
+          "Rust",
+          "C++"
+        ]},
+      { name: this.$t("scripting"), languages: [
+          "Bash",
+          "Batch",
+          "JavaScript",
+          "TypeScript",
+          "PHP"
+        ]},
+      { name: this.$t("other"), languages: [
+          "Markdown",
+          "CSS",
+          "HTML",
+          "SASS",
+          "BBCode",
+          "SQL",
+          "JSON",
+          "XML",
+          "LaTeX",
+          "Regex",
+          "YAML"
+        ]}
+    ];
+    categories.forEach(category => category.languages.sort());
     return {
       categories
     };

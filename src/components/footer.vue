@@ -21,8 +21,8 @@
       <div class="row">
         <div class="col-12">
           <ul>
-            <li><nuxt-link :to="switchLocalePath('en')">English</nuxt-link></li>
-            <li><nuxt-link :to="switchLocalePath('de')">German</nuxt-link></li>
+            <li><nuxt-link :to="switchLocalePath('en')"><span class="flag-icon flag-icon-us"/></nuxt-link></li>
+            <li><nuxt-link :to="switchLocalePath('de')"><span class="flag-icon flag-icon-de"/></nuxt-link></li>
           </ul>
           <p>{{ $t("notice-1") }} <a href="https://vuejs.org/" target="_blank" ref="noopener noreferrer nofollow">Vue.js</a> {{ $t("notice-2") }} <a href="https://github.com/Pernthaler/Website" target="_blank" ref="noopener noreferrer nofollow">Open Source</a>.</p>
 
@@ -54,5 +54,9 @@ ul {
   li {
     display: inline;
   }
+}
+.flag-icon {
+  border-radius: 2px;
+  font-size: 20px;
 }
 </style>
