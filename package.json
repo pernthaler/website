@@ -39,6 +39,7 @@
   "devDependencies": {
     "@intlify/vue-i18n-loader": "^1.0.0",
     "@nuxt/types": "^2.15.2",
+    "nuxt-purgecss": "^1.0.0",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1"
   }

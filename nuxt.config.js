@@ -28,6 +28,12 @@ export default {
             cookieKey: "language"
         }
     },
+    buildModules: [
+        "nuxt-purgecss"
+    ],
+    purgeCSS: {
+        whitelistPatterns: [/(^|\.)fa-/, /-fa($|\.)/]
+    },
     css: [
         "@getbase/base/scss/_mixins.scss",
         "@getbase/base/scss/core.scss",
