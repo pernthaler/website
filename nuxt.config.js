@@ -14,7 +14,8 @@ export default {
         [ "nuxt-matomo", {
             matomoUrl: process.env.MATOMO_URL,
             siteId: process.env.SITE_ID
-        }]
+        }],
+        "@nuxtjs/sitemap"
     ],
     i18n: {
         locales: [

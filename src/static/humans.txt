@@ -4,7 +4,7 @@
 	Location: Österreich
 
 /* SITE */
-	Language: Deutsch
-	Standards: HTML, CSS, SASS, JavaScript
-	Components: Vue.js, Node.js, Webpack.js
+	Language: English, German
+	Standards: HTML, CSS, SASS, JavaScript, Vue.js
+	Components: Nuxt.js, Webpack.js, Matomo, FontAwesome
 	Software: IntelliJ IDEA Ultimate Edition
