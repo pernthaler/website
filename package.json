@@ -18,10 +18,10 @@
     "url": "https://github.com/Pernthaler/Website.git"
   },
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "generate": "nuxt-ts generate",
-    "start": "nuxt-ts start"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -30,7 +30,6 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "@getbase/base": "^5.2.0",
-    "@nuxt/typescript-runtime": "^2.0.2",
     "flag-icon-css": "^3.5.0",
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.20.3",
@@ -40,7 +39,6 @@
   "devDependencies": {
     "@intlify/vue-i18n-loader": "^1.0.0",
     "@nuxt/types": "^2.15.2",
-    "@nuxt/typescript-build": "^2.0.6",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1"
   }

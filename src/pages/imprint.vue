@@ -15,7 +15,7 @@
       <h1>{{ $t("title") }}</h1>
       <p>Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.</p>
       <p>Sebastian Pernthaler</p>
-      <p><a href="mailto:sebastian@pernthaler.me">sebastian@pernthaler.me</a></p>
+      <p><a href="mailto:Sebastian Pernthaler <sebastian@pernthaler.me>">sebastian@pernthaler.me</a></p>
 
       <h2>EU-Streitschlichtung</h2>
       <p>Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.</p>

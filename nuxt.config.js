@@ -5,7 +5,7 @@ export default {
         host: "0"
     },
     plugins: [
-        "~/plugins/fontawesome.ts"
+        "~/plugins/fontawesome.js"
     ],
     modules: [
         [ "nuxt-i18n", {
@@ -28,9 +28,6 @@ export default {
             cookieKey: "language"
         }
     },
-    buildModules: [
-        "@nuxt/typescript-build"
-    ],
     css: [
         "@getbase/base/scss/_mixins.scss",
         "@getbase/base/scss/core.scss",

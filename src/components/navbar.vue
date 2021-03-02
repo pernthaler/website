@@ -22,7 +22,7 @@
           <ul>
             <li><nuxt-link :to="localePath('skills')"><font-awesome-icon :icon="['fas', 'user']"/> {{ $t("skills") }}</nuxt-link></li>
             <li><a href="https://www.linkedin.com/in/pernthaler/" target="_blank" rel="noopener"><font-awesome-icon :icon="['fab', 'linkedin-in']"/> LinkedIn</a></li>
-            <li><a href="mailto:sebastian@pernthaler.me"><font-awesome-icon :icon="['fas', 'envelope']"/> {{ $t("contact") }}</a></li>
+            <li><a href="mailto:Sebastian Pernthaler <sebastian@pernthaler.me>"><font-awesome-icon :icon="['fas', 'envelope']"/> {{ $t("contact") }}</a></li>
           </ul>
         </div>
       </div>

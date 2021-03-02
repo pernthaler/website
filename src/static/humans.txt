@@ -5,6 +5,6 @@
 
 /* SITE */
 	Language: Deutsch
-	Standards: HTML, CSS, SASS, JavaScript, TypeScript
+	Standards: HTML, CSS, SASS, JavaScript
 	Components: Vue.js, Node.js, Webpack.js
 	Software: IntelliJ IDEA Ultimate Edition
