@@ -16,7 +16,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <nuxt-link :to="localePath('/')"><img src="~assets/img/logo.svg" alt="Logo" id="logo"/></nuxt-link>
+          <nuxt-link :to="localePath('/')"><img src="~assets/img/logo.svg" alt="Logo" id="logo" width="40px" height="40px"/></nuxt-link>
         </div>
         <div class="col-6">
           <ul>
@@ -33,9 +33,6 @@
 <style lang="scss" scoped>
 nav {
   min-height: 50px;
-}
-#logo {
-  height: 40px;
 }
 ul, a {
   margin: 0;
