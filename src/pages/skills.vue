@@ -35,6 +35,12 @@
 
 <script>
 export default {
+  nuxtI18n: {
+    paths: {
+      en: "/skills",
+      de: "/kenntnisse"
+    }
+  },
   data() {
     const categories = [
       { name: this.$t("programming"), languages: [

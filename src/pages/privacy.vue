@@ -243,3 +243,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  nuxtI18n: {
+    paths: {
+      en: "/privacy",
+      de: "/datenschutzerklaerung"
+    }
+  }
+}
+</script>

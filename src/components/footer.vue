@@ -1,16 +1,14 @@
 <i18n>
 {
   "en": {
-    "imprint": "Imprint",
+    "legal": "Legal Notice",
     "privacy": "Privacy Policy",
-    "notice-1": "This website was created with",
-    "notice-2": "and is"
+    "notice": "This website was created with |Vue.js| and is |open source|."
   },
   "de": {
-    "imprint": "Impressum",
+    "legal": "Impressum",
     "privacy": "Datenschutzerklärung",
-    "notice-1": "Diese Webseite wurde mit",
-    "notice-2": "erstellt und ist"
+    "notice": "Diese Webseite wurde mit |Vue.js| erstellt und ist |Open Source|."
   }
 }
 </i18n>
@@ -24,9 +22,9 @@
             <li><nuxt-link :to="switchLocalePath('en')"><span aria-label="English" class="flag-icon flag-icon-us"/></nuxt-link></li>
             <li><nuxt-link :to="switchLocalePath('de')"><span aria-label="German" class="flag-icon flag-icon-de"/></nuxt-link></li>
           </ul>
-          <p>{{ $t("notice-1") }} <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue.js</a> {{ $t("notice-2") }} <a href="https://github.com/Pernthaler/Website" target="_blank" rel="noopener">Open Source</a>.</p>
+          <p>{{ $t("notice").split("|")[0] }}<a href="https://vuejs.org/" target="_blank" rel="noopener">{{ $t("notice").split("|")[1] }}</a>{{ $t("notice").split("|")[2] }}<a href="https://github.com/Pernthaler/Website" target="_blank" rel="noopener">{{ $t("notice").split("|")[3] }}</a>{{ $t("notice").split("|")[4] }}</p>
           <ul>
-            <li><nuxt-link :to="localePath('imprint')">{{ $t("imprint") }}</nuxt-link></li>
+            <li><nuxt-link :to="localePath('legal')">{{ $t("legal") }}</nuxt-link></li>
             <li><nuxt-link :to="localePath('privacy')">{{ $t("privacy") }}</nuxt-link></li>
           </ul>
         </div>
