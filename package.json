@@ -38,8 +38,12 @@
     "vue": "^2.6.12"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@intlify/vue-i18n-loader": "^1.0.0",
     "@nuxt/types": "^2.15.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-svgo": "^8.0.0",
     "nuxt-purgecss": "^1.0.0",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1"

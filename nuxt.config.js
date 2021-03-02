@@ -30,8 +30,12 @@ export default {
         }
     },
     buildModules: [
+        "@aceforth/nuxt-optimized-images",
         "nuxt-purgecss"
     ],
+    optimizedImages: {
+        optimizeImages: true
+    },
     purgeCSS: {
         whitelistPatterns: [/(^|\.)fa-/, /-fa($|\.)/]
     },

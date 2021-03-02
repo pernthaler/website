@@ -6,5 +6,5 @@
 /* SITE */
 	Language: English, German
 	Standards: HTML, CSS, SASS, JavaScript, Vue.js
-	Components: Nuxt.js, Webpack.js, Matomo, FontAwesome
+	Components: Nuxt.js, Webpack.js, FontAwesome
 	Software: IntelliJ IDEA Ultimate Edition
