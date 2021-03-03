@@ -24,6 +24,8 @@
 <script>
 export default {
   head() {
+    // TODO: get from header + window
+    const host = "https://sebastian.pernthaler.me";
     return {
       titleTemplate: (title) => ((title ? title + " - " : "") + "Sebastian Pernthaler"),
       htmlAttrs: {
@@ -40,15 +42,16 @@ export default {
         {name: "author", content: "Sebastian Pernthaler"},
         {name: "description", content: this.$t("description")},
         {name: "color-scheme", content: "light"},
-        {property: "og:title", content: "Sebastian Pernthaler"},
-        {property: "og:image", content: "/logo.png"},
         {property: "og:type", content: "website"},
+        {property: "og:title", content: "Sebastian Pernthaler"},
         {property: "og:site_name", content: "Sebastian Pernthaler"},
         {property: "og:description", content: this.$t("description")},
+        {property: "og:image", content: host + "/logo.png"},
+        {property: "og:url", content: host + this.$route.fullPath},
         {name: "twitter:card", content: "summary"},
         {name: "twitter:title", content: "Sebastian Pernthaler"},
         {name: "twitter:description", content: this.$t("description")},
-        {name: "twitter:image", content: "/logo.png"},
+        {name: "twitter:image", content: host + "/logo.png"},
       ]
     };
   }
