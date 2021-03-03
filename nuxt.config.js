@@ -40,6 +40,11 @@ export default {
     purgeCSS: {
         whitelistPatterns: [/(^|\.)fa-/, /-fa($|\.)/]
     },
+    pwa: {
+        name: "Sebastian Pernthaler",
+        short_name: "Pernthaler",
+        description: "Software-Developer"
+    },
     css: [
         "@getbase/base/scss/_mixins.scss",
         "@getbase/base/scss/core.scss",
