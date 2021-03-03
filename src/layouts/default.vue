@@ -41,12 +41,14 @@ export default {
         {name: "description", content: this.$t("description")},
         {name: "color-scheme", content: "light"},
         {property: "og:title", content: "Sebastian Pernthaler"},
+        {property: "og:image", content: "/logo.png"},
         {property: "og:type", content: "website"},
         {property: "og:site_name", content: "Sebastian Pernthaler"},
         {property: "og:description", content: this.$t("description")},
         {name: "twitter:card", content: "summary"},
         {name: "twitter:title", content: "Sebastian Pernthaler"},
-        {name: "twitter:description", content: this.$t("description")}
+        {name: "twitter:description", content: this.$t("description")},
+        {name: "twitter:image", content: "/logo.png"},
       ]
     };
   }
