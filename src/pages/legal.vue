@@ -87,6 +87,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.$t("title")
+    };
+  },
   nuxtI18n: {
     paths: {
       en: "/legal",

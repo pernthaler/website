@@ -25,7 +25,7 @@
 export default {
   head() {
     return {
-      title: "Sebastian Pernthaler",
+      titleTemplate: (title) => ((title ? title + " - " : "") + "Sebastian Pernthaler"),
       htmlAttrs: {
         lang: this.$i18n.locale
       },
