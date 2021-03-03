@@ -41,9 +41,11 @@ export default {
         whitelistPatterns: [/(^|\.)fa-/, /-fa($|\.)/]
     },
     pwa: {
-        name: "Sebastian Pernthaler",
-        short_name: "Pernthaler",
-        description: "Software-Developer"
+        manifest: {
+            name: "Sebastian Pernthaler",
+            short_name: "Pernthaler",
+            description: "Software-Developer"
+        }
     },
     css: [
         "@getbase/base/scss/_mixins.scss",
