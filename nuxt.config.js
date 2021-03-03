@@ -31,7 +31,8 @@ export default {
     },
     buildModules: [
         "@aceforth/nuxt-optimized-images",
-        "nuxt-purgecss"
+        "nuxt-purgecss",
+        "@nuxtjs/pwa"
     ],
     optimizedImages: {
         optimizeImages: true

@@ -41,6 +41,7 @@
     "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@intlify/vue-i18n-loader": "^1.0.0",
     "@nuxt/types": "^2.15.2",
+    "@nuxtjs/pwa": "^3.3.5",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "imagemin-svgo": "^8.0.0",

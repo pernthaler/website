@@ -27,7 +27,7 @@ export default {
     // TODO: get from header + window
     const host = "https://sebastian.pernthaler.me";
     return {
-      titleTemplate: (title) => ((title ? title + " - " : "") + "Sebastian Pernthaler"),
+      titleTemplate: (title) => ((title && !title.isEmpty ? title + " - " : "") + "Sebastian Pernthaler"),
       htmlAttrs: {
         lang: this.$i18n.locale
       },
@@ -41,17 +41,18 @@ export default {
         {name: "msapplication-config", content: "/browserconfig.xml"},
         {name: "author", content: "Sebastian Pernthaler"},
         {name: "description", content: this.$t("description")},
+        {name: "theme-color", content: "#ff0000"},
         {name: "color-scheme", content: "light"},
         {property: "og:type", content: "website"},
         {property: "og:title", content: "Sebastian Pernthaler"},
         {property: "og:site_name", content: "Sebastian Pernthaler"},
         {property: "og:description", content: this.$t("description")},
-        {property: "og:image", content: host + "/logo.png"},
+        {property: "og:image", content: host + "/icon.png"},
         {property: "og:url", content: host + this.$route.fullPath},
         {name: "twitter:card", content: "summary"},
         {name: "twitter:title", content: "Sebastian Pernthaler"},
         {name: "twitter:description", content: this.$t("description")},
-        {name: "twitter:image", content: host + "/logo.png"},
+        {name: "twitter:image", content: host + "/icon.png"},
       ]
     };
   }
