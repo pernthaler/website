@@ -1,15 +1,15 @@
 export const state = () => ({
-    host: "127.0.0.1:3000"
+    domain: "http://127.0.0.1:3000"
 });
 
 export const mutations = {
-    set(state, host) {
-        state.host = host;
+    set(state, domain) {
+        state.domain = domain;
     }
 };
 
 export const actions = {
     async nuxtServerInit({commit}, {req}) {
-        commit("set", req.headers.host);
+        commit("set", `http://${req.headers.host}`);
     }
 };

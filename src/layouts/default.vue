@@ -45,12 +45,12 @@ export default {
         { property: "og:title", content: "Sebastian Pernthaler" },
         { property: "og:site_name", content: "Sebastian Pernthaler" },
         { property: "og:description", content: this.$t("description") },
-        { property: "og:image", content: this.$store.state.host + "/icon.png" },
-        { property: "og:url", content: this.$store.state.host + this.$route.fullPath },
+        { property: "og:image", content: this.$store.state.domain + "/icon.png" },
+        { property: "og:url", content: this.$store.state.domain + this.$route.fullPath },
         { name: "twitter:card", content: "summary" },
         { name: "twitter:title", content: "Sebastian Pernthaler" },
         { name: "twitter:description", content: this.$t("description") },
-        { name: "twitter:image", content: this.$store.state.host + "/icon.png" },
+        { name: "twitter:image", content: this.$store.state.domain + "/icon.png" },
       ]
     };
   }
