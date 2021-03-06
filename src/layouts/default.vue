@@ -11,6 +11,7 @@
 
 <template>
   <div>
+    <Scrollbar/>
     <Navbar/>
     <main>
       <div class="container">
@@ -18,6 +19,7 @@
       </div>
     </main>
     <Footer/>
+    <Cookie/>
   </div>
 </template>
 
@@ -39,7 +41,7 @@ export default {
         { name: "msapplication-config", content: "/browserconfig.xml" },
         { name: "author", content: "Sebastian Pernthaler" },
         { name: "description", content: this.$t("description") },
-        { name: "theme-color", content: "#ff0000" },
+        { name: "theme-color", content: "#0000FF" },
         { name: "color-scheme", content: "light" },
         { property: "og:type", content: "website" },
         { property: "og:title", content: "Sebastian Pernthaler" },
@@ -91,5 +93,10 @@ a {
   &:hover {
     color: $primary-dark;
   }
+}
+
+::selection {
+  color: $primary-light;
+  background-color: $secondary-light;
 }
 </style>

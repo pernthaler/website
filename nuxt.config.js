@@ -15,6 +15,7 @@ export default {
             matomoUrl: process.env.MATOMO_URL,
             siteId: process.env.SITE_ID
         }],
+        "cookie-universal-nuxt",
         "@nuxtjs/sitemap"
     ],
     i18n: {
