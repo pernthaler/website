@@ -24,9 +24,9 @@
     </div>
     <div class="row">
       <div class="col-4-m col-12" v-for="category of categories">
-        <h2>{{category.name}}</h2>
+        <h2>{{ category.name }}</h2>
         <ul>
-          <li v-for="language of category.languages">{{language}}</li>
+          <li v-for="language of category.languages">{{ language }}</li>
         </ul>
       </div>
     </div>
