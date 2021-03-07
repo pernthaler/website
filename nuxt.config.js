@@ -9,7 +9,20 @@ export default {
     ],
     modules: [
         [ "nuxt-i18n", {
-            vueI18nLoader: true
+            vueI18nLoader: true,
+            strategy: "prefix",
+            defaultLocale: "en",
+            locales: [
+                { code: "de", name: "Deutsch", iso: "de-DE" },
+                { code: "en", name: "English", iso: "en-US" }
+            ],
+            detectBrowserLanguage: {
+                fallbackLocale: "en",
+                useCookie: true,
+                onlyOnRoot: true,
+                alwaysRedirect: true,
+                cookieKey: "language"
+            }
         }],
         [ "nuxt-matomo", {
             matomoUrl: process.env.MATOMO_URL,
@@ -18,36 +31,21 @@ export default {
         "cookie-universal-nuxt",
         "@nuxtjs/sitemap"
     ],
-    i18n: {
-        locales: [
-            { code: "en", iso: "en-US" },
-            { code: "de", iso: "de-DE" }
-        ],
-        detectBrowserLanguage: {
-            fallbackLocale: "en",
-            useCookie: true,
-            alwaysRedirect: true,
-            cookieKey: "language"
-        }
-    },
     buildModules: [
-        "@aceforth/nuxt-optimized-images",
-        "nuxt-purgecss",
-        "@nuxtjs/pwa"
+        [ "@aceforth/nuxt-optimized-images", {
+            optimizeImages: true
+        }],
+        [ "nuxt-purgecss", {
+            whitelistPatterns: [/(^|\.)fa-/, /-fa($|\.)/]
+        }],
+        [ "@nuxtjs/pwa", {
+            manifest: {
+                name: "Sebastian Pernthaler",
+                short_name: "Pernthaler",
+                description: "Software-Developer"
+            }
+        }]
     ],
-    optimizedImages: {
-        optimizeImages: true
-    },
-    purgeCSS: {
-        whitelistPatterns: [/(^|\.)fa-/, /-fa($|\.)/]
-    },
-    pwa: {
-        manifest: {
-            name: "Sebastian Pernthaler",
-            short_name: "Pernthaler",
-            description: "Software-Developer"
-        }
-    },
     css: [
         "@getbase/base/scss/_mixins.scss",
         "@getbase/base/scss/core.scss",

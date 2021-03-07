@@ -30,7 +30,8 @@ export default {
     return {
       titleTemplate: (title) => ((title && !title.isEmpty ? title + " - " : "") + "Sebastian Pernthaler"),
       htmlAttrs: {
-        ...i18nHead.htmlAttrs
+        ...i18nHead.htmlAttrs,
+        lang: this.$i18n.locale
       },
       link: [
         { hid: "icon", rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
