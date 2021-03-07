@@ -26,6 +26,7 @@
 <script>
 export default {
   head() {
+    this.$i18n.__baseUrl = this.$store.state.domain;
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
     return {
       titleTemplate: (title) => ((title && !title.isEmpty ? title + " - " : "") + "Sebastian Pernthaler"),
