@@ -1,14 +1,12 @@
 <i18n>
 {
   "en": {
-    "text": "This website uses cookies to ensure you get the best experience on our website.",
-    "button": "Got it",
-    "learn": "Learn more"
+    "text": "This website uses cookies to ensure you get the best experience on our website. |Learn more",
+    "button": "Got it"
   },
   "de": {
-    "text": "Diese Webseite verwendet Cookies, um sicherzustellen, dass Sie die bestmögliche Erfahrung auf unserer Webseite erzielen.",
-    "button": "Verstanden",
-    "learn": "Mehr erfahren"
+    "text": "Diese Webseite verwendet Cookies, um sicherzustellen, dass Sie die bestmögliche Erfahrung auf unserer Webseite machen. |Mehr erfahren",
+    "button": "Verstanden"
   }
 }
 </i18n>
@@ -18,7 +16,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-10-m">
-          <p>{{ this.$t("text") }} <nuxt-link :to="localePath('privacy') + '#cookies'">{{ this.$t("learn") }}</nuxt-link></p>
+          <p>{{ this.$t("text").split("|")[0] }} <nuxt-link :to="localePath('privacy') + '#cookies'">{{ this.$t("text").split("|")[1] }}</nuxt-link></p>
         </div>
         <div class="col-12 col-2-m">
           <button v-on:click="accept">{{ this.$t("button") }}</button>
@@ -33,7 +31,7 @@ export default {
   data() {
     return {
       cookie: this.$cookies.get("cookie")
-    }
+    };
   },
   methods: {
     accept() {

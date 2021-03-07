@@ -20,7 +20,7 @@
         <div class="col-12">
           <ul>
             <li><nuxt-link :to="switchLocalePath('en')"><span aria-label="English" class="flag-icon flag-icon-us"/></nuxt-link></li>
-            <li><nuxt-link :to="switchLocalePath('de')"><span aria-label="German" class="flag-icon flag-icon-de"/></nuxt-link></li>
+            <li><nuxt-link :to="switchLocalePath('de')"><span aria-label="Deutsch" class="flag-icon flag-icon-de"/></nuxt-link></li>
           </ul>
           <p>{{ $t("notice").split("|")[0] }}<a href="https://vuejs.org/" target="_blank" rel="noopener">{{ $t("notice").split("|")[1] }}</a>{{ $t("notice").split("|")[2] }}<a href="https://github.com/Pernthaler/Website" target="_blank" rel="noopener">{{ $t("notice").split("|")[3] }}</a>{{ $t("notice").split("|")[4] }}</p>
           <ul>
