@@ -10,8 +10,6 @@ export const mutations = {
 
 export const actions = {
     async nuxtServerInit({commit}, {req}) {
-        // TODO: Protocol from Header (X-Forwarded-Proto)
-        console.log(req.headers)
-        commit("SET_DOMAIN", `http://${req.headers.host}`);
+        commit("SET_DOMAIN", `${req.headers["x-forwarded-proto"] || "http"}://${req.headers.host}`);
     }
 };
