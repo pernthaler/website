@@ -16,10 +16,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-10-m">
-          <p>{{ this.$t("text").split("|")[0] }} <nuxt-link :to="localePath('privacy') + '#cookies'">{{ this.$t("text").split("|")[1] }}</nuxt-link></p>
+          <p>{{ $t("text").split("|")[0] }} <nuxt-link :to="localePath('privacy') + '#cookies'">{{ $t("text").split("|")[1] }}</nuxt-link></p>
         </div>
         <div class="col-12 col-2-m">
-          <button v-on:click="accept">{{ this.$t("button") }}</button>
+          <button v-on:click="accept">{{ $t("button") }}</button>
         </div>
       </div>
     </div>

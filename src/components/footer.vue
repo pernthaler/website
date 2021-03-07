@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-12">
           <ul>
-            <li v-for="locale of this.$i18n.locales">
+            <li v-for="locale of $i18n.locales">
               <nuxt-link :to="switchLocalePath(locale.code)">
                 <country-flag :aria-label="locale.name" :country="locale.iso.split('-')[1].toLowerCase()" rounded/>
               </nuxt-link>

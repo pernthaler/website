@@ -1,6 +1,6 @@
 # Website
 
-https://sebastian.pernthaler.me
+This website was created with [Vue.js](https://vuejs.org/) and is [open source](https://github.com/Pernthaler/Website).
 
 ## License
 
