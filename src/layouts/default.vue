@@ -26,33 +26,36 @@
 <script>
 export default {
   head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
     return {
       titleTemplate: (title) => ((title && !title.isEmpty ? title + " - " : "") + "Sebastian Pernthaler"),
       htmlAttrs: {
-        lang: this.$i18n.locale
+        ...i18nHead.htmlAttrs
       },
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        { rel: "author", href: "/humans.txt" }
+        { hid: "icon", rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { hid: "author", rel: "author", href: "/humans.txt" },
+        ...i18nHead.link
       ],
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-        { name: "msapplication-config", content: "/browserconfig.xml" },
-        { name: "author", content: "Sebastian Pernthaler" },
-        { name: "description", content: this.$t("description") },
-        { name: "theme-color", content: "#0000FF" },
-        { name: "color-scheme", content: "light" },
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: "Sebastian Pernthaler" },
-        { property: "og:site_name", content: "Sebastian Pernthaler" },
-        { property: "og:description", content: this.$t("description") },
-        { property: "og:image", content: this.$store.state.domain + "/icon.png" },
-        { property: "og:url", content: this.$store.state.domain + this.$route.fullPath },
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:title", content: "Sebastian Pernthaler" },
-        { name: "twitter:description", content: this.$t("description") },
-        { name: "twitter:image", content: this.$store.state.domain + "/icon.png" },
+        { hid: "charset", charset: "utf-8" },
+        { hid: "viewport", name: "viewport", content: "width=device-width, initial-scale=1.0" },
+        { hid: "msapplication-config", name: "msapplication-config", content: "/browserconfig.xml" },
+        { hid: "author", name: "author", content: "Sebastian Pernthaler" },
+        { hid: "description", name: "description", content: this.$t("description") },
+        { hid: "theme-color", name: "theme-color", content: "#0000FF" },
+        { hid: "color-scheme", name: "color-scheme", content: "light" },
+        { hid: "og:type", property: "og:type", content: "website" },
+        { hid: "og:title", property: "og:title", content: "Sebastian Pernthaler" },
+        { hid: "og:site_name", property: "og:site_name", content: "Sebastian Pernthaler" },
+        { hid: "og:description", property: "og:description", content: this.$t("description") },
+        { hid: "og:image", property: "og:image", content: this.$store.state.domain + "/icon.png" },
+        { hid: "og:url", property: "og:url", content: this.$store.state.domain + this.$route.fullPath },
+        { hid: "twitter:card", name: "twitter:card", content: "summary" },
+        { hid: "twitter:title", name: "twitter:title", content: "Sebastian Pernthaler" },
+        { hid: "twitter:description", name: "twitter:description", content: this.$t("description") },
+        { hid: "twitter:image", name: "twitter:image", content: this.$store.state.domain + "/icon.png" },
+        ...i18nHead.meta
       ]
     };
   }
