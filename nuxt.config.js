@@ -5,6 +5,7 @@ export default {
         host: "0"
     },
     plugins: [
+        "~/plugins/countryflag.js",
         "~/plugins/fontawesome.js"
     ],
     modules: [
@@ -36,7 +37,10 @@ export default {
             optimizeImages: true
         }],
         [ "nuxt-purgecss", {
-            whitelistPatterns: [/(^|\.)fa-/, /-fa($|\.)/]
+            whitelistPatterns: [
+                /(^|\.)fa-/,
+                /-fa($|\.)/
+            ]
         }],
         [ "@nuxtjs/pwa", {
             manifest: {

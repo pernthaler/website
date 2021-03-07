@@ -21,7 +21,7 @@
           <ul>
             <li v-for="locale of this.$i18n.locales">
               <nuxt-link :to="switchLocalePath(locale.code)">
-                <span :aria-label="locale.name" :class="'flag-icon flag-icon-' + locale.iso.split('-')[1].toLowerCase()"/>
+                <country-flag :country="locale.iso.split('-')[1].toLowerCase()"/>
               </nuxt-link>
             </li>
           </ul>
