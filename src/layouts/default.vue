@@ -91,7 +91,7 @@ p, span, li {
   font-family: $font-default, sans-serif;
   text-align: justify;
 }
-a {
+a, a:visited {
   color: $primary-light;
   text-decoration: none;
 
