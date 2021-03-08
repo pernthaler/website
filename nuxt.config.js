@@ -51,7 +51,8 @@ export default {
                 short_name: "Pernthaler",
                 description: "Software-Developer"
             }
-        }]
+        }],
+        "nuxt-animejs"
     ],
     css: [
         "@getbase/base/scss/_mixins.scss",

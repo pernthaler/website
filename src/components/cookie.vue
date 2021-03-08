@@ -37,7 +37,15 @@ export default {
     accept() {
       const seconds = 6 * 30 * 24 * 60 * 60;
       this.$cookies.set("cookie", true, { expires: new Date(new Date().getTime() + seconds * 1000), maxAge: seconds });
-      this.cookie = true;
+      this.$anime({
+        targets: "#cookie",
+        easing: "linear",
+        duration: 250,
+        height: 0,
+        complete: () => {
+          this.cookie = true;
+        }
+      });
     }
   }
 }
