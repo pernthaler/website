@@ -1,10 +1,50 @@
 <i18n>
 {
   "en": {
-    "title": "Privacy Policy"
+    "title": "Privacy Policy",
+    "1-1": "We have written this data protection declaration to explain to you in accordance with the provisions of the |General Data Protection Regulation (EU) 2016/679| what information we collect, how we use data and what options you have as a visitor to this website.",
+    "1-2": "Privacy statements usually sound very technical. However, this version should describe the most important things to you as simply and clearly as possible. As far as possible, technical terms are explained in a reader-friendly manner. We would also like to convey that we only collect and use information with this website if there is a corresponding legal basis. This is certainly not possible if you give the briefest possible technical explanations, as they are often standard on the Internet when it comes to data protection. I hope you find the following explanations interesting and informative and maybe there is one or the other piece of information that you were not familiar with.",
+    "1-3": "If you still have questions, we would like to ask you to follow the existing links and look at further information on third-party sites, or simply write us an email. You will find our contact information in the |Legal Notice|.",
+
+    "2-1": "Automatic data storage",
+    "2-2": "When you visit websites these days, certain information is automatically created and stored, including on this website. This collected data should be collected as sparingly as possible and only with justification. By website, we mean the entirety of all websites on your domain, i.e. everything from the start page (homepage) to the very last subpage (like this one here). By domain we mean example.de or musterbeispiel.com.",
+    "2-3": "Even while you are currently visiting our website, our web server - this is the computer on which this website is stored - usually automatically saves data such as",
+      "2-4-1": "the complete Internet address (URL) of the website called up (e.g. https://www.beispielwebsite.de/beispielunterseite.html/)",
+      "2-4-2": "Browser and browser version (e.g. Chrome 87)",
+      "2-4-3": "the operating system used (e.g. Windows 10)",
+      "2-4-4": "the address (URL) of the previously visited page (referrer URL) (e.g. https://www.beispielquellsite.de/vondabinichgekommen.html/)",
+      "2-4-5": "the host name and the IP address of the device from which access is made (e.g. COMPUTERNAME and 194.23.43.121)",
+      "2-4-6": "date and time",
+      "2-4-7": "in files, the so-called web server log files.",
+    "2-5": "As a rule, these files are stored for two weeks and then automatically deleted. We do not pass on this data, but we cannot rule out that this data will be viewed by authorities in the event of illegal behavior.",
+    "2-6": "In short: your visit will be logged by our provider (company that runs our website on special computers (servers)), but we will not pass on your data!",
+
+    "3-1": "Cookies",
+    "3-2": "Our website uses HTTP cookies to save user-specific data.",
+    "3-3": "In the following we explain what cookies are and why they are used so that you can better understand the following data protection declaration."
   },
   "de": {
-    "title": "Datenschutzerklärung"
+    "title": "Datenschutzerklärung",
+    "1-1": "Wir haben diese Datenschutzerklärung verfasst, um Ihnen gemäß der Vorgaben der |Datenschutz-Grundverordnung (EU) 2016/679| zu erklären, welche Informationen wir sammeln, wie wir Daten verwenden und welche Entscheidungsmöglichkeiten Sie als Besucher dieser Webseite haben.",
+    "1-2": "Datenschutzerklärungen klingen für gewöhnlich sehr technisch. Diese Version soll Ihnen hingegen die wichtigsten Dinge so einfach und klar wie möglich beschreiben. Soweit es möglich ist, werden technische Begriffe leserfreundlich erklärt. Außerdem möchten wir vermitteln, dass wir mit dieser Website nur dann Informationen sammeln und verwenden, wenn eine entsprechende gesetzliche Grundlage gegeben ist. Das ist sicher nicht möglich, wenn man möglichst knappe, technische Erklärungen abgibt, so wie sie im Internet oft Standard sind, wenn es um Datenschutz geht. Ich hoffe Sie finden die folgenden Erläuterungen interessant und informativ und vielleicht ist die eine oder andere Information dabei, die Sie noch nicht kannten.",
+    "1-3": "Wenn trotzdem Fragen bleiben, möchten wir Sie bitten den vorhandenen Links zu folgen und sich weitere Informationen auf Drittseiten anzusehen, oder uns einfach eine E-Mail zu schreiben. Unsere Kontaktdaten finden Sie im |Impressum|.",
+
+    "2-1": "Automatische Datenspeicherung",
+    "2-2": "Wenn Sie heutzutage Websites besuchen, werden gewisse Informationen automatisch erstellt und gespeichert, so auch auf dieser Website. Diese gesammelten Daten sollten möglichst sparsam und nur mit Begründung gesammelt werden werden. Mit Website meinen wir übrigens die Gesamtheit aller Webseiten auf Ihrer Domain, d.h. alles von der Startseite (Homepage) bis hin zur aller letzten Unterseite (wie dieser hier). Mit Domain meinen wir zum Beispiel beispiel.de oder musterbeispiel.com.",
+    "2-3": "Auch während Sie unsere Website jetzt gerade besuchen, speichert unser Webserver – das ist der Computer auf dem diese Webseite gespeichert ist – aus Gründen der Betriebssicherheit, zur Erstellung von Zugriffsstatistik usw. in der Regel automatisch Daten wie",
+      "2-4-1": "die komplette Internetadresse (URL) der aufgerufenen Webseite (z. B. https://www.beispielwebsite.de/beispielunterseite.html/)",
+      "2-4-2": "Browser und Browserversion (z. B. Chrome 87)",
+      "2-4-3": "das verwendete Betriebssystem (z. B. Windows 10)",
+      "2-4-4": "die Adresse (URL) der zuvor besuchten Seite (Referrer URL) (z. B. https://www.beispielquellsite.de/vondabinichgekommen.html/)",
+      "2-4-5": "den Hostname und die IP-Adresse des Geräts von welchem aus zugegriffen wird (z. B. COMPUTERNAME und 194.23.43.121)",
+      "2-4-6": "Datum und Uhrzeit",
+      "2-4-7": "in Dateien, den sogenannten Webserver-Logfiles.",
+    "2-5": "In der Regel werden diese Dateien zwei Wochen gespeichert und danach automatisch gelöscht. Wir geben diese Daten nicht weiter, können jedoch nicht ausschließen, dass diese Daten beim Vorliegen von rechtswidrigem Verhalten von Behörden eingesehen werden.",
+    "2-6": "Kurz gesagt: Ihr Besuch wird durch unseren Provider (Firma, die unsere Website auf speziellen Computern (Servern) laufen lässt), protokolliert, aber wir geben Ihre Daten nicht weiter!",
+
+    "3-1": "Cookies",
+    "3-2": "Unsere Webseite verwendet HTTP-Cookies, um nutzerspezifische Daten zu speichern.",
+    "3-3": "Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit Sie die folgende Datenschutzerklärung besser verstehen."
   }
 }
 </i18n>
@@ -13,28 +53,28 @@
   <div class="row">
     <div class="col-12">
       <h1>{{ $t("title") }}</h1>
-      <p>Wir haben diese Datenschutzerklärung verfasst, um Ihnen gemäß der Vorgaben der <a href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&tid=211142478" target="_blank" rel="noopener">Datenschutz-Grundverordnung (EU) 2016/679</a> zu erklären, welche Informationen wir sammeln, wie wir Daten verwenden und welche Entscheidungsmöglichkeiten Sie als Besucher dieser Webseite haben.</p>
-      <p>Datenschutzerklärungen klingen für gewöhnlich sehr technisch. Diese Version soll Ihnen hingegen die wichtigsten Dinge so einfach und klar wie möglich beschreiben. Soweit es möglich ist, werden technische Begriffe leserfreundlich erklärt. Außerdem möchten wir vermitteln, dass wir mit dieser Website nur dann Informationen sammeln und verwenden, wenn eine entsprechende gesetzliche Grundlage gegeben ist. Das ist sicher nicht möglich, wenn man möglichst knappe, technische Erklärungen abgibt, so wie sie im Internet oft Standard sind, wenn es um Datenschutz geht. Ich hoffe Sie finden die folgenden Erläuterungen interessant und informativ und vielleicht ist die eine oder andere Information dabei, die Sie noch nicht kannten.</p>
-      <p>Wenn trotzdem Fragen bleiben, möchten wir Sie bitten den vorhandenen Links zu folgen und sich weitere Informationen auf Drittseiten anzusehen, oder uns einfach eine E-Mail zu schreiben. Unsere Kontaktdaten finden Sie im Impressum.</p>
+      <p>{{ $t("1-1").split("|")[0] }}<a href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&tid=211142478" target="_blank" rel="noopener">{{ $t("1-1").split("|")[1] }}</a>{{ $t("1-1").split("|")[2] }}</p>
+      <p>{{ $t("1-2").split("|")[0] }}</p>
+      <p>{{ $t("1-3").split("|")[0] }}<nuxt-link :to="localePath('legal')">{{ $t("1-3").split("|")[1] }}</nuxt-link>{{ $t("1-3").split("|")[2] }}</p>
 
-      <h2>Automatische Datenspeicherung</h2>
-      <p>Wenn Sie heutzutage Websites besuchen, werden gewisse Informationen automatisch erstellt und gespeichert, so auch auf dieser Website. Diese gesammelten Daten sollten möglichst sparsam und nur mit Begründung gesammelt werden werden. Mit Website meinen wir übrigens die Gesamtheit aller Webseiten auf Ihrer Domain, d.h. alles von der Startseite (Homepage) bis hin zur aller letzten Unterseite (wie dieser hier). Mit Domain meinen wir zum Beispiel beispiel.de oder musterbeispiel.com.</p>
-      <p>Auch während Sie unsere Website jetzt gerade besuchen, speichert unser Webserver – das ist der Computer auf dem diese Webseite gespeichert ist – aus Gründen der Betriebssicherheit, zur Erstellung von Zugriffsstatistik usw. in der Regel automatisch Daten wie</p>
+      <h2>{{ $t("2-1") }}</h2>
+      <p>{{ $t("2-2") }}</p>
+      <p>{{ $t("2-3") }}</p>
       <ul>
-        <li>die komplette Internetadresse (URL) der aufgerufenen Webseite (z. B. https://www.beispielwebsite.de/beispielunterseite.html/)</li>
-        <li>Browser und Browserversion (z. B. Chrome 87)</li>
-        <li>das verwendete Betriebssystem (z. B. Windows 10)</li>
-        <li>die Adresse (URL) der zuvor besuchten Seite (Referrer URL) (z. B. https://www.beispielquellsite.de/vondabinichgekommen.html/)</li>
-        <li>den Hostname und die IP-Adresse des Geräts von welchem aus zugegriffen wird (z. B. COMPUTERNAME und 194.23.43.121)</li>
-        <li>Datum und Uhrzeit</li>
-        <li>in Dateien, den sogenannten Webserver-Logfiles.</li>
+        <li>{{ $t("2-4-1") }}</li>
+        <li>{{ $t("2-4-2") }}</li>
+        <li>{{ $t("2-4-3") }}</li>
+        <li>{{ $t("2-4-4") }}</li>
+        <li>{{ $t("2-4-5") }}</li>
+        <li>{{ $t("2-4-6") }}</li>
+        <li>{{ $t("2-4-7") }}</li>
       </ul>
-      <p>In der Regel werden diese Dateien zwei Wochen gespeichert und danach automatisch gelöscht. Wir geben diese Daten nicht weiter, können jedoch nicht ausschließen, dass diese Daten beim Vorliegen von rechtswidrigem Verhalten von Behörden eingesehen werden.</p>
-      <p>Kurz gesagt: Ihr Besuch wird durch unseren Provider (Firma, die unsere Website auf speziellen Computern (Servern) laufen lässt), protokolliert, aber wir geben Ihre Daten nicht weiter!</p>
+      <p>{{ $t("2-5") }}</p>
+      <p>{{ $t("2-6") }}</p>
 
-      <h2 id="cookies">Cookies</h2>
-      <p>Unsere Webseite verwendet HTTP-Cookies, um nutzerspezifische Daten zu speichern.</p>
-      <p>Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit Sie die folgende Datenschutzerklärung besser verstehen.</p>
+      <h2 id="cookies">{{ $t("3-1") }}</h2>
+      <p>{{ $t("3-2") }}</p>
+      <p>{{ $t("3-3") }}</p>
 
       <h3>Was genau sind Cookies?</h3>
       <p>Immer wenn Sie durch das Internet surfen, verwenden Sie einen Browser. Bekannte Browser sind beispielsweise Chrome, Safari, Firefox, Internet Explorer und Microsoft Edge. Die meisten Webseiten speichern kleine Text-Dateien in Ihrem Browser. Diese Dateien nennt man Cookies.</p>

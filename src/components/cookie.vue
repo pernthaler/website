@@ -35,7 +35,8 @@ export default {
   },
   methods: {
     accept() {
-      this.$cookies.set("cookie", true);
+      const seconds = 6 * 30 * 24 * 60 * 60;
+      this.$cookies.set("cookie", true, { expires: new Date(new Date().getTime() + seconds * 1000), maxAge: seconds });
       this.cookie = true;
     }
   }
