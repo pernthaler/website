@@ -5,7 +5,6 @@ export default {
         host: "0"
     },
     plugins: [
-        "~/plugins/countryflag.js",
         "~/plugins/fontawesome.js"
     ],
     modules: [
@@ -37,6 +36,10 @@ export default {
             optimizeImages: true
         }],
         [ "nuxt-purgecss", {
+            whitelist: [
+                "flag-icon-de",
+                "flag-icon-us"
+            ],
             whitelistPatterns: [
                 /(^|\.)fa-/,
                 /-fa($|\.)/
@@ -67,7 +70,8 @@ export default {
         "@getbase/base/scss/display-helpers.scss",
         "@getbase/base/scss/flex-helpers.scss",
         "@getbase/base/scss/position-helpers.scss",
-        "@fortawesome/fontawesome-svg-core/styles.css"
+        "@fortawesome/fontawesome-svg-core/styles.css",
+        "flag-icon-css/sass/flag-icon.scss"
     ],
     render: {
         bundleRenderer: {

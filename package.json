@@ -32,11 +32,11 @@
     "@getbase/base": "^5.2.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "cookie-universal-nuxt": "^2.1.4",
+    "flag-icon-css": "^3.5.0",
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.20.3",
     "nuxt-matomo": "^1.2.4",
-    "vue": "^2.6.12",
-    "vue-country-flag": "^2.0.3"
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
