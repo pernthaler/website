@@ -23,6 +23,10 @@
     "generate": "nuxt generate",
     "start": "nuxt start"
   },
+  "engines": {
+    "node": ">=15.0.0",
+    "npm": ">=7.0.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
