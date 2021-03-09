@@ -2,7 +2,15 @@
 
 This website was created with [Vue.js](https://vuejs.org/) and is [open source](https://github.com/Pernthaler/Website).
 
-## Deploy
+## Deployment
+
+### Docker
+
+```bash
+docker run pernthaler/website
+```
+
+### Manually
 
 ```bash
 git clone https://github.com/Pernthaler/Website.git
