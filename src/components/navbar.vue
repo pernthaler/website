@@ -1,10 +1,12 @@
 <i18n>
 {
   "en": {
+    "about": "About Me",
     "skills": "Skills",
     "contact": "Contact"
   },
   "de": {
+    "about": "Über Mich",
     "skills": "Kenntnisse",
     "contact": "Kontakt"
   }
@@ -20,7 +22,8 @@
         </div>
         <div class="col-6">
           <ul>
-            <li><nuxt-link :to="localePath('skills')"><font-awesome-icon :icon="['fas', 'user']"/> {{ $t("skills") }}</nuxt-link></li>
+            <li><nuxt-link :to="localePath('about')"><font-awesome-icon :icon="['fas', 'user']"/> {{ $t("about") }}</nuxt-link></li>
+            <li><nuxt-link :to="localePath('skills')"><font-awesome-icon :icon="['fas', 'code']"/> {{ $t("skills") }}</nuxt-link></li>
             <li><a href="https://www.linkedin.com/in/pernthaler/" target="_blank" rel="noopener"><font-awesome-icon :icon="['fab', 'linkedin-in']"/> LinkedIn</a></li>
             <li><a href="mailto:Sebastian Pernthaler <sebastian@pernthaler.me>"><font-awesome-icon :icon="['fas', 'envelope']"/> {{ $t("contact") }}</a></li>
           </ul>

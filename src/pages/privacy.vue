@@ -294,7 +294,7 @@ export default {
   nuxtI18n: {
     paths: {
       en: "/privacy-policy",
-      de: "/datenschutzerkl%C3%A4rung"
+      de: `/${encodeURI("datenschutzerklärung")}`
     }
   }
 }
