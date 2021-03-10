@@ -94,7 +94,7 @@ export default {
   },
   nuxtI18n: {
     paths: {
-      en: "/legal",
+      en: "/legal-notice",
       de: "/impressum"
     }
   }

@@ -1,6 +1,7 @@
 export default {
     srcDir: "src",
     components: true,
+    telemetry: false,
     server: {
         host: "0"
     },

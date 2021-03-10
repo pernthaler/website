@@ -293,8 +293,8 @@ export default {
   },
   nuxtI18n: {
     paths: {
-      en: "/privacy",
-      de: "/datenschutzerklaerung"
+      en: "/privacy-policy",
+      de: "/datenschutzerkl%C3%A4rung"
     }
   }
 }
