@@ -94,8 +94,8 @@ export default {
   },
   nuxtI18n: {
     paths: {
-      en: "/legal-notice",
-      de: "/impressum"
+      en: encodeURI("/legal-notice"),
+      de: encodeURI("/impressum")
     }
   }
 }

@@ -42,8 +42,8 @@ export default {
   },
   nuxtI18n: {
     paths: {
-      en: "/skills",
-      de: "/kenntnisse"
+      en: encodeURI("/skills"),
+      de: encodeURI("/kenntnisse")
     }
   },
   data() {

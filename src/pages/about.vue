@@ -37,16 +37,14 @@ export default {
   },
   nuxtI18n: {
     paths: {
-      en: "/about-me",
-      de: `/${encodeURI("über-mich")}`
+      en: encodeURI("/about-me"),
+      de: encodeURI("/über-mich")
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/theme.scss";
-
 .LI-profile-badge {
   display: flex;
   justify-content: center;
