@@ -65,7 +65,7 @@ export default {
     text-align: center;
   }
   button {
-    width: 100px;
+    min-width: 100px;
     height: 30px;
   }
 }
