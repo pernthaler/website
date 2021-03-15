@@ -21,9 +21,17 @@
 
 <script>
 export default {
+  created() {
+    this.$store.commit("SET_TITLE", this.$t("title"));
+  },
+  nuxtI18n: {
+    paths: {
+      en: encodeURI("/about-me"),
+      de: encodeURI("/über-mich")
+    }
+  },
   head() {
     return {
-      title: this.$t("title"),
       script: [
         {
           hid: "linkedin",
@@ -34,12 +42,6 @@ export default {
         }
       ]
     };
-  },
-  nuxtI18n: {
-    paths: {
-      en: encodeURI("/about-me"),
-      de: encodeURI("/über-mich")
-    }
   }
 }
 </script>

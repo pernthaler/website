@@ -12,6 +12,7 @@
 <template>
   <div>
     <Scrollbar/>
+    <Transition/>
     <Navbar/>
     <main>
       <div class="container">
@@ -29,7 +30,7 @@ export default {
     this.$i18n.__baseUrl = this.$store.state.domain;
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
     return {
-      titleTemplate: (title) => ((title && !title.isEmpty ? title + " - " : "") + "Sebastian Pernthaler"),
+      title: (this.$store.state.title ? this.$store.state.title + " - " : "") + "Sebastian Pernthaler",
       htmlAttrs: {
         ...i18nHead.htmlAttrs,
         lang: this.$i18n.locale
@@ -48,13 +49,13 @@ export default {
         { hid: "theme-color", name: "theme-color", content: "#0000FF" },
         { hid: "color-scheme", name: "color-scheme", content: "light" },
         { hid: "og:type", property: "og:type", content: "website" },
-        { hid: "og:title", property: "og:title", content: "Sebastian Pernthaler" },
+        { hid: "og:title", property: "og:title", content: this.$store.state.title || "Sebastian Pernthaler" },
         { hid: "og:site_name", property: "og:site_name", content: "Sebastian Pernthaler" },
         { hid: "og:description", property: "og:description", content: this.$t("description") },
         { hid: "og:image", property: "og:image", content: this.$store.state.domain + "/icon.png" },
         { hid: "og:url", property: "og:url", content: this.$store.state.domain + this.$route.fullPath },
         { hid: "twitter:card", name: "twitter:card", content: "summary" },
-        { hid: "twitter:title", name: "twitter:title", content: "Sebastian Pernthaler" },
+        { hid: "twitter:title", name: "twitter:title", content: this.$store.state.title || "Sebastian Pernthaler" },
         { hid: "twitter:description", name: "twitter:description", content: this.$t("description") },
         { hid: "twitter:image", name: "twitter:image", content: this.$store.state.domain + "/icon.png" },
         ...i18nHead.meta

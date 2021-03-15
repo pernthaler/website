@@ -87,10 +87,8 @@
 
 <script>
 export default {
-  head() {
-    return {
-      title: this.$t("title")
-    };
+  created() {
+    this.$store.commit("SET_TITLE", this.$t("title"));
   },
   nuxtI18n: {
     paths: {

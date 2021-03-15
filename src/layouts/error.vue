@@ -11,6 +11,9 @@
 export default {
   props: [
     "error"
-  ]
+  ],
+  created() {
+    this.$store.commit("SET_TITLE", this.error.statusCode);
+  }
 }
 </script>

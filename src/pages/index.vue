@@ -20,8 +20,8 @@
 
 <script>
 export default {
-  head: {
-    title: ""
+  created() {
+    this.$store.commit("SET_TITLE", "");
   }
 }
 </script>
