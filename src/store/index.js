@@ -28,7 +28,7 @@ export const actions = {
     async nuxtServerInit({commit}, {req}) {
         commit("SET_NAME", process.env.npm_package_name);
         commit("SET_VERSION", process.env.npm_package_version);
-        commit("SET_SHA", process.env.CURRENT_GIT_SHA);
+        commit("SET_SHA", process.env.GIT_SHA);
         commit("SET_DOMAIN", `${req.headers["x-forwarded-proto"] || "http"}://${req.headers.host}`);
     }
 };
