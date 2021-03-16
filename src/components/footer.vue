@@ -25,6 +25,7 @@
               </nuxt-link>
             </li>
           </ul>
+          <p>{{ $store.state.name }} ({{ $store.state.sha }}) v{{ $store.state.version }}</p>
           <p>{{ $t("notice").split("|")[0] }}<a href="https://vuejs.org/" target="_blank" rel="noopener">{{ $t("notice").split("|")[1] }}</a>{{ $t("notice").split("|")[2] }}<a href="https://github.com/Pernthaler/Website" target="_blank" rel="noopener">{{ $t("notice").split("|")[3] }}</a>{{ $t("notice").split("|")[4] }}</p>
           <ul>
             <li><nuxt-link :to="localePath('legal')">{{ $t("legal") }}</nuxt-link></li>

@@ -1,5 +1,6 @@
 {
   "name": "website",
+  "version": "0.5.7",
   "description": "This website was created with Vue.js and is open source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
@@ -18,9 +19,10 @@
     "url": "https://github.com/Pernthaler/Website.git"
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
+    "current-git-sha": "CURRENT_GIT_SHA=`git rev-parse --short HEAD`",
+    "dev": "npm run current-git-sha nuxt",
+    "build": "npm run current-git-sha nuxt build",
+    "generate": "npm run current-git-sha nuxt generate",
     "start": "nuxt start"
   },
   "engines": {
