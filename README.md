@@ -12,7 +12,7 @@ This website was created with [Vue.js](https://vuejs.org/) and is [open source](
 ### Docker
 
 ```bash
-docker run pernthaler/website
+docker run -ti pernthaler/website
 ```
 
 ### Manually
