@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.5.10",
+  "version": "0.6.0",
   "description": "This website was created with Vue.js and is open source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
@@ -19,42 +19,44 @@
     "url": "https://github.com/Pernthaler/Website.git"
   },
   "scripts": {
-    "sha": "GIT_SHA=`git rev-parse --short HEAD`",
-    "dev": "npm run sha nuxt",
-    "build": "npm run sha nuxt build",
-    "generate": "npm run sha nuxt generate",
-    "start": "npm run sha nuxt start"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  },
+  "browser": {
+    "child_process": false
   },
   "engines": {
     "node": ">=15.0.0",
-    "npm": ">=7.0.0"
+    "npm": ">=7.0.0",
+    "yarn": ">=1.0.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-regular-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "@getbase/base": "^5.2.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "cookie-universal-nuxt": "^2.1.4",
     "flag-icon-css": "^3.5.0",
-    "nuxt": "^2.14.12",
-    "nuxt-i18n": "^6.20.3",
+    "nuxt": "~2.14.12",
+    "nuxt-i18n": "^6.21.1",
     "nuxt-matomo": "^1.2.4",
     "vue": "^2.6.12"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
-    "@intlify/vue-i18n-loader": "^1.0.0",
-    "@nuxt/types": "^2.15.2",
+    "@intlify/vue-i18n-loader": "^1.1.0",
+    "@nuxt/types": "^2.15.3",
     "@nuxtjs/pwa": "^3.3.5",
     "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-pngquant": "^9.0.1",
-    "imagemin-svgo": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^9.0.0",
     "nuxt-animejs": "^1.2.1",
     "nuxt-purgecss": "^1.0.0",
     "sass": "^1.32.8",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "~10.1.1"
   }
 }

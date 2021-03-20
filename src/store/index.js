@@ -1,6 +1,6 @@
 export const state = () => ({
     title: "",
-    name: "",
+    name: "website",
     version: "0.0.0",
     sha: "0000000",
     domain: `http://127.0.0.1:${process.env.PORT || 3000}`
@@ -26,9 +26,11 @@ export const mutations = {
 
 export const actions = {
     async nuxtServerInit({commit}, {req}) {
+        const exec = require("util").promisify(require("child_process").exec);
+
         commit("SET_NAME", process.env.npm_package_name);
         commit("SET_VERSION", process.env.npm_package_version);
-        commit("SET_SHA", process.env.GIT_SHA);
         commit("SET_DOMAIN", `${req.headers["x-forwarded-proto"] || "http"}://${req.headers.host}`);
+        commit("SET_SHA", (await exec("git rev-parse --short HEAD")).stdout.replace(/(\r\n|\n|\r)/gm, ""));
     }
 };
