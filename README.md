@@ -17,7 +17,10 @@ docker run -ti pernthaler/website
 
 ### Manually
 
+You need to have [Node v15](https://nodejs.org/en/download/current/) and npm v7 installed.
+
 ```bash
+npm install -g pnpm
 git clone https://github.com/Pernthaler/Website.git
 cd Website
 pnpm install
