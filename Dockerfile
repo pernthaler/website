@@ -3,9 +3,10 @@ WORKDIR /website
 EXPOSE 3000
 
 RUN apk add git
+RUN npm install -g pnpm
 
 RUN git clone https://github.com/Pernthaler/Website.git .
-RUN yarn install
-RUN yarn run build
+RUN pnpm install
+RUN pnpm run build
 
-CMD [ "yarn", "run", "start" ]
+CMD [ "pnpm", "run", "start" ]

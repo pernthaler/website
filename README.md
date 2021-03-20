@@ -20,9 +20,9 @@ docker run -ti pernthaler/website
 ```bash
 git clone https://github.com/Pernthaler/Website.git
 cd Website
-yarn install
-yarn run build
-yarn run start
+pnpm install
+pnpm run build
+pnpm run start
 ```
 
 ## License
