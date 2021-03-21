@@ -1,5 +1,9 @@
 <template/>
 
+<script>
+// TODO: Add Anime.js
+</script>
+
 <style lang="scss">
 .page-enter-active, .page-leave-active {
   transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;

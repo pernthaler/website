@@ -17,14 +17,8 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <ul>
-            <li v-for="locale of $i18n.locales">
-              <nuxt-link :to="switchLocalePath(locale.code)">
-                <span :aria-label="locale.name" class="flag-icon" :class="'flag-icon-' + locale.iso.split('-')[1].toLowerCase()"/>
-              </nuxt-link>
-            </li>
-          </ul>
+        <div class="col-12 text-center">
+          <languages/>
           <p>{{ $store.state.name }} ({{ $store.state.sha }}) v{{ $store.state.version }}</p>
           <p>{{ $t("notice").split("|")[0] }}<a href="https://vuejs.org/" target="_blank" rel="noopener">{{ $t("notice").split("|")[1] }}</a>{{ $t("notice").split("|")[2] }}<a href="https://github.com/Pernthaler/Website" target="_blank" rel="noopener">{{ $t("notice").split("|")[3] }}</a>{{ $t("notice").split("|")[4] }}</p>
           <ul>

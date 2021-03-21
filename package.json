@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "This website was created with Vue.js and is open source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
@@ -39,7 +39,6 @@
     "@getbase/base": "^5.2.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "cookie-universal-nuxt": "^2.1.4",
-    "flag-icon-css": "^3.5.0",
     "nuxt": "~2.14.12",
     "nuxt-i18n": "^6.21.1",
     "nuxt-matomo": "^1.2.4",
@@ -47,7 +46,7 @@
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
-    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-env": "~7.12.17",
     "@intlify/vue-i18n-loader": "^1.1.0",
     "@nuxt/types": "^2.15.3",
     "@nuxtjs/pwa": "^3.3.5",

@@ -31,6 +31,6 @@ export const actions = {
         commit("SET_NAME", process.env.npm_package_name);
         commit("SET_VERSION", process.env.npm_package_version);
         commit("SET_DOMAIN", `${req.headers["x-forwarded-proto"] || "http"}://${req.headers.host}`);
-        commit("SET_SHA", (await exec("git rev-parse --short HEAD")).stdout.replace(/(\r\n|\n|\r)/gm, ""));
+        commit("SET_SHA", (await exec("git rev-parse --short HEAD")).stdout.replace(/(\r\n|\n|\r)/, ""));
     }
 };
