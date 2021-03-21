@@ -18,16 +18,15 @@ docker run -ti pernthaler/website
 ### Manually
 
 - [Node v15](https://nodejs.org/en/download/current/)
-- npm v7
+- [npm v7](https://nodejs.org/en/download/current/)
 - [Git](https://git-scm.com/downloads)
 
 ```bash
-npm install -g pnpm
 git clone https://github.com/Pernthaler/Website.git
 cd Website
-pnpm install
-pnpm run build
-pnpm run start
+npm install
+npm run build
+npm run start
 ```
 
 ## License

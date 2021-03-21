@@ -4,10 +4,9 @@ EXPOSE 3000
 
 RUN apt-get update
 RUN apt-get -y install git
-RUN npm install -g pnpm
 
 RUN git clone https://github.com/Pernthaler/Website.git .
-RUN pnpm install
-RUN pnpm run build
+RUN npm install
+RUN npm run build
 
-CMD pnpm run start
+CMD npm run start
