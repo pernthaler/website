@@ -10,14 +10,21 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Setup Node.js environment
+      - name: Setup
         uses: actions/setup-node@v2
         with:
           node-version: '>=15.0.0'
           check-latest: true
       
-      - name: Install dependencies
-        run: npm install
-      
-      - name: Run github script
-        run: npm run github
+      - name: Build
+        run: |
+          npm install
+          npm run github
+  
+      - name: Deploy
+        run: |
+          git config --global user.name "GitHub"
+          git pull --allow-unrelated-histories origin storybook
+          git add storybook-static
+          git commit -m "Update Storybook"
+          git subtree push --prefix storybook-static origin storybook
