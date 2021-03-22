@@ -1,7 +1,8 @@
 name: Storybook
 on:
   push:
-    branches: [ master ]
+    branches:
+    - master
 
 jobs:
   build:
@@ -9,10 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Run a one-line script
-        run: echo Hello, world!
-        
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '>=15.0.0'
+          check-latest: true
+      
+      - name: Run github script
+        run: npm run github
