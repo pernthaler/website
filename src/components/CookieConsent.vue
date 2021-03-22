@@ -12,7 +12,7 @@
 </i18n>
 
 <template>
-  <div v-if="!hide" id="cookie">
+  <div v-if="!cookie" id="cookie">
     <div class="container">
       <div class="row">
         <div class="col-12 col-10-m">
@@ -30,7 +30,7 @@
 export default {
   data() {
     return {
-      hide: this.$cookies.get("cookie")
+      cookie: this.$cookies.get("cookie")
     };
   },
   methods: {
@@ -43,7 +43,7 @@ export default {
         duration: 250,
         height: 0,
         complete: () => {
-          this.hide = true;
+          this.cookie = true;
         }
       });
     }
