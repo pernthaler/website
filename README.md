@@ -1,6 +1,7 @@
 <p align="center">
     <a href="https://hub.docker.com/r/pernthaler/website"><img alt="Pulls" src="https://img.shields.io/docker/pulls/pernthaler/website?label=Pulls"></a>
     <a href="https://github.com/Pernthaler/Website"><img alt="Version" src="https://img.shields.io/github/package-json/v/Pernthaler/Website?label=Version"></a>
+    <a href="https://pernthaler.github.io/Website/"><img alt="Storybook" src="https://github.com/Pernthaler/Website/actions/workflows/storybook.yml/badge.svg"></a>
 </p>
 
 # Website
