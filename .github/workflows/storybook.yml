@@ -17,4 +17,4 @@ jobs:
           check-latest: true
       
       - name: Run github script
-        run: npm run github
+        run: npm run nuxt storybook build
