@@ -23,6 +23,7 @@ jobs:
   
       - name: Deploy
         run: |
+          git config --global user.name "GitHub"
           git add storybook-static
           git commit -m "Update Storybook"
           git subtree push --prefix storybook-static origin storybook
