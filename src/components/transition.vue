@@ -2,6 +2,7 @@
 
 <script>
 // TODO: Add Anime.js
+export default {}
 </script>
 
 <style lang="scss">

@@ -4,3 +4,4 @@ dist
 .nuxt
 .env
 sw.*
+.nuxt-storybook

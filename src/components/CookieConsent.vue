@@ -12,7 +12,7 @@
 </i18n>
 
 <template>
-  <div v-if="!cookie" id="cookie">
+  <div v-if="!hide" id="cookie">
     <div class="container">
       <div class="row">
         <div class="col-12 col-10-m">
@@ -28,9 +28,15 @@
 
 <script>
 export default {
+  props: {
+    hide: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
-      cookie: this.$cookies.get("cookie")
+      hide: this.$cookies.get("cookie")
     };
   },
   methods: {
@@ -43,7 +49,7 @@ export default {
         duration: 250,
         height: 0,
         complete: () => {
-          this.cookie = true;
+          this.hide = true;
         }
       });
     }

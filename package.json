@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "This website was created with Vue.js and is open source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
@@ -20,6 +20,8 @@
   },
   "scripts": {
     "dev": "nuxt",
+    "storybook": "nuxt storybook",
+    "github": "nuxt storybook build",
     "build": "nuxt build",
     "start": "nuxt start"
   },
@@ -31,6 +33,7 @@
     "npm": ">=7.0.0"
   },
   "dependencies": {
+    "@babel/runtime-corejs3": "^7.13.10",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
@@ -39,6 +42,7 @@
     "@getbase/base": "^5.2.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "cookie-universal-nuxt": "^2.1.4",
+    "core-js": "^3.9.1",
     "nuxt": "~2.14.12",
     "nuxt-i18n": "^6.21.1",
     "nuxt-matomo": "^1.2.4",
@@ -50,6 +54,7 @@
     "@intlify/vue-i18n-loader": "^1.1.0",
     "@nuxt/types": "^2.15.3",
     "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/storybook": "^3.3.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^9.0.0",

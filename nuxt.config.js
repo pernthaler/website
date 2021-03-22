@@ -70,6 +70,17 @@ export default {
         "@getbase/base/scss/position-helpers.scss",
         "@fortawesome/fontawesome-svg-core/styles.css"
     ],
+    build: {
+        babel: {
+            presets({ envName }) {
+                return [
+                    [ "@nuxt/babel-preset-app", {
+                        corejs: { version: 3 }
+                    }]
+                ];
+            }
+        }
+    },
     render: {
         bundleRenderer: {
             shouldPreload: (file, type) => {
