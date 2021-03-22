@@ -20,7 +20,7 @@
       </div>
     </main>
     <Footer/>
-    <Cookie/>
+    <CookieConsent/>
   </div>
 </template>
 
