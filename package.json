@@ -19,10 +19,8 @@
     "url": "https://github.com/Pernthaler/Website.git"
   },
   "scripts": {
-    "dev": "nuxt",
-    "storybook": "nuxt storybook",
-    "components": "nuxt storybook build",
-    "build": "nuxt build",
+    "dev": "nuxt storybook build && nuxt",
+    "build": "nuxt storybook build && nuxt build",
     "start": "nuxt start"
   },
   "browser": {

@@ -1,3 +1,5 @@
+import serveStatic from "serve-static";
+
 export default {
     srcDir: "src",
     components: true,
@@ -7,6 +9,9 @@ export default {
     },
     plugins: [
         "~/plugins/fontawesome.js"
+    ],
+    serverMiddleware: [
+        { path: "/storybook", handler: serveStatic("storybook-static") }
     ],
     modules: [
         [ "nuxt-i18n", {
@@ -72,7 +77,7 @@ export default {
     ],
     build: {
         babel: {
-            presets({ envName }) {
+            presets() {
                 return [
                     [ "@nuxt/babel-preset-app", {
                         corejs: { version: 3 }

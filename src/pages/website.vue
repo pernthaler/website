@@ -19,7 +19,7 @@
       <h1>{{ $t("title") }}</h1>
       <p>{{ $t("subtitle") }}</p>
       <h2>{{ $t("components") }}</h2>
-      <iframe width="100%" height="500px" src="https://components.pernthaler.me"/>
+      <iframe width="100%" height="500px" src="/storybook"/>
     </div>
   </div>
 </template>
