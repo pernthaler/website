@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "description": "This website was created with Vue.js and is open source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
@@ -19,7 +19,8 @@
     "url": "https://github.com/Pernthaler/Website.git"
   },
   "scripts": {
-    "dev": "nuxt storybook build && nuxt",
+    "dev": "nuxt",
+    "storybook": "nuxt storybook",
     "build": "nuxt storybook build && nuxt build",
     "start": "nuxt start"
   },

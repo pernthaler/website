@@ -19,7 +19,7 @@
           <p>{{ $t("text").split("|")[0] }} <nuxt-link :to="localePath('privacy') + '#cookies'">{{ $t("text").split("|")[1] }}</nuxt-link></p>
         </div>
         <div class="col-12 col-2-m">
-          <button v-on:click="accept">{{ $t("button") }}</button>
+          <button @click="accept">{{ $t("button") }}</button>
         </div>
       </div>
     </div>
@@ -28,12 +28,6 @@
 
 <script>
 export default {
-  props: {
-    hide: {
-      type: Boolean,
-      default: false
-    }
-  },
   data() {
     return {
       hide: this.$cookies.get("cookie")

@@ -1,13 +1,5 @@
 export default {
-    title: "Cookie Consent",
-    argTypes: {
-        hide: {
-            control: "boolean"
-        }
-    }
+    title: "Cookie Consent"
 }
 
-export const CookieConsent = (arg, { argTypes }) => ({
-    props: Object.keys(argTypes),
-    template: "<CookieConsent v-bind='$props'/>"
-});
+export const CookieConsent = () => "<CookieConsent @click='console.log(asd)'/>";
