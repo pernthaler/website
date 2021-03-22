@@ -16,5 +16,8 @@ jobs:
           node-version: '>=15.0.0'
           check-latest: true
       
+      - name: Install dependencies
+        run: npm install
+      
       - name: Run github script
-        run: npm run nuxt storybook build
+        run: npm run github
