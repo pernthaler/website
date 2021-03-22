@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "nuxt",
     "storybook": "nuxt storybook",
-    "github": "nuxt storybook build -o docs",
+    "components": "nuxt storybook build",
     "build": "nuxt build",
     "start": "nuxt start"
   },
