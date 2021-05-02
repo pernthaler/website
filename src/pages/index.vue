@@ -10,11 +10,9 @@
 </i18n>
 
 <template>
-  <div class="row">
-    <div class="col-12">
-      <h1>Sebastian Pernthaler</h1>
-      <p>{{ $t("subtitle") }}</p>
-    </div>
+  <div>
+    <h1>Sebastian Pernthaler</h1>
+    <p>{{ $t("subtitle") }}</p>
   </div>
 </template>
 

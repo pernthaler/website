@@ -1,9 +1,4 @@
-<p align="center">
-    <a href="https://hub.docker.com/r/pernthaler/website"><img alt="Pulls" src="https://img.shields.io/docker/pulls/pernthaler/website?label=Pulls"></a>
-    <a href="https://github.com/Pernthaler/Website"><img alt="Version" src="https://img.shields.io/github/package-json/v/Pernthaler/Website?label=Version"></a>
-</p>
-
-# Website
+# Website [![Version](https://img.shields.io/github/package-json/v/Pernthaler/Website?label=Version)](https://github.com/Pernthaler/Website)
 
 This website was created with [Vue.js](https://vuejs.org/) and is [open source](https://github.com/Pernthaler/Website).
 
@@ -17,16 +12,16 @@ docker run -ti pernthaler/website
 
 ### Manually
 
-- [Node v15](https://nodejs.org/en/download/current/)
-- [npm v7](https://nodejs.org/en/download/current/)
+- [Node v16](https://nodejs.org/en/download/current/)
+- [yarn v1](https://classic.yarnpkg.com/en/docs/install/)
 - [Git](https://git-scm.com/downloads)
 
 ```bash
 git clone https://github.com/Pernthaler/Website.git
 cd Website
-npm install
-npm run build
-npm run start
+yarn install
+yarn build
+yarn start
 ```
 
 ## License

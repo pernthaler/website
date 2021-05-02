@@ -21,22 +21,13 @@
 
 <template>
   <div>
-    <div class="row">
-      <div class="col-12">
-        <h1>{{ $t("title") }}</h1>
-        <div class="LI-profile-badge" data-version="v1" data-size="large" :data-locale="$i18n.localeProperties.iso.replace('-', '_')" data-type="horizontal" data-theme="light" data-vanity="pernthaler">
-          <a class="LI-simple-link" href="https://www.linkedin.com/in/pernthaler" target="_blank" rel="noopener">Sebastian Pernthaler</a>
-        </div>
-        <h2>{{ $t("skills") }}</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4-m col-12" v-for="category of categories">
-        <h2>{{ category.name }}</h2>
-        <ul>
-          <li v-for="language of category.languages">{{ language }}</li>
-        </ul>
-      </div>
+    <h1>{{ $t("title") }}</h1>
+    <h2>{{ $t("skills") }}</h2>
+    <div v-for="category of categories">
+      <h3>{{ category.name }}</h3>
+      <ul>
+        <li v-for="language of category.languages">{{ language }}</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -52,25 +43,14 @@ export default {
       de: encodeURI("/über-mich")
     }
   },
-  head() {
-    return {
-      script: [
-        {
-          hid: "linkedin",
-          type: "text/javascript",
-          src: "https://platform.linkedin.com/badges/js/profile.js",
-          async: true,
-          defer: true
-        }
-      ]
-    };
-  },
   data() {
     const categories = [
       { name: this.$t("programming"), languages: [
           "Java",
-          "Rust",
-          "C++"
+          "C",
+          "C++",
+          "Go",
+          "Ruby"
         ]},
       { name: this.$t("scripting"), languages: [
           "Bash",
@@ -101,11 +81,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.LI-profile-badge {
-  display: flex;
-  justify-content: center;
-}
+<style lang="less" scoped>
 ul {
   list-style: none;
   margin: 0;

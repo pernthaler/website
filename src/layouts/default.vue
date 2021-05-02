@@ -11,16 +11,8 @@
 
 <template>
   <div>
-    <Scrollbar/>
-    <Transition/>
-    <Navbar/>
-    <main>
-      <div class="container">
-        <Nuxt/>
-      </div>
-    </main>
-    <Footer/>
-    <CookieConsent/>
+    <Sidebar/>
+    <Content/>
   </div>
 </template>
 
@@ -65,44 +57,60 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "~assets/scss/theme.scss";
-
+<style lang="less">
 html, body, #__nuxt, #__layout, #__layout > div {
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   word-wrap: break-word;
-  background-color: $background-dark;
 }
 #__layout > div {
-  padding: 0;
-  margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-
+main {
+  flex: 1;
+}
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-header, sans-serif;
+  font-family: @font-header, sans-serif;
 }
 p, span, li {
-  font-family: $font-default, sans-serif;
+  font-family: @font-default, sans-serif;
   text-align: justify;
 }
 a, a:visited {
-  color: $primary-light;
+  color: @primary-light;
   text-decoration: none;
-
   &:hover {
-    color: $primary-dark;
+    color: @primary-dark;
   }
 }
-
 ::selection {
-  color: $primary-light;
-  background-color: $secondary-light;
+  color: @primary-light;
+  background-color: @secondary-light;
+}
+*::-webkit-scrollbar {
+  width: 0.3rem;
+}
+*::-webkit-scrollbar-track {
+  background: none;
+}
+*::-webkit-scrollbar-thumb {
+  background: @secondary-light;
+  &:hover {
+    background: @secondary-dark;
+  }
+}
+.page-enter-active, .page-leave-active {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 15px, 0);
 }
 </style>

@@ -1,9 +1,8 @@
 <template>
-  <div class="row">
-    <div class="col-12">
-      <p v-if="error.statusCode === 404">404</p>
-      <p v-else>An error occurred</p>
-    </div>
+  <div>
+    <h1>{{ error.statusCode }}</h1>
+    <p v-if="error.statusCode === 404">The server can not find the requested resource.</p>
+    <p v-else>An error occurred.</p>
   </div>
 </template>
 

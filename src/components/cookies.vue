@@ -12,7 +12,7 @@
 </i18n>
 
 <template>
-  <div v-if="!cookie" id="cookie">
+  <div v-if="!cookie" id="cookies">
     <div class="container">
       <div class="row">
         <div class="col-12 col-10-m">
@@ -51,15 +51,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "~assets/scss/theme.scss";
-
-#cookie {
+<style lang="less" scoped>
+#cookies {
   position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: $background-light;
+  background-color: @background-light;
 
   * {
     text-align: center;
