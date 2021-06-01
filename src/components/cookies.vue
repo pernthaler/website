@@ -30,15 +30,15 @@
 export default {
   data() {
     return {
-      cookie: this.$cookies.get("cookie")
+      cookie: this.$cookies.get("cookies")
     };
   },
   methods: {
     accept() {
       const seconds = 6 * 30 * 24 * 60 * 60;
-      this.$cookies.set("cookie", true, { expires: new Date(new Date().getTime() + seconds * 1000), maxAge: seconds });
+      this.$cookies.set("cookies", true, { expires: new Date(new Date().getTime() + seconds * 1000), maxAge: seconds });
       this.$anime({
-        targets: "#cookie",
+        targets: "#cookies",
         easing: "linear",
         duration: 250,
         height: 0,
@@ -57,7 +57,7 @@ export default {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: @background-light;
+  background-color: @background-dark;
 
   * {
     text-align: center;
