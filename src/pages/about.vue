@@ -21,12 +21,12 @@
 
 <template>
   <div>
-    <h1>{{ $t("title") }}</h1>
+    <h1><fa-icon :icon="['fas', 'user']"/> {{ $t("title") }}</h1>
     <h2>{{ $t("skills") }}</h2>
-    <div v-for="category of categories">
+    <div v-for="category of categories" v-bind:key="category">
       <h3>{{ category.name }}</h3>
       <ul>
-        <li v-for="language of category.languages">{{ language }}</li>
+        <li v-for="language of category.languages" v-bind:key="language">{{ language }}</li>
       </ul>
     </div>
   </div>
@@ -50,14 +50,16 @@ export default {
           "C",
           "C++",
           "Go",
-          "Ruby"
+          "Ruby",
+          "TypeScript",
+          "CoffeeScript"
         ]},
       { name: this.$t("scripting"), languages: [
           "Bash",
           "Batch",
           "JavaScript",
-          "TypeScript",
-          "PHP"
+          "PHP",
+          "Groovy"
         ]},
       { name: this.$t("other"), languages: [
           "Markdown",

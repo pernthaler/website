@@ -21,7 +21,23 @@
 
     "3-1": "Cookies",
     "3-2": "Our website uses HTTP cookies to save user-specific data.",
-    "3-3": "In the following we explain what cookies are and why they are used so that you can better understand the following data protection declaration."
+    "3-3": "In the following we explain what cookies are and why they are used so that you can better understand the following data protection declaration.",
+
+    "4-1": "What exactly are cookies?",
+    "4-2": "Whenever you surf the Internet, you are using a browser. Well-known browsers are, for example, Chrome, Safari, Firefox, Internet Explorer and Microsoft Edge. Most websites save small text files in your browser. These files are called cookies.",
+    "4-3": "One thing cannot be dismissed out of hand: Cookies are really useful little helpers. Almost all websites use cookies. To be more precise, they are HTTP cookies, as there are also other cookies for other areas of application. HTTP cookies are small files that our website stores on your computer. These cookie files are automatically placed in the cookie folder, which is the \"brain\" of your browser. A cookie consists of a name and a value. When defining a cookie, one or more attributes must also be specified.",
+    "4-4": "Cookies store certain user data about you, such as language or personal page settings. When you call up our site again, your browser transmits the \"user-related\" information back to our site. Thanks to cookies, our website knows who you are and offers you the settings that you are used to. In some browsers, each cookie has its own file, in others, such as Firefox, all cookies are stored in a single file.",
+    "4-5": "There are both first-party cookies and third-party cookies. First-party cookies are created directly from our side, third-party cookies are created by partner websites (e.g. Google Analytics). Each cookie must be evaluated individually, as each cookie stores different data. The expiry time of a cookie also varies from a few minutes to a few years. Cookies are not software programs and do not contain viruses, Trojans or other \"pests\". Cookies cannot access information on your PC either.",
+    "4-6": "For example, cookie data can look like this:",
+      "4-7-1": "",
+      "4-7-2": "",
+      "4-7-3": "",
+      "4-7-4": "",
+    "4-8": "",
+      "4-9-1": "",
+      "4-9-2": "",
+      "4-9-3": "",
+      "4-9-4": ""
   },
   "de": {
     "title": "Datenschutzerklärung",
@@ -44,7 +60,23 @@
 
     "3-1": "Cookies",
     "3-2": "Unsere Webseite verwendet HTTP-Cookies, um nutzerspezifische Daten zu speichern.",
-    "3-3": "Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit Sie die folgende Datenschutzerklärung besser verstehen."
+    "3-3": "Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit Sie die folgende Datenschutzerklärung besser verstehen.",
+
+    "4-1": "Was genau sind Cookies?",
+    "4-2": "Immer wenn Sie durch das Internet surfen, verwenden Sie einen Browser. Bekannte Browser sind beispielsweise Chrome, Safari, Firefox, Internet Explorer und Microsoft Edge. Die meisten Webseiten speichern kleine Text-Dateien in Ihrem Browser. Diese Dateien nennt man Cookies.",
+    "4-3": "Eines ist nicht von der Hand zu weisen: Cookies sind echt nützliche Helferlein. Fast alle Webseiten verwenden Cookies. Genauer gesprochen sind es HTTP-Cookies, da es auch noch andere Cookies für andere Anwendungsbereiche gibt. HTTP-Cookies sind kleine Dateien, die von unserer Webseite auf Ihrem Computer gespeichert werden. Diese Cookie-Dateien werden automatisch im Cookie-Ordner, quasi dem \"Hirn\" Ihres Browsers, untergebracht. Ein Cookie besteht aus einem Namen und einem Wert. Bei der Definition eines Cookies müssen zusätzlich ein oder mehrere Attribute angegeben werden.",
+    "4-4": "Cookies speichern gewisse Nutzerdaten von Ihnen, wie beispielsweise Sprache oder persönliche Seiteneinstellungen. Wenn Sie unsere Seite wieder aufrufen, übermittelt Ihr Browser die \"userbezogenen\" Informationen an unsere Seite zurück. Dank der Cookies weiß unsere Webseite, wer Sie sind und bietet Ihnen die Einstellung, die Sie gewohnt sind. In einigen Browsern hat jedes Cookie eine eigene Datei, in anderen wie beispielsweise Firefox sind alle Cookies in einer einzigen Datei gespeichert.",
+    "4-5": "Es gibt sowohl Erstanbieter Cookies als auch Drittanbieter-Cookies. Erstanbieter-Cookies werden direkt von unserer Seite erstellt, Drittanbieter-Cookies werden von Partner-Webseiten (z.B. Google Analytics) erstellt. Jedes Cookie ist individuell zu bewerten, da jedes Cookie andere Daten speichert. Auch die Ablaufzeit eines Cookies variiert von ein paar Minuten bis hin zu ein paar Jahren. Cookies sind keine Software-Programme und enthalten keine Viren, Trojaner oder andere \"Schädlinge\". Cookies können auch nicht auf Informationen Ihres PCs zugreifen.",
+    "4-6": "So können zum Beispiel Cookie-Daten aussehen:",
+      "4-7-1": "",
+      "4-7-2": "",
+      "4-7-3": "",
+      "4-7-4": "",
+    "4-8": "",
+      "4-9-1": "",
+      "4-9-2": "",
+      "4-9-3": "",
+      "4-9-4": ""
   }
 }
 </i18n>
@@ -52,7 +84,7 @@
 <template>
   <div class="row">
     <div class="col-12">
-      <h1>{{ $t("title") }}</h1>
+      <h1><fa-icon :icon="['fas', 'user-secret']"/> {{ $t("title") }}</h1>
       <p>{{ $t("1-1").split("|")[0] }}<a href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&tid=211142478" target="_blank" rel="noopener">{{ $t("1-1").split("|")[1] }}</a>{{ $t("1-1").split("|")[2] }}</p>
       <p>{{ $t("1-2").split("|")[0] }}</p>
       <p>{{ $t("1-3").split("|")[0] }}<nuxt-link :to="localePath('legal')">{{ $t("1-3").split("|")[1] }}</nuxt-link>{{ $t("1-3").split("|")[2] }}</p>
@@ -76,17 +108,18 @@
       <p>{{ $t("3-2") }}</p>
       <p>{{ $t("3-3") }}</p>
 
-      <h3>Was genau sind Cookies?</h3>
-      <p>Immer wenn Sie durch das Internet surfen, verwenden Sie einen Browser. Bekannte Browser sind beispielsweise Chrome, Safari, Firefox, Internet Explorer und Microsoft Edge. Die meisten Webseiten speichern kleine Text-Dateien in Ihrem Browser. Diese Dateien nennt man Cookies.</p>
-      <p>Eines ist nicht von der Hand zu weisen: Cookies sind echt nützliche Helferlein. Fast alle Webseiten verwenden Cookies. Genauer gesprochen sind es HTTP-Cookies, da es auch noch andere Cookies für andere Anwendungsbereiche gibt. HTTP-Cookies sind kleine Dateien, die von unserer Webseite auf Ihrem Computer gespeichert werden. Diese Cookie-Dateien werden automatisch im Cookie-Ordner, quasi dem „Hirn“ Ihres Browsers, untergebracht. Ein Cookie besteht aus einem Namen und einem Wert. Bei der Definition eines Cookies müssen zusätzlich ein oder mehrere Attribute angegeben werden.</p>
-      <p>Cookies speichern gewisse Nutzerdaten von Ihnen, wie beispielsweise Sprache oder persönliche Seiteneinstellungen. Wenn Sie unsere Seite wieder aufrufen, übermittelt Ihr Browser die „userbezogenen“ Informationen an unsere Seite zurück. Dank der Cookies weiß unsere Webseite, wer Sie sind und bietet Ihnen die Einstellung, die Sie gewohnt sind. In einigen Browsern hat jedes Cookie eine eigene Datei, in anderen wie beispielsweise Firefox sind alle Cookies in einer einzigen Datei gespeichert.</p>
-      <p>Es gibt sowohl Erstanbieter Cookies als auch Drittanbieter-Cookies. Erstanbieter-Cookies werden direkt von unserer Seite erstellt, Drittanbieter-Cookies werden von Partner-Webseiten (z.B. Google Analytics) erstellt. Jedes Cookie ist individuell zu bewerten, da jedes Cookie andere Daten speichert. Auch die Ablaufzeit eines Cookies variiert von ein paar Minuten bis hin zu ein paar Jahren. Cookies sind keine Software-Programme und enthalten keine Viren, Trojaner oder andere „Schädlinge“. Cookies können auch nicht auf Informationen Ihres PCs zugreifen.</p>
-      <p>So können zum Beispiel Cookie-Daten aussehen:</p>
+      <h3>{{ $t("4-1") }}</h3>
+      <p>{{ $t("4-2") }}</p>
+      <p>{{ $t("4-3") }}</p>
+      <p>{{ $t("4-4") }}</p>
+      <p>{{ $t("4-5") }}</p>
+      <p>{{ $t("4-6") }}</p>
       <p>
-        <strong>Name:</strong> _ga<br />
-        <strong>Wert:</strong> GA1.2.1326744211.152211142478-6<br />
-        <strong>Verwendungszweck:</strong> Unterscheidung der Webseitenbesucher<br />
-        <strong>Ablaufdatum:</strong> nach 2 Jahren</p>
+        <strong>Name:</strong> _ga<br/>
+        <strong>Wert:</strong> GA1.2.1326744211.152211142478-6<br/>
+        <strong>Verwendungszweck:</strong> Unterscheidung der Webseitenbesucher<br/>
+        <strong>Ablaufdatum:</strong> nach 2 Jahren
+      </p>
       <p>Diese Mindestgrößen sollte ein Browser unterstützen können:</p>
       <ul>
         <li>Mindestens 4096 Bytes pro Cookie</li>

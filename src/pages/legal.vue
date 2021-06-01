@@ -56,7 +56,7 @@
 <template>
   <div class="row">
     <div class="col-12">
-      <h1>{{ $t("title") }}</h1>
+      <h1><fa-icon :icon="['fas', 'balance-scale']"/> {{ $t("title") }}</h1>
       <p>{{ $t("subtitle") }}</p>
       <p>Sebastian Pernthaler</p>
       <p><a href="mailto:Sebastian Pernthaler <sebastian@pernthaler.me>">sebastian@pernthaler.me</a></p>

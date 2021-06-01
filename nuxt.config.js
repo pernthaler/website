@@ -3,7 +3,7 @@ export default {
     components: true,
     telemetry: false,
     server: {
-        host: "0"
+        host: "0.0.0.0"
     },
     modules: [
         [ "nuxt-i18n", {
@@ -31,7 +31,15 @@ export default {
     ],
     buildModules: [
         "@nuxtjs/style-resources",
-        "nuxt-animejs"
+        "nuxt-animejs",
+        [ "@nuxtjs/fontawesome", {
+            component: "fa",
+            suffix: true,
+            icons: {
+                solid: [ "faHome", "faUser", "faEnvelope", "faBalanceScale", "faUserSecret" ],
+                brands: [ "faGithub", "faLinkedin" ]
+            }
+        }]
     ],
     styleResources: {
       less: "./assets/less/*.less"
