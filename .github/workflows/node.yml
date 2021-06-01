@@ -16,7 +16,7 @@ jobs:
       - name: Version
         run: |
           sudo apt-get install jq
-          echo VERSION=$(jq .version package.json) >> $GITHUB_ENV
+          echo VERSION=$(jq -r .version package.json) >> $GITHUB_ENV
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
