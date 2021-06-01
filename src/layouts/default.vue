@@ -75,6 +75,7 @@ body {
 }
 main {
   flex: 1;
+  padding: 10px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: @font-header, sans-serif;

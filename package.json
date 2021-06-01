@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "This website was created with Vue.js and is open source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
@@ -27,7 +27,7 @@
     "child_process": false
   },
   "engines": {
-    "node": ">=16.0.0",
+    "node": ">=14.0.0",
     "yarn": ">=1.0.0"
   },
   "dependencies": {

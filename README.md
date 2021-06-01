@@ -12,7 +12,7 @@ docker run -ti pernthaler/website
 
 ### Manually
 
-- [Node v16](https://nodejs.org/en/download/current/)
+- [Node v14](https://nodejs.org/en/download/)
 - [yarn v1](https://classic.yarnpkg.com/en/docs/install/)
 - [Git](https://git-scm.com/downloads)
 
