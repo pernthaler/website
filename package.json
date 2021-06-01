@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "This website was created with Vue.js and is open source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
@@ -35,7 +35,8 @@
     "cookie-universal-nuxt": "^2.1.4",
     "nuxt": "^2.15.4",
     "nuxt-i18n": "^6.26.0",
-    "nuxt-matomo": "^1.2.4"
+    "nuxt-matomo": "^1.2.4",
+    "three": "^0.129.0"
   },
   "devDependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
