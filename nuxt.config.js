@@ -36,8 +36,7 @@ export default {
             component: "fa",
             suffix: true,
             icons: {
-                solid: [ "faHome", "faUser", "faEnvelope", "faBalanceScale", "faUserSecret" ],
-                brands: [ "faGithub", "faLinkedin" ]
+                solid: [ "faAngleRight", "faExternalLinkAlt", "faUser", "faBalanceScale", "faUserSecret" ]
             }
         }]
     ],
