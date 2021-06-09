@@ -17,6 +17,18 @@ jobs:
         run: |
           sudo apt-get install jq
           echo VERSION=$(jq -r .version package.json) >> $GITHUB_ENV
+      - name: Login Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: pernthaler
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Push Docker Hub
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: |
+            pernthaler/website:latest
+            pernthaler/website:${{ env.VERSION }}
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
