@@ -52,7 +52,9 @@ export default {
           "Go",
           "Ruby",
           "TypeScript",
-          "CoffeeScript"
+          "CoffeeScript",
+          "Rust",
+          "Kotlin"
         ]},
       { name: this.$t("scripting"), languages: [
           "Bash",
@@ -72,7 +74,11 @@ export default {
           "XML",
           "LaTeX",
           "Regex",
-          "YAML"
+          "YAML",
+          "Haml"
+          "FreeMarker",
+          "Sinatra",
+          "JSX"
         ]}
     ];
     categories.forEach(category => category.languages.sort());
