@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Sync Docker
-        uses: meeDamian/sync-readme@v1
+        uses: meeDamian/sync-readme@v1.0.6
         with:
           user: pernthaler
           pass: ${{ secrets.DOCKER_PASSWORD }}
