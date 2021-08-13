@@ -39,12 +39,13 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Sync Docker
-        uses: ms-jpq/sync-dockerhub-readme@v1
+        uses: meeDamian/sync-readme@v1
         with:
-          username: pernthaler
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: pernthaler/website
+          user: pernthaler
+          pass: ${{ secrets.DOCKER_PASSWORD }}
+          slug: pernthaler/website
           readme: README.md
+          description: true
 
       - name: Push Docker
         uses: docker/build-push-action@v2
