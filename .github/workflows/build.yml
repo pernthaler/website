@@ -38,15 +38,6 @@ jobs:
           username: pernthaler
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Sync Docker
-        uses: meeDamian/sync-readme@v1.0.6
-        with:
-          user: pernthaler
-          pass: ${{ secrets.DOCKER_PASSWORD }}
-          slug: pernthaler/website
-          readme: README.md
-          description: true
-
       - name: Push Docker
         uses: docker/build-push-action@v2
         with:
