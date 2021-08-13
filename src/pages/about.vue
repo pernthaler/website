@@ -75,7 +75,7 @@ export default {
           "LaTeX",
           "Regex",
           "YAML",
-          "Haml"
+          "Haml",
           "FreeMarker",
           "Sinatra",
           "JSX"
