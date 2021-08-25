@@ -43,6 +43,13 @@ export default {
     styleResources: {
       less: "./assets/less/*.less"
     },
+    build: {
+        babel: {
+            plugins: [
+                [ "@babel/plugin-proposal-private-methods", { "loose": true } ]
+            ]
+        }
+    },
     render: {
         bundleRenderer: {
             shouldPreload: (file, type) => {
