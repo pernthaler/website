@@ -35,7 +35,7 @@
       </ul>
     </nav>
     <footer>
-      <p>{{ $store.state.name }} ({{ $store.state.sha }}) v{{ $store.state.version }}</p>
+      <p>{{ $store.state.name }} ({{ $store.state.revision }}) v{{ $store.state.version }}</p>
       <select aria-label="Languages" v-model="selected" v-on:change="$router.push(switchLocalePath(selected))">
         <option v-for="locale of $i18n.locales" v-bind:key="locale.code" :selected="selected === locale.code" :value="locale.code">{{ locale.name }}</option>
       </select>
