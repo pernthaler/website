@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.7.8",
+  "version": "0.8.0",
   "description": "This website was created with Vue.js and is open source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
@@ -31,20 +31,22 @@
     "yarn": ">=1.0.0 <2"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "^7.0.3",
     "@nuxtjs/sitemap": "^2.4.0",
-    "cookie-universal-nuxt": "^2.1.4",
-    "nuxt": "^2.15.4",
-    "nuxt-i18n": "^6.26.0",
+    "cookie-universal-nuxt": "^2.1.5",
+    "nuxt": "^2.15.8",
     "nuxt-matomo": "^1.2.4",
-    "three": "^0.129.0"
+    "three": "^0.132.2"
   },
   "devDependencies": {
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@intlify/vue-i18n-loader": "^2.1.0",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@intlify/vue-i18n-loader": "^3.0.0",
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/fontawesome": "^1.1.2",
-    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/style-resources": "^1.2.1",
     "less": "^4.1.1",
-    "less-loader": "^7.3.0",
+    "less-loader": "~7.3.0",
     "nuxt-animejs": "^1.2.1"
   }
 }

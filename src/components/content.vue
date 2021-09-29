@@ -1,20 +1,20 @@
 <template>
-    <div>
-        <main>
-            <Nuxt/>
-        </main>
-        <Cookies/>
-    </div>
+  <div>
+    <main>
+      <Nuxt/>
+    </main>
+    <Cookies/>
+  </div>
 </template>
 
 <style lang="less" scoped>
 div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: @background-light;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: @background-dark;
 }
 main {
-    flex: 1;
+  flex: 1;
 }
 </style>

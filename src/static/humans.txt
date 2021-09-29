@@ -5,6 +5,6 @@
 
 /* SITE */
 	Language: English, German
-	Standards: HTML, CSS, Less, JavaScript
+	Standards: HTML, CSS, Less, JavaScript, TypeScript
 	Components: Vue.js, Nuxt.js
 	Software: Visual Studio Code

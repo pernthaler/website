@@ -1,21 +1,22 @@
-<i18n>
+<i18n locale="en">
 {
-  "en": {
-    "title": "About Me",
+  "title": "About Me",
 
-    "skills": "Skills",
-    "programming": "Programming languages",
-    "scripting": "Scripting languages",
-    "other": "Other languages"
-  },
-  "de": {
-    "title": "Über Mich",
+  "skills": "Skills",
+  "programming": "Programming languages",
+  "scripting": "Scripting languages",
+  "other": "Other languages"
+}
+</i18n>
 
-    "skills": "Kenntnisse",
-    "programming": "Programmiersprachen",
-    "scripting": "Skriptsprachen",
-    "other": "Andere Sprachen"
-  }
+<i18n locale="de">
+{
+  "title": "Über Mich",
+
+  "skills": "Kenntnisse",
+  "programming": "Programmiersprachen",
+  "scripting": "Skriptsprachen",
+  "other": "Andere Sprachen"
 }
 </i18n>
 

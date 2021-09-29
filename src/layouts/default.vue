@@ -1,18 +1,20 @@
-<i18n>
+<i18n locale="en">
 {
-  "en": {
-    "description": "Software-Developer"
-  },
-  "de": {
-    "description": "Software-Entwickler"
-  }
+  "description": "Software-Developer"
+}
+</i18n>
+
+<i18n locale="de">
+{
+  "description": "Software-Entwickler"
 }
 </i18n>
 
 <template>
   <div>
-    <Sidebar/>
+    <Navbar/>
     <Content/>
+    <Footer/>
   </div>
 </template>
 
@@ -58,55 +60,15 @@ export default {
 </script>
 
 <style lang="less">
-html, body, #__nuxt, #__layout, #__layout > div {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  word-wrap: break-word;
-}
 #__layout > div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 main {
   flex: 1;
   padding: 10px;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: @font-header, sans-serif;
-}
-p, span, li {
-  font-family: @font-default, sans-serif;
-  text-align: justify;
-}
-a, a:visited {
-  color: @primary-light;
-  text-decoration: none;
-  &:hover {
-    color: @primary-dark;
-  }
-}
-::selection {
-  color: @primary-light;
-  background-color: @secondary-light;
-}
-*::-webkit-scrollbar {
-  width: 0.3rem;
-}
-*::-webkit-scrollbar-track {
-  background: none;
-}
-*::-webkit-scrollbar-thumb {
-  background: @secondary-light;
-  &:hover {
-    background: @secondary-dark;
-  }
-}
+
 .page-enter-active, .page-leave-active {
   transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
 }

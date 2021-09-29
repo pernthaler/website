@@ -1,13 +1,14 @@
-<i18n>
+<i18n locale="en">
 {
-  "en": {
-    "text": "This website uses cookies to ensure you get the best experience on our website. |Learn more",
-    "button": "Got it"
-  },
-  "de": {
-    "text": "Diese Webseite verwendet Cookies, um sicherzustellen, dass Sie die bestmögliche Erfahrung auf unserer Webseite machen. |Mehr erfahren",
-    "button": "Verstanden"
-  }
+  "text": "This website uses cookies to ensure you get the best experience on our website. |Learn more",
+  "button": "Got it"
+}
+</i18n>
+
+<i18n locale="de">
+{
+  "text": "Diese Webseite verwendet Cookies, um sicherzustellen, dass Sie die bestmögliche Erfahrung auf unserer Webseite machen. |Mehr erfahren",
+  "button": "Verstanden"
 }
 </i18n>
 
@@ -57,7 +58,7 @@ export default {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: @background-dark;
+  background-color: @background-light;
 
   * {
     text-align: center;

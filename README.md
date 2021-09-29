@@ -18,16 +18,15 @@ docker run -ti pernthaler/website:latest
 
 ### Manually
 
-- [Node v14](https://nodejs.org/en/download/)
-- [yarn v1](https://classic.yarnpkg.com/en/docs/install/)
+- [Node](https://nodejs.org/en/download/)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
 - [Git](https://git-scm.com/downloads)
 
 ```bash
 git clone https://github.com/Pernthaler/Website.git
 cd Website
 yarn install
-yarn build
-yarn start
+yarn dev
 ```
 
 ## License

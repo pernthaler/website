@@ -1,11 +1,12 @@
-<i18n>
+<i18n locale="en">
 {
-  "en": {
-    "subtitle": "This website is not in its final state and is constantly being improved."
-  },
-  "de": {
-    "subtitle": "Diese Website ist nicht im finalen Zustand und wird stetig verbessert."
-  }
+  "subtitle": "This website is not in its final state and is constantly being improved."
+}
+</i18n>
+
+<i18n locale="de">
+{
+  "subtitle": "Diese Website ist nicht im finalen Zustand und wird stetig verbessert."
 }
 </i18n>
 
