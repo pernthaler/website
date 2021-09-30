@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <main>
+  <div id="content">
+    <main class="container">
       <Nuxt/>
     </main>
     <Cookies/>
@@ -8,9 +8,10 @@
 </template>
 
 <style lang="less" scoped>
-div {
+#content {
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: @background-dark;
 }

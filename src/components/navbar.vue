@@ -16,17 +16,19 @@
 
 <template>
   <div id="navbar">
-    <div id="logo">
-      <nuxt-link :to="localePath('/')"><img src="~assets/img/logo.svg" alt="Logo" width="40px" height="40px"/></nuxt-link>
+    <div class="container">
+      <div id="logo">
+        <nuxt-link :to="localePath('/')"><img src="~assets/img/logo.svg" alt="Logo" width="40px" height="40px"/></nuxt-link>
+      </div>
+      <nav>
+        <ul>
+          <li><nuxt-link :to="localePath('/')"><fa-icon :icon="['fas', 'angle-right']"/> {{ $t("home") }}</nuxt-link></li>
+          <li><nuxt-link :to="localePath('about')"><fa-icon :icon="['fas', 'angle-right']"/> {{ $t("about") }}</nuxt-link></li>
+          <li><a href="https://github.com/Pernthaler/Website" target="_blank" rel="noopener"><fa-icon :icon="['fas', 'external-link-alt']"/> {{ $t("source") }}</a></li>
+          <li><a href="https://www.linkedin.com/in/pernthaler/" target="_blank" rel="noopener"><fa-icon :icon="['fas', 'external-link-alt']"/> LinkedIn</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><nuxt-link :to="localePath('/')"><fa-icon :icon="['fas', 'angle-right']"/> {{ $t("home") }}</nuxt-link></li>
-        <li><nuxt-link :to="localePath('about')"><fa-icon :icon="['fas', 'angle-right']"/> {{ $t("about") }}</nuxt-link></li>
-        <li><a href="https://github.com/Pernthaler/Website" target="_blank" rel="noopener"><fa-icon :icon="['fas', 'external-link-alt']"/> {{ $t("source") }}</a></li>
-        <li><a href="https://www.linkedin.com/in/pernthaler/" target="_blank" rel="noopener"><fa-icon :icon="['fas', 'external-link-alt']"/> LinkedIn</a></li>
-      </ul>
-    </nav>
   </div>
 </template>
 
@@ -38,6 +40,10 @@
   top: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
   display: flex;
   flex-direction: row;
   align-items: center;

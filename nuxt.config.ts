@@ -39,7 +39,13 @@ const config: NuxtConfig = {
       component: "fa",
       suffix: true,
       icons: {
-        solid: [ "faAngleRight", "faExternalLinkAlt", "faUser", "faBalanceScale", "faUserSecret" ]
+        solid: [
+          "faAngleRight",
+          "faExternalLinkAlt",
+          "faUser",
+          "faBalanceScale",
+          "faUserSecret"
+        ]
       }
     }]
   ],
