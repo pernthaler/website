@@ -1,0 +1,9 @@
+{
+  "ext": "js,ejs,css",
+  "watch": [
+    "build"
+  ],
+  "env": {
+    "MODE": "development"
+  }
+}

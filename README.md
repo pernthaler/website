@@ -6,7 +6,7 @@
 
 # <a href="https://github.com/Pernthaler/Website/blob/master/src/static/icon.png"><img src="https://github.com/Pernthaler/Website/raw/master/src/static/icon.png" alt="Logo" width="30" height="auto"></a> Website
 
-This website was created with [Vue.js](https://vuejs.org/) and is [open source](https://github.com/Pernthaler/Website).
+Software-Developer
 
 ## Deployment
 
@@ -26,7 +26,8 @@ docker run -ti pernthaler/website:latest
 git clone https://github.com/Pernthaler/Website.git
 cd Website
 yarn install
-yarn dev
+yarn build
+yarn start
 ```
 
 ## License
