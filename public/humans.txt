@@ -1,0 +1,10 @@
+/* TEAM */
+  Developer: Sebastian Pernthaler
+  Contact: sebastian@pernthaler.me
+  Location: Austria
+
+/* SITE */
+  Language: English, German
+  Standards: HTML, CSS, Less, JavaScript, TypeScript
+  Components: React.js
+  Software: Visual Studio Code

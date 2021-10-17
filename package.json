@@ -1,7 +1,7 @@
 {
   "name": "website",
-  "version": "0.8.1",
-  "description": "This website was created with Vue.js and is open source.",
+  "version": "1.0.0",
+  "description": "This website was created with Node.js and is open source.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
   "private": true,
@@ -19,34 +19,65 @@
     "url": "https://github.com/Pernthaler/Website.git"
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start"
-  },
-  "browser": {
-    "child_process": false
+    "dev:server": "webpack watch --mode=development --config=webpack.config.server.js",
+    "dev:client": "webpack watch --mode=development --config=webpack.config.client.js",
+    "dev:start": "wait-on build && wait-on build/static && nodemon --watch build build/server.js",
+    "dev:open": "wait-on http://localhost:3000 && opener http://localhost:3000",
+    "dev": "concurrently \"yarn dev:server\" \"yarn dev:client\" \"yarn dev:start\" \"yarn dev:open\"",
+    "build:server": "webpack --mode=production --config=webpack.config.server.js",
+    "build:client": "webpack --mode=production --config=webpack.config.client.js",
+    "build": "yarn build:server && yarn build:client",
+    "start": "node build/server.js"
   },
   "engines": {
     "node": ">=14.0.0",
     "yarn": ">=1.0.0 <2"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^7.0.3",
-    "@nuxtjs/sitemap": "^2.4.0",
-    "cookie-universal-nuxt": "^2.1.5",
-    "nuxt": "^2.15.8",
-    "nuxt-matomo": "^1.2.4",
-    "three": "^0.132.2"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "html-minifier": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@intlify/vue-i18n-loader": "^3.0.0",
-    "@nuxt/types": "^2.15.8",
-    "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/fontawesome": "^1.1.2",
-    "@nuxtjs/style-resources": "^1.2.1",
-    "less": "^4.1.1",
-    "less-loader": "~7.3.0",
-    "nuxt-animejs": "^1.2.1"
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.0",
+    "@types/react": "^17.0.30",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "autoprefixer": "^10.3.7",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^6.3.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.4.0",
+    "cssnano": "^5.0.8",
+    "eslint": "^8.0.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-webpack-plugin": "^3.0.1",
+    "less": "^4.1.2",
+    "less-loader": "^10.1.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "nodemon": "^2.0.13",
+    "null-loader": "^4.0.1",
+    "opener": "^1.5.2",
+    "postcss": "^8.3.9",
+    "postcss-loader": "^6.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-webpack-plugin": "^3.0.1",
+    "typescript": "^4.4.4",
+    "wait-on": "^6.0.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-manifest-plugin": "^4.0.2",
+    "webpack-node-externals": "^3.0.0"
   }
 }

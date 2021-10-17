@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="dark">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+
+    <title>Sebastian Pernthaler</title>
+    <meta name="description" content="Software-Developer">
+    <meta name="keywords" content="website, portfolio">
+    <meta name="author" content="Sebastian Pernthaler">
+
+    <meta name="og:title" content="Sebastian Pernthaler">
+    <meta name="og:site_name" content="Sebastian Pernthaler">
+    <meta name="og:description" content="Software-Developer">
+    <meta name="og:image" content="<%= domain %>/favicon.png">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="<%= url %>">
+
+    <meta name="twitter:title" content="Sebastian Pernthaler">
+    <meta name="twitter:description" content="Software-Developer">
+    <meta name="twitter:image" content="<%= domain %>/favicon.png">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="author" href="/humans.txt">
+    <link rel="stylesheet" href="<%= assets['client.css'] %>">
+  </head>
+
+  <body>
+    <div id="root"><%- component %></div>
+    <script src="<%= assets['client.js'] %>"></script>
+  </body>
+</html>
