@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This website was made with React and Express.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
