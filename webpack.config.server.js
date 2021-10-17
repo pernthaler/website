@@ -8,7 +8,7 @@ module.exports = {
   name: "server",
   target: "node",
   entry: {
-    server: path.resolve(__dirname, "src", "server", "main.tsx"),
+    server: path.resolve(__dirname, "src", "server", "main.ts"),
   },
   output: {
     path: path.resolve(__dirname, "build"),
@@ -39,7 +39,7 @@ module.exports = {
       extensions: [ "js", "jsx", "ts", "tsx" ]
     }),
     new CopyPlugin({
-      patterns: [{ context: "src/server", from: "views", to: "views" }]
+      patterns: [{ context: path.resolve(__dirname, "src", "server"), from: "views", to: "views" }]
     })
   ]
 }
