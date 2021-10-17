@@ -7,7 +7,8 @@ export default class App extends React.Component {
   background = React.createRef<HTMLDivElement>();
   addStars = () => {
     this.background.current.innerHTML = "";
-    for (let i = 0; i < 25 * (window.innerWidth / window.innerHeight); i++) {
+    const diagonal = Math.sqrt(Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2));
+    for (let i = 0; i < (0.03 * diagonal); i++) {
       const star = document.createElement("div");
       star.classList.add("star");
       star.style.top = Math.floor(Math.random() * (window.innerHeight - 1)) + "px";
