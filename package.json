@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This website was made with React and Express.",
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
@@ -19,14 +19,14 @@
     "url": "https://github.com/Pernthaler/Website.git"
   },
   "scripts": {
-    "dev:server": "webpack watch --mode=development --config=webpack.config.server.js",
     "dev:client": "webpack watch --mode=development --config=webpack.config.client.js",
-    "dev:start": "wait-on build && wait-on build/static && nodemon build/server.js",
+    "dev:server": "webpack watch --mode=development --config=webpack.config.server.js",
+    "dev:start": "wait-on build && nodemon build/server.js",
     "dev:open": "wait-on http://localhost:3000 && opener http://localhost:3000",
-    "dev": "concurrently \"yarn dev:server\" \"yarn dev:client\" \"yarn dev:start\" \"yarn dev:open\"",
-    "build:server": "webpack --mode=production --config=webpack.config.server.js",
+    "dev": "concurrently \"yarn dev:client\" \"yarn dev:server\" \"yarn dev:start\" \"yarn dev:open\"",
     "build:client": "webpack --mode=production --config=webpack.config.client.js",
-    "build": "yarn build:server && yarn build:client",
+    "build:server": "webpack --mode=production --config=webpack.config.server.js",
+    "build": "yarn build:client && yarn build:server",
     "start": "node build/server.js"
   },
   "engines": {

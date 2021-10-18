@@ -1,26 +1,10 @@
 import React from "react";
 import { FaEnvelope, FaGithub, FaLinkedin, FaXing } from "react-icons/fa";
+import Background from "./Background";
 import "./assets/less/App.less";
-import "./assets/less/Fonts.less";
+import "./assets/less/Font.less";
 
 export default class App extends React.Component {
-  background = React.createRef<HTMLDivElement>();
-  addStars = () => {
-    this.background.current.innerHTML = "";
-    const diagonal = Math.sqrt(Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2));
-    for (let i = 0; i < (0.03 * diagonal); i++) {
-      const star = document.createElement("div");
-      star.classList.add("star");
-      star.style.top = Math.floor(Math.random() * (window.innerHeight - 1)) + "px";
-      star.style.left = Math.floor(Math.random() * (window.innerWidth - 1)) + "px";
-      star.style.animationDuration = (Math.floor(Math.random() * 10) + 3) + "s";
-      this.background.current.appendChild(star);
-    }
-  }
-  componentDidMount() {
-    window.addEventListener("resize", () => this.addStars());
-    this.addStars();
-  }
   render() {
     return (
       <>
@@ -32,7 +16,7 @@ export default class App extends React.Component {
           <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pernthaler/"><FaLinkedin/> LinkedIn</a></li>
           <li><a target="_blank" rel="noreferrer" href="https://www.xing.com/profile/Sebastian_Pernthaler"><FaXing/> Xing</a></li>
         </ul>
-        <div id="background" ref={this.background}/>
+        <Background/>
         <noscript>
           <p id="noscript">All animations have been disabled.</p>
         </noscript>

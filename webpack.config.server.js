@@ -29,12 +29,17 @@ module.exports = {
       },
       {
         test: /\.(css|less)$/,
-        use: [ "null-loader" ]
+        loader: "null-loader"
       }
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: [
+        "**/*",
+        "!static/**"
+      ]
+    }),
     new ESLintPlugin({
       extensions: [ "js", "jsx", "ts", "tsx" ]
     }),
