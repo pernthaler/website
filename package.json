@@ -2,6 +2,11 @@
   "name": "website",
   "version": "1.0.6",
   "description": "This website was made with React and Express.",
+  "keywords": [
+    "react",
+    "website",
+    "express"
+  ],
   "homepage": "https://github.com/Pernthaler/Website",
   "license": "Apache-2.0",
   "private": true,
