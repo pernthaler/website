@@ -23,7 +23,7 @@ if (process.env.MODE === "development") {
 
 server.use(express.static(path.join(__dirname, "static")));
 server.get("/", (req, res) => {
-  const domain = "http" + (req.secure ? "s" : "") + "://" + req.get("host");
+  const domain = (req.get("x-forwarded-proto") || "http") + "://" + req.get("host");
   const url = domain + req.path;
   const component = ReactDOMServer.renderToString(React.createElement(App));
   const html = ejs.render(template, { assets, domain, url, component });
