@@ -1,27 +1,44 @@
 import React from "react";
 import "./assets/less/Background.less";
 
-export default class Background extends React.Component {
-  background = React.createRef<HTMLDivElement>();
-  addStars = () => {
-    this.background.current.innerHTML = "";
+type State = {
+  stars: {
+    top: string,
+    left: string,
+    animationDuration: string
+  }[]
+};
+
+export default class Background extends React.Component<unknown, State> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      stars: []
+    };
+  }
+  setStars = () => {
+    const stars = [];
     const diagonal = Math.sqrt(Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2));
     for (let i = 0; i < (0.03 * diagonal); i++) {
-      const star = document.createElement("div");
-      star.classList.add("star");
-      star.style.top = Math.floor(Math.random() * (window.innerHeight - 1)) + "px";
-      star.style.left = Math.floor(Math.random() * (window.innerWidth - 1)) + "px";
-      star.style.animationDuration = (Math.floor(Math.random() * 5) + 3) + "s";
-      this.background.current.appendChild(star);
+      stars.push({
+        top: Math.floor(Math.random() * (window.innerHeight - 1)) + "px",
+        left: Math.floor(Math.random() * (window.innerWidth - 1)) + "px",
+        animationDuration: (Math.floor(Math.random() * 5) + 3) + "s"
+      });
     }
+    this.setState({ stars });
   }
   componentDidMount() {
-    window.addEventListener("resize", () => this.addStars());
-    this.addStars();
+    window.addEventListener("resize", () => this.setStars());
+    this.setStars();
   }
   render() {
     return (
-      <div id="background" ref={this.background}/>
+      <div id="background">
+        {this.state.stars.map((style, index) => (
+          <div key={index} className="star" style={style}/>
+        ))}
+      </div>
     );
   }
 }

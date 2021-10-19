@@ -5,6 +5,6 @@
 
 /* SITE */
   Language: English, German
-  Standards: HTML, CSS, Less, JavaScript, TypeScript
-  Components: React.js
+  Standards: HTML, Handlebars, JavaScript, TypeScript, CSS, Less 
+  Components: React, Express
   Software: Visual Studio Code
