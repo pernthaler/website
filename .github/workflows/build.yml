@@ -42,8 +42,8 @@ jobs:
           push: true
           context: .
           tags: |
-            pernthaler/website:latest
             pernthaler/website:${{ env.VERSION }}
+            pernthaler/website:latest
 
       - name: Release GitHub
         uses: softprops/action-gh-release@v1

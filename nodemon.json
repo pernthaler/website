@@ -1,5 +1,5 @@
 {
-  "ext": "js,ejs,css",
+  "ext": "hbs,js,css",
   "watch": [
     "build"
   ],

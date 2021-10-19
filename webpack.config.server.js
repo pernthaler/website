@@ -44,7 +44,7 @@ module.exports = {
       extensions: [ "js", "jsx", "ts", "tsx" ]
     }),
     new CopyPlugin({
-      patterns: [{ context: path.resolve(__dirname, "src", "server"), from: "views", to: "views" }]
+      patterns: [{ context: path.resolve(__dirname, "src", "server"), from: "assets", to: "assets" }]
     })
   ]
 }

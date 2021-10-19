@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "This website was made with React and Express.",
   "keywords": [
     "react",
@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "connect-livereload": "^0.6.1",
-    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "handlebars": "^4.7.7",
     "html-minifier": "^4.0.0",
     "livereload": "^0.9.3",
     "react": "^17.0.2",

@@ -15,27 +15,27 @@
     <meta name="og:title" content="Sebastian Pernthaler">
     <meta name="og:site_name" content="Sebastian Pernthaler">
     <meta name="og:description" content="Software-Developer">
-    <meta name="og:image" content="<%= domain %>/favicon.png">
+    <meta name="og:image" content="{{domain}}/favicon.png">
     <meta name="og:type" content="website">
     <meta name="og:url" content="<%= url %>">
 
     <meta name="twitter:title" content="Sebastian Pernthaler">
     <meta name="twitter:description" content="Software-Developer">
-    <meta name="twitter:image" content="<%= domain %>/favicon.png">
+    <meta name="twitter:image" content="{{domain}}/favicon.png">
     <meta name="twitter:card" content="summary">
 
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="author" href="/humans.txt">
-    <link rel="stylesheet" href="/<%= assets['client.css'] %>">
+    <link rel="stylesheet" href="/{{assets.[client.css]}}">
 
-    <link rel="preload" href="/<%= assets['Lato-Regular.woff2'] %>" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/<%= assets['Lato-Regular.woff'] %>" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="/<%= assets['Lato-Bold.woff2'] %>" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/<%= assets['Lato-Bold.woff'] %>" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/{{assets.[Lato-Regular.woff2]}}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/{{assets.[Lato-Regular.woff]}}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/{{assets.[Lato-Bold.woff2]}}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/{{assets.[Lato-Bold.woff]}}" as="font" type="font/woff" crossorigin>
   </head>
 
   <body>
-    <div id="root"><%- component %></div>
-    <script src="/<%= assets['client.js'] %>"></script>
+    <div id="root">{{{content}}}</div>
+    <script src="/{{assets.[client.js]}}"></script>
   </body>
 </html>
