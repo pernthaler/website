@@ -10,7 +10,7 @@ module.exports = {
   name: "client",
   target: "web",
   entry: {
-    client: path.resolve(__dirname, "src", "client", "index.tsx"),
+    client: path.resolve(__dirname, "src", "client", "main.tsx"),
   },
   output: {
     path: path.resolve(__dirname, "build", "static"),

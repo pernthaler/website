@@ -8,7 +8,7 @@ module.exports = {
   name: "server",
   target: "node",
   entry: {
-    server: path.resolve(__dirname, "src", "server", "main.ts"),
+    server: path.resolve(__dirname, "src", "server", "main.tsx"),
   },
   output: {
     path: path.resolve(__dirname, "build"),
