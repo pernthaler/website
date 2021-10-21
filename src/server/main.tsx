@@ -4,6 +4,8 @@ import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { StaticRouter } from "react-router";
 import express from "express";
+import morgan from "morgan";
+import helmet from "helmet";
 import handlebars from "handlebars";
 import { minify } from "html-minifier";
 import livereload from "livereload";
@@ -21,8 +23,10 @@ if (process.env.MODE === "development") {
   reloadServer.watch(__dirname);
   reloadServer.server.once("connection", () => setTimeout(() => reloadServer.refresh("/"), 100));
   server.use(connectLivreload());
+  server.use(morgan("dev"));
 }
 
+server.use(helmet({ contentSecurityPolicy: false }));
 server.use(express.static(path.join(__dirname, "static")));
 server.get("/sitemap.xml", (req, res) => {
   const domain = getDomain(req);
