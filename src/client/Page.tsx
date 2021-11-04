@@ -1,14 +1,14 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import "./assets/less/Font.less";
-import "./assets/less/Page.less";
+import "./assets/styles/Font.less";
+import "./assets/styles/Page.less";
 
 export type Props = {
   exact?: boolean,
   path: string
 };
 
-export default class Page extends React.Component<{ children: React.ReactNode, exact?: boolean, path: string, title: string, description: string, status?: number }, unknown> {
+export default class Page extends React.Component<{ children: React.ReactNode, id?: string, exact?: boolean, path: string, title: string, description: string, status?: number }, unknown> {
   render() {
     return (
       <Route exact={this.props.exact} path={this.props.path} render={({ staticContext }) => {
@@ -17,7 +17,11 @@ export default class Page extends React.Component<{ children: React.ReactNode, e
           staticContext.description = this.props.description;
           if (this.props.status) staticContext.status = this.props.status;
         }
-        return this.props.children;
+        return (
+          <div id={this.props.id}>
+            {this.props.children}
+          </div>
+        );
       }}/>
     );
   }

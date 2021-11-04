@@ -8,7 +8,7 @@ class Plugin {
       const dir = path.join(process.cwd(), "src", "client", "pages");
       const files = glob.sync(path.join(dir, "**/*"));
 
-      let pages = [];
+      const pages = [];
       for (const file of files) {
         if (!path.basename(file).startsWith("_")) {
           pages.push("/" + path.relative(dir, file).split(".")[0].replace("index", ""));
