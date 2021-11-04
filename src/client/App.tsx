@@ -1,17 +1,17 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
 import Index from "./pages";
-import _404 from "./pages/404";
-import "./assets/less/App.less";
-import "./assets/less/Font.less";
+import Test from "./pages/test";
+import _404 from "./pages/_404";
 
 export default class App extends React.Component {
   render() {
     return (
-        <Switch>
-          <Route exact path="/" component={Index}/>
-          <Route path="*" component={_404}/>
-        </Switch>
+      <Switch>
+        <Index exact path="/"/>
+        <Test path="/test"/>
+        <_404 path="*"/>
+      </Switch>
     );
   }
 }

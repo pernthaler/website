@@ -7,20 +7,20 @@
     <meta name="color-scheme" content="dark">
     <meta name="msapplication-config" content="/browserconfig.xml">
 
-    <title>Sebastian Pernthaler</title>
-    <meta name="description" content="Software-Developer">
-    <meta name="keywords" content="website, portfolio">
+    <title>{{title}}{{#if title}} - {{/if}}Sebastian Pernthaler</title>
+    <meta name="description" content="{{description}}">
+    <meta name="keywords" content="react, website, express">
     <meta name="author" content="Sebastian Pernthaler">
 
-    <meta name="og:title" content="Sebastian Pernthaler">
+    <meta name="og:title" content="{{title}}{{#unless title}}Sebastian Pernthaler{{/unless}}">
     <meta name="og:site_name" content="Sebastian Pernthaler">
-    <meta name="og:description" content="Software-Developer">
+    <meta name="og:description" content="{{description}}">
     <meta name="og:image" content="{{domain}}/favicon.png">
     <meta name="og:type" content="website">
     <meta name="og:url" content="{{url}}">
 
-    <meta name="twitter:title" content="Sebastian Pernthaler">
-    <meta name="twitter:description" content="Software-Developer">
+    <meta name="twitter:title" content="{{title}}{{#unless title}}Sebastian Pernthaler{{/unless}}">
+    <meta name="twitter:description" content="{{description}}">
     <meta name="twitter:image" content="{{domain}}/favicon.png">
     <meta name="twitter:card" content="summary">
 

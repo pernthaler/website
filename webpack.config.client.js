@@ -46,7 +46,9 @@ module.exports = {
       filename: "styles.[contenthash].css"
     }),
     new CopyPlugin({
-      patterns: [{ from: "public", to: "." }]
+      patterns: [{
+        context: path.resolve(__dirname, "src", "client"), from: "public", to: "."
+      }]
     })
   ]
 }

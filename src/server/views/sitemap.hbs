@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>{{domain}}/</loc>
-  </url>
+  {{#each pages}}
+    <url>
+      <loc>{{../domain}}{{this}}</loc>
+    </url>
+  {{/each}}
 </urlset>
