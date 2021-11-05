@@ -1,11 +1,25 @@
 import React from "react";
 import "../assets/styles/Background.less";
 
-export default class Background extends React.Component<unknown, { time: number, stars: { x: number, y: number, z: number }[] }> {
+export default class Background extends React.Component<unknown, { time: number, width: number, height: number, stars: { x: number, y: number, z: number }[] }> {
   private canvas: React.RefObject<HTMLCanvasElement>;
-  constructor(props) {
+  constructor(props: unknown) {
     super(props);
     this.canvas = React.createRef();
+    this.state = {
+      time: 0,
+      width: 0,
+      height: 0,
+      stars: []
+    };
+  }
+  resize = () => {
+    this.setState({
+      width: document.body.clientWidth,
+      height: document.body.clientHeight
+    });
+  }
+  init = (time: number) => {
     const stars = [];
     for (let i = 0; i < 1000; i++) {
       const star = {
@@ -15,15 +29,8 @@ export default class Background extends React.Component<unknown, { time: number,
       };
       stars.push(star);
     }
-    this.state = { time: 0, stars };
-  }
-  resize = () => {
-    const canvas = this.canvas.current;
-    canvas.width = document.body.clientWidth;
-    canvas.height = document.body.clientHeight;
-  }
-  init = (time: number) => {
-    this.setState({ time });
+    this.setState({ time, stars });
+    this.resize();
     window.requestAnimationFrame(this.frame);
   }
   frame = (time: number) => {
@@ -42,8 +49,8 @@ export default class Background extends React.Component<unknown, { time: number,
 
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    const w = document.body.clientWidth;
-    const h = document.body.clientHeight;
+    const w = this.state.width;
+    const h = this.state.height;
     const wh = w / 2;
     const hh = h / 2;
 
@@ -67,13 +74,12 @@ export default class Background extends React.Component<unknown, { time: number,
     window.requestAnimationFrame(this.frame);
   }
   componentDidMount() {
-    window.addEventListener("resize", () => this.resize());
-    this.resize();
+    window.addEventListener("resize", this.resize);
     window.requestAnimationFrame(this.init);
   }
   render() {
     return (
-      <canvas id="background" ref={this.canvas}/>
+      <canvas id="background" width={this.state.width} height={this.state.height} ref={this.canvas}/>
     );
   }
 }

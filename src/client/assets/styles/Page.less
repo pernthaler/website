@@ -3,8 +3,8 @@ html, body, #root, #root > div {
   padding: 0;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100vh;
 }
 body {
   color: white;
@@ -18,6 +18,16 @@ body {
 *::selection {
   color: black;
   background: white;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
 }
 h1 {
   text-transform: uppercase;
@@ -45,7 +55,7 @@ a {
     transform: scale3d(0, 1, 1);
     transition: transform 0.3s;
   }
-  &:hover::before, &:focus::before {
+  &:hover::before, &:focus-visible:before {
     transform-origin: 0% 50%;
     transform: scale3d(1, 1, 1);
   }
