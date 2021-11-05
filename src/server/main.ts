@@ -3,7 +3,9 @@ import path from "path";
 import fs from "fs";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
-import { StaticRouter } from "react-router-dom";
+import { StaticRouter } from "react-router-dom/server";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
 import express, { Request } from "express";
 import morgan from "morgan";
 import helmet from "helmet";
@@ -12,6 +14,7 @@ import { minify } from "html-minifier";
 import livereload from "livereload";
 import connectLivreload from "connect-livereload";
 import App from "../client/App";
+import Store from "../shared/store";
 import { box } from "./console";
 
 const server = express();
@@ -40,9 +43,14 @@ server.get("/sitemap.xml", (req, res) => {
 server.get("*", (req, res) => {
   const domain = getDomain(req);
   const url = domain + req.path;
-  const meta: { title: string, description: string, status?: number } = { title: "", description: "" };
-  const content = ReactDOMServer.renderToString(React.createElement(StaticRouter, { location: req.url, context: meta }, React.createElement(App)));
-  res.status(meta.status || 200).send(minify(template({ title: meta.title, description: meta.description, manifest, domain, url, content }), { collapseWhitespace: true }));
+  const store = createStore(Store);
+  const content = ReactDOMServer.renderToString(
+    React.createElement(Provider, { store },
+      React.createElement(StaticRouter, { location: req.url }, 
+        React.createElement(App))));
+  const meta = store.getState();
+  const preloadedState = JSON.stringify(meta);
+  res.status(meta.status || 200).send(minify(template({ manifest, domain, url, content, preloadedState, title: meta.title, description: meta.description }), { collapseWhitespace: true }));
 });
 const listener = server.listen(3000, () => {
   if (dev) return;

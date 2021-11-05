@@ -1,28 +1,32 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { connect } from "react-redux";
+import { Dispatch } from "redux";
+import { Meta, setMeta } from "../shared/store";
 import "./assets/styles/Font.less";
 import "./assets/styles/Page.less";
 
-export type Props = {
-  exact?: boolean,
-  path: string
-};
-
-export default class Page extends React.Component<{ children: React.ReactNode, id?: string, exact?: boolean, path: string, title: string, description: string, status?: number }, unknown> {
+class Page extends React.Component<{ children: React.ReactNode, setMeta?: (meta: Meta) => void, id?: string, meta: Meta}, unknown> {
+  constructor(props) {
+    super(props);
+    this.props.setMeta({
+      title: this.props.meta.title,
+      description: this.props.meta.description,
+      status: this.props.meta.status
+    });
+  }
   render() {
     return (
-      <Route exact={this.props.exact} path={this.props.path} render={({ staticContext }) => {
-        if (staticContext) {
-          staticContext.title = this.props.title;
-          staticContext.description = this.props.description;
-          if (this.props.status) staticContext.status = this.props.status;
-        }
-        return (
-          <div id={this.props.id}>
-            {this.props.children}
-          </div>
-        );
-      }}/>
+      <div id={this.props.id}>
+        {this.props.children}
+      </div>
     );
   }
 }
+
+function mapDispatchToProps(dispatch: Dispatch) {
+  return {
+    setMeta: meta => dispatch(setMeta(meta))
+  };
+}
+
+export default connect(null, mapDispatchToProps)(Page);

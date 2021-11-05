@@ -1,13 +1,13 @@
 import React from "react";
 import { FaEnvelope, FaGithub, FaLinkedin, FaXing } from "react-icons/fa";
-import Page, { Props } from "../Page";
+import Page from "../Page";
 import Background from "../components/Background";
 import "../assets/styles/Index.less";
 
-export default class Index extends React.Component<Props, unknown> {
+export default class Index extends React.Component {
   render() {
     return (
-      <Page id="index" title="" description="Software-Developer" {...this.props}>
+      <Page id="index" meta={{ title: "", description: "Software-Developer" }}>
         <Background/>
         <h1>Sebastian Pernthaler</h1>
         <h2>Software-Developer</h2>
