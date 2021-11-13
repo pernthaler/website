@@ -1,11 +1,12 @@
-const path = require("path")
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const ESLintPlugin = require("eslint-webpack-plugin");
-const nodeExternals = require("webpack-node-externals");
-const CopyPlugin = require("copy-webpack-plugin");
-const Plugin = require("./src/server/plugin");
+import path from "path";
+import webpack from "webpack";
+import Plugin from "./src/server/plugin";
+import { CleanWebpackPlugin } from "clean-webpack-plugin";
+import ESLintWebpackPlugin from "eslint-webpack-plugin";
+import CopyWebpackPlugin from "copy-webpack-plugin";
+import webpackNodeExternals from "webpack-node-externals";
 
-module.exports = {
+const config: webpack.Configuration = {
   name: "server",
   target: "node",
   entry: {
@@ -18,7 +19,7 @@ module.exports = {
   resolve: {
     extensions: [ ".js", ".jsx" , ".ts", ".tsx" ],
   },
-  externals: [ nodeExternals() ],
+  externals: [ webpackNodeExternals() ],
   node: {
     __dirname: false
   },
@@ -41,12 +42,14 @@ module.exports = {
         "!static/**"
       ]
     }),
-    new ESLintPlugin({
+    new ESLintWebpackPlugin({
       extensions: [ "js", "jsx", "ts", "tsx" ]
     }),
-    new CopyPlugin({
+    new CopyWebpackPlugin({
       patterns: [{ context: path.resolve(__dirname, "src", "server"), from: "views", to: "views" }]
     }),
     new Plugin()
   ]
-}
+};
+
+export default config;

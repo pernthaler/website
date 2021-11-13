@@ -1,9 +1,10 @@
-const path = require("path");
-const fs = require("fs");
-const glob = require("glob");
+import path from "path";
+import fs from "fs";
+import glob from "glob";
+import { Compiler } from "webpack";
 
-class Plugin {
-  apply(compiler) {
+export default class Plugin {
+  apply(compiler: Compiler) {
     compiler.hooks.done.tap("Plugin", () => {
       const dir = path.join(process.cwd(), "src", "client", "pages");
       const files = glob.sync(path.join(dir, "**/*"));
@@ -19,5 +20,3 @@ class Plugin {
     });
   }
 }
-
-module.exports = Plugin;

@@ -1,12 +1,13 @@
-const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
-const ESLintPlugin = require("eslint-webpack-plugin");
-const StylelintPlugin = require("stylelint-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
+import path from "path";
+import webpack from "webpack";
+import { CleanWebpackPlugin } from "clean-webpack-plugin";
+import { WebpackManifestPlugin } from "webpack-manifest-plugin";
+import ESLintWebpackPlugin from "eslint-webpack-plugin";
+import StylelintWebpackPlugin from "stylelint-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import CopyWebpackPlugin from "copy-webpack-plugin";
 
-module.exports = {
+const config: webpack.Configuration = {
   name: "client",
   target: "web",
   entry: {
@@ -36,19 +37,21 @@ module.exports = {
     new WebpackManifestPlugin({
       publicPath: ""
     }),
-    new ESLintPlugin({
+    new ESLintWebpackPlugin({
       extensions: [ "js", "jsx", "ts", "tsx" ]
     }),
-    new StylelintPlugin({
+    new StylelintWebpackPlugin({
       extensions: [ "css", "less" ]
     }),
     new MiniCssExtractPlugin({
       filename: "styles.[contenthash].css"
     }),
-    new CopyPlugin({
+    new CopyWebpackPlugin({
       patterns: [{
         context: path.resolve(__dirname, "src", "client"), from: "public", to: "."
       }]
     })
   ]
 }
+
+export default config;
