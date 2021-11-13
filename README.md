@@ -12,18 +12,29 @@ This website was made with React and Express.
 
 ### Docker
 
-```bash
+```
 docker run -ti -p 3000:3000 pernthaler/website:latest
 ```
 
-### Manually
+### Source
 
-```bash
+```
 git clone https://github.com/Pernthaler/Website.git
 cd Website
 yarn install
 yarn build
 yarn start
+```
+
+### Bundle
+
+[![Version](https://img.shields.io/github/v/release/Pernthaler/Website?label=Version)](https://github.com/Pernthaler/Website/tags)
+
+```
+curl https://github.com/Pernthaler/Website/releases/download/vX.X.X/Website.zip -o Website.zip
+unzip Website.zip -d Website
+cd Website
+node build/server.js
 ```
 
 ## License

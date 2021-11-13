@@ -9,8 +9,9 @@ on:
       - master
 
 jobs:
-  build:
-    name: Build
+
+  bundle:
+    name: Bundle
     runs-on: ubuntu-latest
     steps:
 
@@ -22,10 +23,36 @@ jobs:
         with:
           node-version: 14
 
-      - name: Build Yarn
+      - name: Bundle Yarn
         run: |
           yarn install
           yarn build
+          yarn install --production
+          zip -r Website.zip build node_modules
+
+      - name: Get Version
+        run: echo VERSION=$(node -p "require('./package.json').version") >> $GITHUB_ENV
+
+      - name: Release GitHub
+        uses: softprops/action-gh-release@v1
+        with:
+          files: Website.zip
+          tag_name: v${{ env.VERSION }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  docker:
+    name: Docker
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout GitHub
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
 
       - name: Get Version
         run: echo VERSION=$(node -p "require('./package.json').version") >> $GITHUB_ENV
@@ -44,10 +71,3 @@ jobs:
           tags: |
             pernthaler/website:${{ env.VERSION }}
             pernthaler/website:latest
-
-      - name: Release GitHub
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: v${{ env.VERSION }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
