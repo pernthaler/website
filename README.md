@@ -31,10 +31,9 @@ yarn start
 [![Version](https://img.shields.io/github/v/release/Pernthaler/Website?label=Version)](https://github.com/Pernthaler/Website/tags)
 
 ```
-curl https://github.com/Pernthaler/Website/releases/download/vX.X.X/Website.zip -o Website.zip
+curl -LO https://github.com/Pernthaler/Website/releases/download/vX.X.X/Website.zip
 unzip Website.zip -d Website
-cd Website
-node build/server.js
+node Website/build/server.js
 ```
 
 ## License
