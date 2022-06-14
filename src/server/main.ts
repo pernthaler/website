@@ -14,7 +14,7 @@ import { minify } from "html-minifier";
 import livereload from "livereload";
 import connectLivreload from "connect-livereload";
 import App from "../client/App";
-import Store from "../shared/store";
+import Store from "../common/store";
 import { box } from "./console";
 import { Meta } from "./plugin";
 

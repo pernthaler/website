@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
-import { Meta, setMeta } from "../shared/store";
+import { Meta, setMeta } from "../common/store";
 import "./assets/styles/Font.less";
 import "./assets/styles/Page.less";
 

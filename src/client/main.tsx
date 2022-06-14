@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import App from "./App";
-import Store from "../shared/store";
+import Store from "../common/store";
 
 const store = createStore(Store, window["__PRELOADED_STATE__"]);
 delete window["__PRELOADED_STATE__"];

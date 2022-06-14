@@ -4,7 +4,7 @@
   Location: Austria
 
 /* SITE */
-  Language: English, German
-  Standards: HTML, Handlebars, JavaScript, TypeScript, CSS, Less
+  Language: English
+  Standards: Handlebars, TypeScript, Less
   Components: React, Express
   Software: Visual Studio Code
