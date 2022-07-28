@@ -2,6 +2,16 @@
 
 ## Deploy
 
+### Java
+
+[Releases](https://github.com/Pernthaler/Website/releases)
+
+### Docker
+
+```bash
+$ docker run -ti -p 8080:8080 pernthaler/website:latest
+```
+
 ## Build
 
 ```bash
