@@ -1,0 +1,8 @@
+.nuxt
+.output
+.yarn
+build
+dist
+node
+node_modules
+.yarnrc.yml
