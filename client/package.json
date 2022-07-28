@@ -5,6 +5,7 @@
     "build": "nuxt generate"
   },
   "devDependencies": {
+    "less": "^4.1.3",
     "nuxt": "3.0.0-rc.6"
   },
   "packageManager": "yarn@1.22.19"
