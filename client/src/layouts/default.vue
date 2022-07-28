@@ -16,11 +16,11 @@ useHead({
     { name: "author",       content: "Sebastian Pernthaler" },
 
     { name: "og:title",       content: "Sebastian Pernthaler" },
-    { name: "og:site_name",   content: "Sebastian Pernthale" },
+    { name: "og:site_name",   content: "Sebastian Pernthaler" },
     { name: "og:description", content: "Software-Developer" },
     { name: "og:image",       content: "https://sebastian.pernthaler.me/favicon.png" },
     { name: "og:type",        content: "website" },
-    { name: "og:url",         content: "https://sebastian.pernthaler.me/" },
+    { name: "og:url",         content: "https://sebastian.pernthaler.me" },
 
     { name: "twitter:title",        content: "Sebastian Pernthaler" },
     { name: "twitter:description",  content: "Software-Developer" },
