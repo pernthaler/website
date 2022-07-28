@@ -275,6 +275,11 @@
   dependencies:
     mime "^3.0.0"
 
+"@fontsource/noto-mono@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-mono/-/noto-mono-4.5.3.tgz#d00c143dd7d92415a51716c6153b9755000fad4d"
+  integrity sha512-d6xHqBCkkZZk+8Sq4MahON+TDOHpeNP76woozj52VVSmaVa1dgzdZAsSXREUgmCnOLjVaDb5SLI3WkUDQJhqmg==
+
 "@ioredis/commands@^1.1.1":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ioredis/commands/-/commands-1.2.0.tgz#6d61b3097470af1fdbbe622795b8921d42018e11"

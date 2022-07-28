@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import "@fontsource/noto-mono";
+
 useHead({
   title: "Sebastian Pernthaler",
   htmlAttrs: {
@@ -46,5 +48,6 @@ body {
   margin: 0;
   color: white;
   background-color: black;
+  font-family: "Noto Mono", monospace;
 }
 </style>
