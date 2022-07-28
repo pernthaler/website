@@ -1,0 +1,33 @@
+plugins {
+    id "java"
+    id "org.siouan.frontend-jdk11" version "6.0.0"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+jar {
+    dependsOn "assembleFrontend"
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir ".output"
+        }
+    }
+}
+
+frontend {
+    nodeVersion = "16.16.0"
+    yarnEnabled = true
+    yarnVersion = "1.22.19"
+    installScript = "install"
+    assembleScript = "build"
+}
+
+clean {
+    delete "dist", ".nuxt", ".output", ".yarn", "node", "node_modules", ".yarnrc.yml"
+}

@@ -1,9 +1,0 @@
-{
-  "ext": "hbs,js,css",
-  "watch": [
-    "build"
-  ],
-  "env": {
-    "MODE": "development"
-  }
-}

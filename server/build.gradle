@@ -1,0 +1,19 @@
+plugins {
+    id "java"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":client")
+    implementation group: "org.eclipse.jetty", name: "jetty-server", version: "11.0.11"
+    implementation group: 'org.eclipse.jetty', name: 'jetty-webapp', version: '11.0.11'
+    implementation group: "org.slf4j", name: "slf4j-simple", version: "2.0.0-alpha7"
+}
