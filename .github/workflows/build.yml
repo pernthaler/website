@@ -18,51 +18,29 @@ jobs:
         distribution: temurin
         java-version: 17
 
-    - name: Gradle
-      run: chmod +x gradlew
-
     - name: Build
-      run: ./gradlew build
-
-    - name: Version
-      run: echo VERSION=$(./gradlew -q properties | grep 'version:' | cut -d ' ' -f 2) >> $GITHUB_ENV
+      run: |
+        chmod +x gradlew
+        ./gradlew build
+        echo VERSION=$(./gradlew -q properties | grep 'version:' | cut -d ' ' -f 2) >> $GITHUB_ENV
 
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
         files: server/build/libs/*.jar
         tag_name: v${{ env.VERSION }}
+        fail_on_unmatched_files: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  docker:
-    name: Docker
-    runs-on: ubuntu-latest
-    steps:
-
-    - name: Checkout GitHub
-      uses: actions/checkout@v3
-
-    - name: Java
-      uses: actions/setup-java@v3
-      with:
-        distribution: temurin
-        java-version: 17
-
-    - name: Gradle
-      run: chmod +x gradlew
-
-    - name: Version
-      run: echo VERSION=$(./gradlew -q properties | grep 'version:' | cut -d ' ' -f 2) >> $GITHUB_ENV
-
     - name: Login
-      uses: docker/login-action@v1
+      uses: docker/login-action@v2
       with:
         username: pernthaler
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Push
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v3
       with:
         push: true
         context: .
