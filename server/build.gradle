@@ -2,9 +2,18 @@ plugins {
     id "java"
 }
 
+group "me.pernthaler.sebastian"
+
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
+}
+
+jar {
+    archiveFileName = "${rootProject.name.toLowerCase()}.jar"
+    duplicatesStrategy = "exclude"
+    manifest.attributes "Main-Class": "${project.group}.${rootProject.name.toLowerCase()}.Main"
+    from { configurations.compileClasspath.filter{ it.exists() }.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
 repositories {

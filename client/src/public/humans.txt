@@ -1,0 +1,9 @@
+/* TEAM */
+  Developer: Sebastian Pernthaler
+  Contact: sebastian@pernthaler.me
+  Location: Austria
+
+/* SITE */
+  Language: English
+  Standards: HTML, CSS, JavaScript
+  Components: Vue, Java
