@@ -8,8 +8,6 @@ useHead({
     lang: "en"
   },
   meta: [
-    { charset: "utf-8" },
-    { name: "viewport",             content: "width=device-width, initial-scale=1" },
     { name: "theme-color",          content: "#ffffff" },
     { name: "color-scheme",         content: "dark" },
     { name: "msapplication-config", content: "/browserconfig.xml" },
