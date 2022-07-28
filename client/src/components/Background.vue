@@ -10,6 +10,7 @@ const stars = ref<{ x: number, y: number, z: number }[]>([]);
 function frame(t: number) {
   const context = canvas.value.getContext("2d");
   const elapsed = t - time.value;
+
   for (const star of stars.value) {
     star.z -= elapsed * 0.1;
     while (star.z <= 1) {
@@ -18,10 +19,12 @@ function frame(t: number) {
   }
   time.value = t;
   context.clearRect(0, 0, canvas.value.width, canvas.value.height);
+
   const w = width.value;
   const h = height.value;
   const wh = w / 2;
   const hh = h / 2;
+
   for (const star of stars.value) {
     const x = wh + star.x / (star.z * 0.001);
     const y = hh + star.y / (star.z * 0.001);
@@ -29,12 +32,11 @@ function frame(t: number) {
       continue;
     }
     const d = star.z / 1000;
-    const b = 1 - d * d;
-    const intensity = b * 255;
-    const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
-    context.fillStyle = rgb;
+    const i = (1 - d * d) * 255;
+    context.fillStyle = `rgb(${i}, ${i}, ${i})`;
     context.fillRect(x, y, 2, 2);
   }
+
   window.requestAnimationFrame(frame);
 }
 
