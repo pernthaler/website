@@ -4,10 +4,10 @@
     <h1>Sebastian Pernthaler</h1>
     <h2>Software-Developer</h2>
     <ul>
-      <li><a href="mailto:sebastian@pernthaler.me">Contact</a></li>
-      <li><a target="_blank" ref="noopener noreferrer" href="https://github.com/Pernthaler/Website">Source Code</a></li>
-      <li><a target="_blank" ref="noopener noreferrer" href="https://www.xing.com/profile/Sebastian_Pernthaler">Xing</a></li>
-      <li><a target="_blank" ref="noopener noreferrer" href="https://www.linkedin.com/in/pernthaler/">LinkedIn</a></li>
+      <li><a href="mailto:sebastian@pernthaler.me"><FontAwesomeIcon icon="fa-solid fa-envelope"/> Contact</a></li>
+      <li><a target="_blank" ref="noopener noreferrer" href="https://github.com/Pernthaler/Website"><FontAwesomeIcon icon="fa-brands fa-github"/> Source Code</a></li>
+      <li><a target="_blank" ref="noopener noreferrer" href="https://www.xing.com/profile/Sebastian_Pernthaler"><FontAwesomeIcon icon="fa-brands fa-xing"/> Xing</a></li>
+      <li><a target="_blank" ref="noopener noreferrer" href="https://www.linkedin.com/in/pernthaler/"><FontAwesomeIcon icon="fa-brands fa-linkedin"/> LinkedIn</a></li>
     </ul>
   </div>
 </template>
@@ -19,10 +19,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 50px;
   text-align: center;
 }
 
 h1, h2 {
+  margin: 0;
   text-shadow: 0 0 5px white;
 }
 h1 {
@@ -37,7 +39,7 @@ ul {
   padding: 0;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   list-style-type: none;
 }
 

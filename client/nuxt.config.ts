@@ -1,5 +1,8 @@
 import { defineNuxtConfig } from "nuxt";
 
 export default defineNuxtConfig({
-    srcDir: "src"
+    srcDir: "src",
+    css: [
+        "@fortawesome/fontawesome-svg-core/styles.css"
+    ]
 });
