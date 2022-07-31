@@ -1,0 +1,18 @@
+stages:
+  - build
+  - docker
+
+build:
+  stage: build
+  image: opoenjdk:17-slim
+  script:
+    - chmod +x gradlew
+    - ./gradlew build
+
+docker:
+  stage: docker
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker restart Pernthaler
