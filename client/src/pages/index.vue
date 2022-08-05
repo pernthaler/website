@@ -1,80 +1,30 @@
 <template>
-  <div id="container">
-    <Background/>
-    <h1>Sebastian Pernthaler</h1>
-    <h2>Software-Developer</h2>
-    <ul>
-      <li><a href="mailto:sebastian@pernthaler.me"><span><FontAwesomeIcon icon="fa-solid fa-envelope"/></span> Contact</a></li>
-      <li><a target="_blank" ref="noopener noreferrer" href="https://github.com/Pernthaler/Website"><span><FontAwesomeIcon icon="fa-brands fa-github"/></span> Source Code</a></li>
-      <li><a target="_blank" ref="noopener noreferrer" href="https://www.xing.com/profile/Sebastian_Pernthaler"><span><FontAwesomeIcon icon="fa-brands fa-xing"/></span> Xing</a></li>
-      <li><a target="_blank" ref="noopener noreferrer" href="https://www.linkedin.com/in/pernthaler/"><span><FontAwesomeIcon icon="fa-brands fa-linkedin"/></span> LinkedIn</a></li>
-    </ul>
-  </div>
+    <div id="container" class="h-full flex flex-col justify-center items-center gap-10 text-center">
+        <Background/>
+        <h1 class="text-3xl font-bold uppercase word-spacing-full sm:word-spacing-normal">Sebastian Pernthaler</h1>
+        <h2 class="text-xl">Software-Developer</h2>
+        <ul class="flex flex-col sm:flex-row gap-5">
+            <li><Link text="Contact" icon="fa-solid fa-envelope" link="mailto:sebastian@pernthaler.me"/></li>
+            <li><Link text="GitHub" icon="fa-brands fa-github" link="https://github.com/Pernthaler/Website"/></li>
+            <li><Link text="Xing" icon="fa-brands fa-xing" link="https://www.xing.com/profile/Sebastian_Pernthaler"/></li>
+            <li><Link text="LinkedIn" icon="fa-brands fa-linkedin" link="https://www.linkedin.com/in/pernthaler/"/></li>
+        </ul>
+    </div>
 </template>
 
 <style scoped lang="less">
-#container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  text-align: center;
+@tailwind utilities;
+
+@layer utilities {
+  .word-spacing-normal {
+    word-spacing: normal;
+  }
+  .word-spacing-full {
+    word-spacing: 100vw;
+  }
 }
 
 h1, h2 {
-  margin: 0;
   text-shadow: 0 0 5px white;
-}
-h1 {
-  text-transform: uppercase;
-}
-h2 {
-  font-weight: normal;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  list-style-type: none;
-}
-
-a {
-  color: gray;
-  outline: none;
-  text-decoration: none;
-  position: relative;
-
-  &::before, &::after {
-    background: gray;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-  }
-  &::before {
-    content: "";
-    transform-origin: 100% 50%;
-    transform: scale3d(0, 1, 1);
-    transition: transform 0.3s;
-  }
-  &:hover::before, &:focus-visible:before {
-    transform-origin: 0 50%;
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    word-spacing: 100vw;
-  }
-  ul {
-    flex-direction: column;
-  }
 }
 </style>
