@@ -27,6 +27,7 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
+        draft: false
         files: server/build/libs/*.jar
         tag_name: v${{ env.VERSION }}
         fail_on_unmatched_files: true
