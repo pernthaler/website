@@ -63,5 +63,5 @@ onMounted(() => {
 </script>
 
 <template>
-    <canvas ref="canvas" :width="width" :height="height" class="absolute -z-10"/>
+    <canvas ref="canvas" :width="width" :height="height" class="absolute -z-1"/>
 </template>

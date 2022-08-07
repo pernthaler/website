@@ -6,7 +6,10 @@ import Link from "./components/Link.vue";
 <template>
     <div id="container" class="h-full flex flex-col justify-center items-center gap-10 text-center">
         <Background/>
-        <h1 class="text-3xl font-bold uppercase word-spacing-full sm:word-spacing-normal">Sebastian Pernthaler</h1>
+        <h1 class="flex flex-col sm:flex-row gap-x-3 text-3xl font-bold uppercase">
+            <span>Sebastian</span>
+            <span>Pernthaler</span>
+        </h1>
         <h2 class="text-xl">Software-Developer</h2>
         <ul class="flex flex-col sm:flex-row gap-5">
             <li><Link text="Contact" icon="carbon:email" link="mailto:sebastian@pernthaler.me"/></li>
@@ -17,20 +20,7 @@ import Link from "./components/Link.vue";
     </div>
 </template>
 
-<style>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer utilities {
-    .word-spacing-normal {
-        word-spacing: normal;
-    }
-    .word-spacing-full {
-        word-spacing: 100vw;
-    }
-}
-
+<style lang="less">
 html, body, #app {
     height: 100%;
 }

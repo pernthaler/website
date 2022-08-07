@@ -1,5 +1,5 @@
 import { ViteSSG } from "vite-ssg/single-page";
-// @ts-ignore
-import App from "./App.vue"
+import "virtual:windi.css";
+import App from "./App.vue";
 
-export const createApp = ViteSSG(App)
+export const createApp = ViteSSG(App);
