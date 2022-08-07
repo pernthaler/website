@@ -2,7 +2,7 @@ plugins {
     id "base"
 }
 
-version = "2.2.2"
+version = "2.2.3"
 
 clean {
     dependsOn ":client:clean", ":server:clean"
