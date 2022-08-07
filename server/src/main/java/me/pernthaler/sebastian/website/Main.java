@@ -9,9 +9,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
         var server = new Server(8080);
         var webAppContext = new WebAppContext();
-        var resourceBase = Objects.requireNonNull(Main.class.getClassLoader().getResource("public")).toExternalForm();
+        var resourceBase = Objects.requireNonNull(Main.class.getClassLoader().getResource("static")).toExternalForm();
         webAppContext.setResourceBase(resourceBase);
-        webAppContext.getMimeTypes().addMimeMapping("mjs", "application/javascript");
         server.setHandler(webAppContext);
         server.start();
         server.join();

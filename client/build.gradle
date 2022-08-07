@@ -15,7 +15,7 @@ jar {
 sourceSets {
     main {
         resources {
-            srcDir ".output"
+            srcDir "dist"
         }
     }
 }
@@ -29,5 +29,5 @@ frontend {
 }
 
 clean {
-    delete "dist", ".nuxt", ".output", ".yarn", "node", "node_modules", ".yarnrc.yml"
+    delete ".yarn", "dist", "node", "node_modules", ".yarnrc.yml"
 }
