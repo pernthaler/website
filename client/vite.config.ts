@@ -14,5 +14,9 @@ export default defineConfig({
     },
     build: {
         outDir: join("dist", "static")
+    },
+    // @ts-ignore
+    ssgOptions: {
+        formatting: "minify"
     }
 });
