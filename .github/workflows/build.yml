@@ -40,10 +40,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    docker:
-      name: Docker
-      runs-on: linux-latest
-      steps:
+  docker:
+    name: Docker
+    runs-on: linux-latest
+    steps:
 
       - name: Checkout
         uses: actions/checkout@v3
