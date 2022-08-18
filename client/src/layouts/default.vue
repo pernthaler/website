@@ -3,24 +3,38 @@ import Background from "../components/Background.vue";
 </script>
 
 <template>
-    <div id="container" class="h-full flex flex-col justify-center items-center gap-10 text-center">
+    <div class="h-full flex flex-col justify-center items-center gap-10 text-center">
         <Background/>
         <RouterView/>
     </div>
 </template>
 
 <style lang="stylus">
+* {
+    font-family: "Noto Mono", monospace;
+    
+    &::selection {
+        @apply bg-white text-black;
+    }
+}
+
 html, body, #app {
-  height: 100%;
+    @apply h-full;
 }
 
 body {
-  color: white;
-  background-color: black;
-  font-family: "Noto Mono", monospace;
+    @apply bg-black text-white;
 }
 
 h1, h2 {
-  text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px white;
+}
+
+::-webkit-scrollbar {
+    @apply w-1;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-white rounded;
 }
 </style>

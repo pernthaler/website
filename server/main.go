@@ -19,7 +19,7 @@ func main() {
 	app := &cli.App{
 		Name:    "website",
 		Usage:   "Website",
-		Version: "2.3.2",
+		Version: "2.3.3",
 		Action:  Execute,
 	}
 
