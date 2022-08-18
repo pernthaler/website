@@ -8,7 +8,7 @@
 
 ## Deploy
 
-### Java
+### Bin
 
 [Releases](https://github.com/Pernthaler/Website/releases)
 
@@ -23,8 +23,7 @@ $ docker run -ti -p 8080:8080 pernthaler/website:latest
 ```bash
 $ git clone https://github.com/Pernthaler/Website.git
 $ cd Website
-$ chmod +x gradlew
-$ ./gradlew build
+$ make
 ```
 
 ## License
