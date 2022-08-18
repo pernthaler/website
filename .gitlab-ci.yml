@@ -5,8 +5,9 @@ stages:
 
 client:
   stage: client
-  image: node:lts
+  image: node:lts-slim
   script:
+    - npm install -g pnpm
     - make client
 
 server:
