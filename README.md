@@ -6,13 +6,12 @@
     <a href="https://github.com/Pernthaler/Website/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Pernthaler/Website?label=License"></a>
 </div>
 
-## Deploy
 
-### Bin
+## Windows
 
 [Releases](https://github.com/Pernthaler/Website/releases)
 
-### Docker
+## Docker
 
 ```bash
 $ docker run -ti -p 8080:8080 pernthaler/website:latest
