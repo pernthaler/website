@@ -2,4 +2,4 @@
 
 package console
 
-func SetConsoleTitle(title string)
+func SetConsoleTitle(title string) {}

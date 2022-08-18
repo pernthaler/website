@@ -1,20 +1,17 @@
-.ONESHELL:
 .PHONY: all client server clean
 
 all: client server
 
 client:
-	cd client
-	pnpm install
-	pnpm build
+	cd client && pnpm install
+	cd client && pnpm build
 
 server:
-	cd server
 ifeq ($(OS), Windows_NT)
-	windres -o resource.syso assets/resource.rc
-	go build -o Website.exe
+	cd server && windres -o resource.syso assets/resource.rc
+	cd server && go build -o Website.exe
 else
-	go build -o website
+	cd server && go build -o website
 endif
 
 clean:
