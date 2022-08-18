@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from "vue";
 import { Icon } from "@iconify/vue";
 
 defineProps<{
@@ -16,10 +15,10 @@ defineProps<{
     </a>
 </template>
 
-<style scoped lang="less">
+<style scoped lang="stylus">
 .animation {
   &:after {
-    @apply bg-neutral-500;
+    @apply bg-gray-500;
     content: "";
     position: absolute;
     width: 100%;

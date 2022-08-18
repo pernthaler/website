@@ -15,6 +15,20 @@ import (
 //go:embed dist/*
 var dist embed.FS
 
+func main() {
+	app := &cli.App{
+		Name:    "website",
+		Usage:   "Website",
+		Version: "2.3.1",
+		Action:  Execute,
+	}
+
+	err := app.Run(os.Args)
+	if err != nil {
+		fmt.Println(err)
+	}
+}
+
 func Execute(*cli.Context) error {
 	fsys, _ := fs.Sub(dist, "dist")
 	fs := http.FileServer(http.FS(fsys))
@@ -30,18 +44,4 @@ func Execute(*cli.Context) error {
 		return err
 	}
 	return nil
-}
-
-func main() {
-	app := &cli.App{
-		Name:    "website",
-		Usage:   "Website",
-		Version: "2.3.0",
-		Action:  Execute,
-	}
-
-	err := app.Run(os.Args)
-	if err != nil {
-		fmt.Println(err)
-	}
 }

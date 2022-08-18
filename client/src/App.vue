@@ -20,7 +20,7 @@ import Link from "./components/Link.vue";
     </div>
 </template>
 
-<style lang="less">
+<style lang="stylus">
 html, body, #app {
     height: 100%;
 }

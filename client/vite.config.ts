@@ -14,7 +14,8 @@ export default defineConfig({
         host: "0.0.0.0"
     },
     build: {
-        outDir: join("..", "server", "dist")
+        outDir: join("..", "server", "dist"),
+        emptyOutDir: true
     },
     // @ts-ignore
     ssgOptions: {
