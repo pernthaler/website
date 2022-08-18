@@ -8,8 +8,8 @@ const height = ref<number>();
 const stars = ref<{ x: number, y: number, z: number }[]>([]);
 
 function frame(t: number) {
-    const context = canvas.value.getContext("2d");
-    const elapsed = t - time.value;
+    const context = canvas.value?.getContext("2d")!;
+    const elapsed = t - time.value!;
 
     for (const star of stars.value) {
         star.z -= elapsed * 0.1;
@@ -18,10 +18,10 @@ function frame(t: number) {
         }
     }
     time.value = t;
-    context.clearRect(0, 0, canvas.value.width, canvas.value.height);
+    context.clearRect(0, 0, canvas.value!.width, canvas.value!.height);
 
-    const w = width.value;
-    const h = height.value;
+    const w = width.value!;
+    const h = height.value!;
     const wh = w / 2;
     const hh = h / 2;
 
