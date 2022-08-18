@@ -1,13 +1,19 @@
 stages:
-  - build
+  - client
+  - server
   - docker
 
-build:
-  stage: build
-  image: openjdk:17-slim
+client:
+  stage: client
+  image: node:lts-slim
   script:
-    - chmod +x gradlew
-    - ./gradlew build
+    - make client
+
+server:
+  stage: server
+  image: golang:latest
+  script:
+    - make server
 
 docker:
   stage: docker

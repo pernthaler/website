@@ -1,5 +1,5 @@
-FROM openjdk:17-slim
+FROM debian:stable-slim
 EXPOSE 8080
 WORKDIR /website
-COPY server/build/libs/website.jar .
-ENTRYPOINT [ "java", "-jar", "website.jar" ]
+COPY server/website .
+ENTRYPOINT [ "website" ]

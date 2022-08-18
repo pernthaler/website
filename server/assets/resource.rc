@@ -1,0 +1,19 @@
+0 ICON "icon.ico"
+
+1 VERSIONINFO
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "ProductName",        "Website"
+            VALUE "CompanyName",        "Sebastian Pernthaler"
+            VALUE "LegalCopyright",     "Copyright 2021 Sebastian Pernthaler"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0, 0
+    END
+END

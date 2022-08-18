@@ -10,10 +10,11 @@ export default defineConfig({
         WindiCSS()
     ],
     server: {
-      host: "0.0.0.0"
+        port: 8080,
+        host: "0.0.0.0"
     },
     build: {
-        outDir: join("dist", "static")
+        outDir: join("..", "server", "dist")
     },
     // @ts-ignore
     ssgOptions: {

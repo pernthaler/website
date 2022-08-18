@@ -4,34 +4,62 @@ on: workflow_dispatch
 
 jobs:
 
-  build:
-    name: Build
-    runs-on: ubuntu-latest
+  github:
+    name: GitHub
+    runs-on: windows-latest
     steps:
 
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Java
-      uses: actions/setup-java@v3
+    - name: Node
+      uses: actions/setup-node@v3
       with:
-        distribution: temurin
-        java-version: 17
+        node-version: 16
+        
+    - name: Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: 1.19
+        check-latest: true
 
     - name: Build
       run: |
-        chmod +x gradlew
-        ./gradlew build
-        echo VERSION=$(./gradlew -q properties | grep 'version:' | cut -d ' ' -f 2) >> $GITHUB_ENV
+        make
+        echo VERSION=$(./server/Website.exe -v | cut -d ' ' -f 3) | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: server/build/libs/*.jar
+        files: server/Website.exe
         tag_name: v${{ env.VERSION }}
         fail_on_unmatched_files: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  docker:
+    name: Docker
+    runs-on: linux-latest
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        
+    - name: Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: 1.19
+        check-latest: true
+
+    - name: Build
+      run: |
+        make
+        echo VERSION=$(./server/website -v | cut -d ' ' -f 3) >> $GITHUB_ENV
 
     - name: Login
       uses: docker/login-action@v2

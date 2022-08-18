@@ -1,9 +1,0 @@
-plugins {
-    id "base"
-}
-
-version = "2.2.6"
-
-clean {
-    dependsOn ":client:clean", ":server:clean"
-}
