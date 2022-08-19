@@ -19,7 +19,7 @@ func main() {
 	app := &cli.App{
 		Name:    "website",
 		Usage:   "Website",
-		Version: "2.3.4",
+		Version: "2.3.5",
 		Action:  Execute,
 	}
 
@@ -35,7 +35,7 @@ func Execute(*cli.Context) error {
 	http.Handle("/", fs)
 
 	console.SetConsoleTitle("Website")
-	figure.NewFigure("Website", "doom", true).Print()
+	figure.NewFigure("Website", "colossal", true).Print()
 	fmt.Println()
 	fmt.Println("Listening at :8080")
 

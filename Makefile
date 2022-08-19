@@ -1,4 +1,4 @@
-.PHONY: all client server clean
+.PHONY: all client server client-dev server-dev clean
 
 all: client server
 
@@ -13,6 +13,13 @@ ifeq ($(OS), Windows_NT)
 else
 	cd server && go build -o website
 endif
+
+client-dev:
+	cd client && pnpm install
+	cd client && pnpm dev
+
+server-dev:
+	cd server && go run main.go
 
 clean:
 ifeq ($(OS), Windows_NT)

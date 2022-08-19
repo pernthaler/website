@@ -9,7 +9,7 @@ import Background from "../components/Background.vue";
     </div>
 </template>
 
-<style lang="stylus">
+<style lang="less">
 * {
     font-family: "Noto Mono", monospace;
     
