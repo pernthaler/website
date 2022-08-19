@@ -6,4 +6,4 @@
 /* SITE */
   Language: English
   Standards: HTML, CSS, JavaScript
-  Components: Vue, Java
+  Components: Vue, Go
