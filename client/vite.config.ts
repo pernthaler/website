@@ -14,6 +14,11 @@ export default defineConfig({
         Layouts(),
         WindiCSS()
     ],
+    resolve: {
+        alias: {
+            "@": path.resolve("src")
+        }
+    },
     server: {
         port: 8080,
         host: "0.0.0.0"
