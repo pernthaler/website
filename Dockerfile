@@ -1,5 +1,4 @@
-FROM debian:stable-slim
+FROM scratch
 EXPOSE 8080
-WORKDIR /website
-COPY server/website .
-ENTRYPOINT [ "website" ]
+COPY server/website /
+ENTRYPOINT [ "/website" ]
