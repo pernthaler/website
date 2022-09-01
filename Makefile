@@ -21,6 +21,9 @@ client-dev:
 server-dev:
 	cd server && go run main.go
 
+docker:
+	docker-compose up --build
+
 clean:
 ifeq ($(OS), Windows_NT)
 	if exist client\node_modules	( rmdir /s /q client\node_modules	)
