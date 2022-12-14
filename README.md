@@ -1,30 +1,29 @@
 <div align="center">
-    <a href="https://github.com/Pernthaler/Website/blob/master/client/src/public/favicon.png"><img src="https://github.com/Pernthaler/Website/raw/master/client/src/public/favicon.png" alt="Logo" width="150" height="auto"></a>
+    <a href="https://github.com/pernthaler/website/blob/master/web/static/favicon.png"><img src="https://github.com/pernthaler/website/raw/master/web/static/favicon.png" alt="Logo" width="150" height="auto"></a>
     <h1>Website</h1>
-    <a href="https://github.com/Pernthaler/Website/tags"><img alt="Version" src="https://img.shields.io/github/v/release/Pernthaler/Website?label=Version"></a>
-    <a href="https://github.com/Pernthaler/Website/actions/workflows/build.yml"><img alt="Build" src="https://github.com/Pernthaler/Website/actions/workflows/build.yml/badge.svg"></a>
-    <a href="https://github.com/Pernthaler/Website/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Pernthaler/Website?label=License"></a>
+    <a href="https://github.com/pernthaler/website/tags"><img alt="Version" src="https://img.shields.io/github/v/release/pernthaler/website?label=Version"></a>
+    <a href="https://github.com/pernthaler/website/actions/workflows/build.yml"><img alt="Build" src="https://github.com/pernthaler/website/actions/workflows/build.yml/badge.svg"></a>
+    <a href="https://github.com/pernthaler/website/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/pernthaler/website?label=License"></a>
 </div>
-
 
 ## Windows
 
-[Releases](https://github.com/Pernthaler/Website/releases)
+[Releases](https://github.com/pernthaler/website/releases)
 
 ## Docker
 
 ```bash
-$ docker run -ti -p 8080:8080 pernthaler/website:latest
+$ docker run -ti -p 8080:8080 pernthaler/website:latest -nogui
 ```
 
 ## Build
 
 ```bash
-$ git clone https://github.com/Pernthaler/Website.git
-$ cd Website
+$ git clone https://github.com/pernthaler/website.git
+$ cd website
 $ make
 ```
 
 ## License
 
-[Apache License 2.0](https://github.com/Pernthaler/Website/blob/master/LICENSE)
+[Apache License 2.0](https://github.com/pernthaler/website/blob/master/LICENSE)

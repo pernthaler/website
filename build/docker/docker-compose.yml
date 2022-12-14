@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  website:
+    image: golang:latest
+    working_dir: /src
+    command: make
+    volumes:
+      - ../../:/src

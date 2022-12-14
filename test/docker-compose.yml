@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  website:
+    build:
+      context: ../
+      dockerfile: build/docker/Dockerfile
+    command: -nogui
+    ports:
+      - 8080:8080
