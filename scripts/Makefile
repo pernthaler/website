@@ -3,16 +3,16 @@
 all: clean build
 
 build:
-ifeq ($(OS),Windows_NT)
+ifeq ($(OS), Windows_NT)
 	if not exist bin ( mkdir bin )
 #	TODO
-	windres -o resource.syso build/windows/resource.rc
+	windres -o bin/resource.syso build/windows/resource.rc
 	go build -tags desktop,production -ldflags "-w -s -H windowsgui" -o bin/website.exe cmd/website/main.go
 	upx --best --lzma bin/website.exe
 else
 	mkdir -p bin
 	go build -tags desktop,production -ldflags "-w -s" -o bin/website cmd/website/main.go
-ifeq ($(UNAME_S),Linux)
+ifneq ($(UNAME_S), Darwin)
 #	TODO
 #	https://github.com/upx/upx/issues/612
 #	https://github.com/upx/upx/issues/601
@@ -31,4 +31,8 @@ test:
 	docker-compose -f test/docker-compose.yml up --build
 
 clean:
+ifeq ($(OS), Windows_NT)
+	if exist bin ( rmdir /s /q bin)
+else
 	if [ -d bin ]; then rm -r bin; fi
+endif
