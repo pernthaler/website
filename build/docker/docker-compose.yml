@@ -3,7 +3,7 @@ version: "3.9"
 services:
   website:
     image: golang:latest
-    working_dir: /src
+    working_dir: /website
     command: make
     volumes:
-      - ../../:/src
+      - ../../:/website
