@@ -5,7 +5,6 @@ go 1.19
 require (
 	github.com/gofiber/fiber/v2 v2.40.1
 	github.com/urfave/cli/v2 v2.23.7
-	github.com/webview/webview v0.0.0-20221206071508-862eb96057ff
 )
 
 require (

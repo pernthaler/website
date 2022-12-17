@@ -10,7 +10,6 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
 	"github.com/pernthaler/website/web"
 	"github.com/urfave/cli/v2"
-	"github.com/webview/webview"
 )
 
 func main() {
@@ -54,13 +53,7 @@ func main() {
 	}))
 
 	// TODO: check for open port
-	go server.Listen(":8080")
+	server.Listen(":8080")
 
-	gui := webview.New(false)
-	defer gui.Destroy()
-	// TODO: Show local IP
-	gui.SetTitle("website")
-	gui.SetSize(800, 600, webview.HintNone)
-	gui.Navigate("http://127.0.0.1:8080")
-	gui.Run()
+	// TODO: webview
 }
