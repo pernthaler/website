@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -13,8 +12,8 @@ import (
 )
 
 func main() {
-	var count int
-	var language string
+	var matomo_url string
+	var matomo_site_id int
 
 	cli := &cli.App{
 		Name:    "website",
@@ -22,29 +21,27 @@ func main() {
 		Version: "3.0.0",
 
 		Flags: []cli.Flag{
-			&cli.BoolFlag{
-				Name:  "no-gui",
-				Usage: "disable the gui",
-				Count: &count,
-			},
 			&cli.StringFlag{
-				Name:        "matomo",
-				Aliases:     []string{"m"},
-				Value:       "url",
+				Name:        "matomo-url",
 				Usage:       "set the matomo url",
-				Destination: &language,
+				Destination: &matomo_url,
+			},
+			&cli.IntFlag{
+				Name:        "matomo-site-id",
+				Value:       1,
+				Usage:       "set the matomo site id",
+				Destination: &matomo_site_id,
 			},
 		},
-		Action: func(*cli.Context) error {
-			fmt.Println("boom! I say!")
-			return nil
-		},
+		Action: action,
 	}
 
 	if err := cli.Run(os.Args); err != nil {
 		log.Fatal(err)
 	}
+}
 
+func action(*cli.Context) error {
 	server := fiber.New()
 
 	server.Use("/", filesystem.New(filesystem.Config{
@@ -56,4 +53,5 @@ func main() {
 	server.Listen(":8080")
 
 	// TODO: webview
+	return nil
 }
