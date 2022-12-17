@@ -2,51 +2,65 @@ package main
 
 import (
 	"fmt"
-	"net"
+	"log"
 	"net/http"
+	"os"
 
-	"github.com/gofiber/adaptor/v2"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
 	"github.com/pernthaler/website/web"
-	"github.com/wailsapp/wails/v2"
-	"github.com/wailsapp/wails/v2/pkg/options"
-	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
-	"github.com/wailsapp/wails/v2/pkg/options/windows"
+	"github.com/urfave/cli/v2"
+	"github.com/webview/webview"
 )
 
 func main() {
-	// TODO: check for open port
+	var count int
+	var language string
 
-	conn, error := net.Dial("udp", "1.1.1.1:80")
-	if error != nil {
-		panic(error)
+	cli := &cli.App{
+		Name:    "website",
+		Usage:   "sebastian.pernthaler.me",
+		Version: "3.0.0",
+
+		Flags: []cli.Flag{
+			&cli.BoolFlag{
+				Name:  "no-gui",
+				Usage: "disable the gui",
+				Count: &count,
+			},
+			&cli.StringFlag{
+				Name:        "matomo",
+				Aliases:     []string{"m"},
+				Value:       "url",
+				Usage:       "set the matomo url",
+				Destination: &language,
+			},
+		},
+		Action: func(*cli.Context) error {
+			fmt.Println("boom! I say!")
+			return nil
+		},
 	}
 
-	defer conn.Close()
-	ip := conn.LocalAddr().(*net.UDPAddr).IP
+	if err := cli.Run(os.Args); err != nil {
+		log.Fatal(err)
+	}
 
-	app := fiber.New()
+	server := fiber.New()
 
-	app.Use("/", filesystem.New(filesystem.Config{
+	server.Use("/", filesystem.New(filesystem.Config{
 		Root:       http.FS(web.Static),
 		PathPrefix: "static",
 	}))
 
-	go wails.Run(&options.App{
-		Title:     fmt.Sprintf("website [%s:8080]", ip),
-		Width:     1280,
-		Height:    1024,
-		MinWidth:  320,
-		MinHeight: 256,
-		AssetServer: &assetserver.Options{
-			Handler: adaptor.FiberApp(app),
-		},
-		Windows: &windows.Options{
-			DisableWindowIcon: true,
-			Theme:             windows.Dark,
-		},
-	})
+	// TODO: check for open port
+	go server.Listen(":8080")
 
-	app.Listen(":8080")
+	gui := webview.New(false)
+	defer gui.Destroy()
+	// TODO: Show local IP
+	gui.SetTitle("website")
+	gui.SetSize(800, 600, webview.HintNone)
+	gui.Navigate("http://127.0.0.1:8080")
+	gui.Run()
 }
