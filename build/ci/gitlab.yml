@@ -8,7 +8,7 @@ build:
   image: golang:latest
   script:
     - apt-get update
-    - apt-get install upx-ucl
+    - apt-get install -y upx-ucl
     - make
 
 docker:
