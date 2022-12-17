@@ -7,6 +7,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/gofiber/template/html"
 	"github.com/pernthaler/website/web"
 	"github.com/urfave/cli/v2"
 )
@@ -15,7 +16,7 @@ func main() {
 	var matomo_url string
 	var matomo_site_id int
 
-	cli := &cli.App{
+	app := &cli.App{
 		Name:    "website",
 		Usage:   "sebastian.pernthaler.me",
 		Version: "3.0.0",
@@ -36,21 +37,31 @@ func main() {
 		Action: action,
 	}
 
-	if err := cli.Run(os.Args); err != nil {
+	if err := app.Run(os.Args); err != nil {
 		log.Fatal(err)
 	}
 }
 
 func action(*cli.Context) error {
-	server := fiber.New()
+	engine := html.NewFileSystem(http.FS(web.Template), ".html")
+	app := fiber.New(fiber.Config{
+		Views:       engine,
+		ViewsLayout: "template/layout",
+	})
 
-	server.Use("/", filesystem.New(filesystem.Config{
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.Render("template/index", fiber.Map{
+			"hello": "world",
+		})
+	})
+
+	app.Use("/", filesystem.New(filesystem.Config{
 		Root:       http.FS(web.Static),
 		PathPrefix: "static",
 	}))
 
 	// TODO: check for open port
-	server.Listen(":8080")
+	app.Listen(":8080")
 
 	// TODO: webview
 	return nil
