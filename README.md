@@ -13,7 +13,7 @@
 ## Docker
 
 ```bash
-$ docker run -ti -p 8080:8080 pernthaler/website:latest -nogui
+$ docker run -ti -p 8080:8080 pernthaler/website:latest
 ```
 
 ## Build
