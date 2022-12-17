@@ -21,12 +21,12 @@ endif
 dev:
 	go run cmd/website/main.go $(args)
 
+docker:
+	docker-compose -f build/docker/docker-compose.yml up --build
+
 test:
 	$(MAKE) docker
 	docker-compose -f test/docker-compose.yml up --build
-
-docker:
-	docker-compose -f build/docker/docker-compose.yml up --build
 
 clean:
 ifeq ($(OS), Windows_NT)

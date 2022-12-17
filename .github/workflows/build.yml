@@ -7,5 +7,10 @@ on:
 
 jobs:
 
-  build:
-    uses: pernthaler/website/build/ci/github.yml@github
+#  TODO
+#  github:
+#    uses: ./.github/workflows/github.yml@github
+
+#  TODO
+#  docker:
+#    uses: ./.github/workflows/docker.yml@docker
