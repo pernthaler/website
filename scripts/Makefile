@@ -17,8 +17,10 @@ bin/website:
 	mkdir -p bin
 	CGO_ENABLED=0 go build -ldflags "-s -w" -o bin ./...
 #	TODO: https://github.com/upx/upx/issues/612
+ifneq ($(OS), Windows_NT)
 ifneq ($(shell uname), Darwin)
 	upx --best --lzma $@
+endif
 endif
 
 bin\website.exe:
