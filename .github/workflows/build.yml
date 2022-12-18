@@ -17,4 +17,4 @@ jobs:
 #    uses: ./.github/workflows/github.yml@github
 
   docker:
-    uses: .github/workflows/docker.yml@docker
+    uses: ./.github/workflows/docker.yml@docker
