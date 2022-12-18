@@ -1,10 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
 
+	"github.com/common-nighthawk/go-figure"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
 	"github.com/gofiber/template/html"
@@ -43,10 +45,17 @@ func main() {
 }
 
 func action(*cli.Context) error {
+	// TODO: SetWindowTitle("website")
+
+	figure.NewFigure("website", "doom", true).Print()
+	fmt.Println()
+	fmt.Println("Listening at :8080")
+
 	engine := html.NewFileSystem(http.FS(web.Template), ".html")
 	app := fiber.New(fiber.Config{
-		Views:       engine,
-		ViewsLayout: "template/layout",
+		DisableStartupMessage: true,
+		Views:                 engine,
+		ViewsLayout:           "template/layout",
 	})
 
 	app.Get("/", func(c *fiber.Ctx) error {

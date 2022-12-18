@@ -3,6 +3,7 @@ module github.com/pernthaler/website
 go 1.19
 
 require (
+	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
 	github.com/gofiber/fiber/v2 v2.40.1
 	github.com/gofiber/template v1.7.3
 	github.com/urfave/cli/v2 v2.23.7
