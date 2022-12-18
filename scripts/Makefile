@@ -25,9 +25,12 @@ endif
 
 dev:
 ifeq ($(OS), Windows_NT)
-	$(MAKE) cmd/website/resource.syso
+	if not exist bin ( mkdir bin )
+	air --build.cmd "go build -o bin .\..." --build.bin .\bin\website.exe
+else
+	mkdir -p bin
+	air --build.cmd "go build -o bin ./..." --build.bin ./bin/website
 endif
-	go run ./... $(args)
 
 cmd\website\resource.syso:
 	windres -o $@ build\windows\resource.rc
