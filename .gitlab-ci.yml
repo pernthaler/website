@@ -1,1 +1,1 @@
-include: "build/ci/gitlab.yml"
+include: build/ci/gitlab.yml
