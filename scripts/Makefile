@@ -1,5 +1,9 @@
 .PHONY: all build dev docker test clean
 
+ifeq ($(OS), Windows_NT)
+SHELL = cmd
+endif
+
 all: clean build
 
 build:
