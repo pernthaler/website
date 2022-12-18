@@ -7,10 +7,9 @@ on:
 
 jobs:
 
-#  TODO
-#  github:
-#    uses: ./.github/workflows/github.yml
-#    secrets: inherit
+  github:
+    uses: ./.github/workflows/github.yml
+    secrets: inherit
 
   docker:
     uses: ./.github/workflows/docker.yml
