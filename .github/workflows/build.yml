@@ -7,11 +7,6 @@ on:
 
 jobs:
 
-  todo:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo TODO
-
 #  TODO
 #  github:
 #    uses: ./.github/workflows/github.yml
