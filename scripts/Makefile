@@ -9,19 +9,19 @@ else
 	$(MAKE) bin/website
 endif
 
+bin/website:
+	mkdir -p bin
+	CGO_ENABLED=0 go build -ldflags "-s -w" -o bin ./...
+#	TODO: https://github.com/upx/upx/issues/612
+ifneq ($(shell uname), Darwin)
+	upx --best --lzma $@
+endif
+
 bin\website.exe:
 	if not exist bin ( mkdir bin )
 	$(MAKE) cmd\website\resource.syso
 	go build -ldflags "-s -w" -o bin .\...
 	upx --best --lzma $@
-
-bin/website:
-	mkdir -p bin
-	go build -ldflags "-s -w" -o bin ./...
-#	TODO: https://github.com/upx/upx/issues/612
-ifneq ($(shell uname), Darwin)
-	upx --best --lzma $@
-endif
 
 dev:
 ifeq ($(OS), Windows_NT)
@@ -36,10 +36,6 @@ cmd\website\resource.syso:
 	windres -o $@ build\windows\resource.rc
 
 docker:
-	docker-compose -f build/docker/docker-compose.yml up --build
-
-test:
-	$(MAKE) docker
 	docker-compose -f test/docker-compose.yml up --build
 
 clean:

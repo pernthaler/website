@@ -1,5 +1,10 @@
-FROM debian:stable-slim
+FROM golang:alpine AS build
+WORKDIR /build
+COPY . .
+RUN apk add --no-cache make upx
+RUN make
+
+FROM scratch
 EXPOSE 8080
-WORKDIR /bin
-COPY bin/ /bin
-ENTRYPOINT [ "/bin/website" ]
+COPY --from=build /build/bin .
+ENTRYPOINT [ "/website" ]
