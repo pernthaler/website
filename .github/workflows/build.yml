@@ -9,7 +9,7 @@ jobs:
 
   todo:
     steps:
-      run: echo TODO
+      - run: echo TODO
 
 #  TODO
 #  github:
