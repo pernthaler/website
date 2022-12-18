@@ -8,11 +8,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Go
-        uses: actions/setup-go@v3
-        with:
-          go-version: 1.19
-          check-latest: true
+#      - name: Go
+#        uses: actions/setup-go@v3
+#        with:
+#          go-version: 1.19
+#          check-latest: true
 
       - name: Build
         run: |
@@ -30,6 +30,7 @@ jobs:
         with:
           push: true
           context: .
+          file: build/docker/Dockerfile
           tags: |
             pernthaler/website:${{ env.VERSION }}
             pernthaler/website:latest
