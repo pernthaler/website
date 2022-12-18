@@ -14,7 +14,7 @@ jobs:
 
 #  TODO
 #  github:
-#    uses: ./.github/workflows/github.yml@github
+#    uses: ./.github/workflows/github.yml
 
   docker:
-    uses: ./.github/workflows/docker.yml@docker
+    uses: ./.github/workflows/docker.yml
