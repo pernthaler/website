@@ -8,7 +8,7 @@ all: clean build
 
 build:
 ifeq ($(OS), Windows_NT)
-	$(MAKE) bin\website.exe
+	$(MAKE) bin/website.exe
 else
 	$(MAKE) bin/website
 endif
@@ -23,23 +23,23 @@ ifneq ($(shell uname), Darwin)
 endif
 endif
 
-bin\website.exe:
+bin/website.exe:
 	if not exist bin ( mkdir bin )
-	$(MAKE) cmd\website\resource.syso
-	go build -ldflags "-s -w" -o bin .\...
+	$(MAKE) cmd/website/resource.syso
+	go build -ldflags "-s -w" -o bin ./...
 	upx --best --lzma $@
 
 dev:
 ifeq ($(OS), Windows_NT)
 	if not exist bin ( mkdir bin )
-	air --build.cmd "go build -o bin .\..." --build.bin .\bin\website.exe
+	air --build.cmd "go build -o bin ./..." --build.bin bin\website.exe
 else
 	mkdir -p bin
 	air --build.cmd "go build -o bin ./..." --build.bin ./bin/website
 endif
 
-cmd\website\resource.syso:
-	windres -o $@ build\windows\resource.rc
+cmd/website/resource.syso:
+	windres -o $@ build/windows/resource.rc
 
 docker:
 	docker-compose -f test/docker-compose.yml up --build
@@ -47,7 +47,7 @@ docker:
 clean:
 ifeq ($(OS), Windows_NT)
 	if exist bin ( rmdir /s /q bin)
-	if exist cmd\website\resource.syso ( del cmd\website\resource.syso )
+	if exist cmd/website/resource.syso ( del cmd\website\resource.syso )
 else
 	if [ -d bin ]; then rm -r bin; fi
 endif
