@@ -2,8 +2,8 @@ package web
 
 import "embed"
 
-//go:embed all:static
+//go:embed static
 var Static embed.FS
 
-//go:embed all:template
+//go:embed template
 var Template embed.FS
