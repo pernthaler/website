@@ -17,14 +17,14 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-func main() {
-	var matomo_url string
-	var matomo_site_id int
+var matomo_url string
+var matomo_site_id int
 
+func main() {
 	app := &cli.App{
 		Name:    "website",
 		Usage:   "sebastian.pernthaler.me",
-		Version: "3.0.3",
+		Version: "3.0.4",
 
 		Flags: []cli.Flag{
 			&cli.StringFlag{
@@ -70,9 +70,11 @@ func action(*cli.Context) error {
 		localizer := i18n.NewLocalizer(bundle, c.Get("Accept-Language"))
 		description, tag, _ := localizer.LocalizeWithTag(&i18n.LocalizeConfig{MessageID: "Description"})
 		return c.Render("template/index", fiber.Map{
-			"tag":         tag.String(),
-			"description": description,
-			"source":      localizer.MustLocalize(&i18n.LocalizeConfig{MessageID: "Source"}),
+			"tag":            tag.String(),
+			"description":    description,
+			"source":         localizer.MustLocalize(&i18n.LocalizeConfig{MessageID: "Source"}),
+			"matomo_url":     matomo_url,
+			"matomo_site_id": matomo_site_id,
 		})
 	})
 
