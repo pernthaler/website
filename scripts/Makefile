@@ -46,8 +46,10 @@ docker:
 
 clean:
 ifeq ($(OS), Windows_NT)
-	if exist bin ( rmdir /s /q bin)
+	if exist bin ( rmdir /s /q bin )
+	if exist tmp ( rmdir /s /q tmp )
 	if exist cmd/website/resource.syso ( del cmd\website\resource.syso )
 else
 	if [ -d bin ]; then rm -r bin; fi
+	if [ -d tmp ]; then rm -r tmp; fi
 endif

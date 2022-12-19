@@ -9,7 +9,7 @@ import (
 	"github.com/common-nighthawk/go-figure"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
-	"github.com/gofiber/template/html"
+	"github.com/gofiber/template/mustache"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"github.com/pernthaler/website/web"
 	"github.com/urfave/cli/v2"
@@ -24,7 +24,7 @@ func main() {
 	app := &cli.App{
 		Name:    "website",
 		Usage:   "sebastian.pernthaler.me",
-		Version: "3.0.1",
+		Version: "3.0.2",
 
 		Flags: []cli.Flag{
 			&cli.StringFlag{
@@ -54,7 +54,7 @@ func action(*cli.Context) error {
 	fmt.Println()
 	fmt.Println("Listening at :8080")
 
-	engine := html.NewFileSystem(http.FS(web.Template), ".html")
+	engine := mustache.NewFileSystem(http.FS(web.Template), ".mustache")
 	app := fiber.New(fiber.Config{
 		DisableStartupMessage: true,
 		Views:                 engine,
@@ -68,8 +68,10 @@ func action(*cli.Context) error {
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		localizer := i18n.NewLocalizer(bundle, c.Get("Accept-Language"))
+		description, tag, _ := localizer.LocalizeWithTag(&i18n.LocalizeConfig{MessageID: "Description"})
 		return c.Render("template/index", fiber.Map{
-			"description": localizer.MustLocalize(&i18n.LocalizeConfig{MessageID: "Description"}),
+			"tag":         tag.String(),
+			"description": description,
 			"source":      localizer.MustLocalize(&i18n.LocalizeConfig{MessageID: "Source"}),
 		})
 	})
