@@ -10,8 +10,11 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
 	"github.com/gofiber/template/html"
+	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"github.com/pernthaler/website/web"
 	"github.com/urfave/cli/v2"
+	"golang.org/x/text/language"
+	"gopkg.in/yaml.v2"
 )
 
 func main() {
@@ -21,7 +24,7 @@ func main() {
 	app := &cli.App{
 		Name:    "website",
 		Usage:   "sebastian.pernthaler.me",
-		Version: "3.0.0",
+		Version: "3.0.1",
 
 		Flags: []cli.Flag{
 			&cli.StringFlag{
@@ -58,9 +61,16 @@ func action(*cli.Context) error {
 		ViewsLayout:           "template/layout",
 	})
 
+	bundle := i18n.NewBundle(language.English)
+	bundle.RegisterUnmarshalFunc("yml", yaml.Unmarshal)
+	bundle.LoadMessageFileFS(web.Lang, "lang/en.yml")
+	bundle.LoadMessageFileFS(web.Lang, "lang/de.yml")
+
 	app.Get("/", func(c *fiber.Ctx) error {
+		localizer := i18n.NewLocalizer(bundle, c.Get("Accept-Language"))
 		return c.Render("template/index", fiber.Map{
-			"hello": "world",
+			"description": localizer.MustLocalize(&i18n.LocalizeConfig{MessageID: "Description"}),
+			"source":      localizer.MustLocalize(&i18n.LocalizeConfig{MessageID: "Source"}),
 		})
 	})
 
