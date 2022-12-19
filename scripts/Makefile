@@ -32,10 +32,10 @@ bin/website.exe:
 dev:
 ifeq ($(OS), Windows_NT)
 	if not exist bin ( mkdir bin )
-	air --build.cmd "go build -o bin ./..." --build.bin bin\website.exe
+	air --build.cmd "go build -o bin ./..." --build.bin bin\website.exe --build.include_ext go,hbs,css,js,yml
 else
 	mkdir -p bin
-	air --build.cmd "go build -o bin ./..." --build.bin ./bin/website
+	air --build.cmd "go build -o bin ./..." --build.bin ./bin/website --build.include_ext go,hbs,css,js,yml
 endif
 
 cmd/website/resource.syso:

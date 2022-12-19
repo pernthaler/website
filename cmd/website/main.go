@@ -9,7 +9,7 @@ import (
 	"github.com/common-nighthawk/go-figure"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
-	"github.com/gofiber/template/mustache"
+	"github.com/gofiber/template/handlebars"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"github.com/pernthaler/website/web"
 	"github.com/urfave/cli/v2"
@@ -24,7 +24,7 @@ func main() {
 	app := &cli.App{
 		Name:    "website",
 		Usage:   "sebastian.pernthaler.me",
-		Version: "3.0.2",
+		Version: "3.0.3",
 
 		Flags: []cli.Flag{
 			&cli.StringFlag{
@@ -54,7 +54,7 @@ func action(*cli.Context) error {
 	fmt.Println()
 	fmt.Println("Listening at :8080")
 
-	engine := mustache.NewFileSystem(http.FS(web.Template), ".mustache")
+	engine := handlebars.NewFileSystem(http.FS(web.Template), ".hbs")
 	app := fiber.New(fiber.Config{
 		DisableStartupMessage: true,
 		Views:                 engine,
