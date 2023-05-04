@@ -7,9 +7,9 @@ RUN pnpm vite build
 
 FROM rust:latest AS rust
 WORKDIR /build
-COPY --from=node . .
+COPY --from=node /build .
 RUN cargo build -r
 
 FROM scratch
-COPY --from=rust target/release/website .
+COPY --from=rust /build/target/release/website .
 ENTRYPOINT [ "/website" ]
