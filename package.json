@@ -3,7 +3,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && cargo build -r"
+		"build": "pnpm vite:build && pnpm cargo:build",
+		"vite:build": "vite build",
+		"cargo:build": "cargo build -r"
 	},
 	"devDependencies": {
 		"@fontsource/ibm-plex-sans": "^4.5.13",
