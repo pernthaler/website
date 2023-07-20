@@ -1,6 +1,6 @@
 .git
-.svelte-kit
-.vscode
+.github
+.gradle
+.idea
 build
-node_modules
-target
+README.md

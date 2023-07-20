@@ -1,5 +1,3 @@
-.svelte-kit
-.vscode
+.gradle
+.idea
 build
-node_modules
-target

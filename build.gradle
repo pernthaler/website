@@ -1,0 +1,31 @@
+plugins {
+    id("groovy")
+    id("org.springframework.boot") version("3.1.2")
+}
+
+group = "dev.pernthaler"
+version = "5.0.0"
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+    implementation("org.apache.groovy:groovy:4.0.13")
+    implementation("org.springframework.boot:spring-boot-starter-web:3.1.2") {
+        exclude(group: "org.springframework.boot", module: "spring-boot-starter-tomcat")
+    }
+    implementation("org.springframework.boot:spring-boot-starter-jetty:3.1.2") {
+        exclude(group: "jakarta.servlet", module: "jakarta.servlet-api")
+    }
+    implementation("org.webjars:webjars-locator:0.47")
+    implementation("org.webjars.npm:fontsource-variable__jetbrains-mono:5.0.6")
+    implementation("org.springframework.boot:spring-boot-starter-freemarker:3.1.2")
+    implementation("jakarta.servlet:jakarta.servlet-api:5.0.0")
+    runtimeOnly("org.springframework.boot:spring-boot-devtools:3.1.2")
+}
