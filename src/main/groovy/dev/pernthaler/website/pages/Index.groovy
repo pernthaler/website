@@ -17,7 +17,7 @@ class Index {
     @GetMapping("/")
     index(ModelMap model) {
         model["links"] = links
-        "Index"
+        "index"
     }
 
 }

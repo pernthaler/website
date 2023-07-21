@@ -11,8 +11,23 @@
     <title>Sebastian Pernthaler</title>
     <meta name="description" content="Software-Developer">
     <meta name="author" content="Sebastian Pernthaler">
+    <meta name="keywords" content="Sebastian Pernthaler">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sebastian.pernthaler.dev/">
+    <meta property="og:title" content="Sebastian Pernthaler">
+    <meta property="og:site_name" content="Sebastian Pernthaler">
+    <meta property="og:description" content="Software-Developer">
+    <meta property="og:image" content="https://sebastian.pernthaler.dev/img/icon.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sebastian Pernthaler">
+    <meta name="twitter:description" content="Software-Developer">
+    <meta name="twitter:image" content="https://sebastian.pernthaler.dev/img/icon.png">
 
     <link rel="icon" href="/img/icon.png">
+    <link rel="author" href="/humans.txt">
+
     <link rel="stylesheet" href="/webjars/fontsource-variable__jetbrains-mono/index.css">
     <link rel="stylesheet" href="/webjars/normalize.css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
