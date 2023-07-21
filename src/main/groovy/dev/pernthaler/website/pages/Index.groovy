@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping
 class Index {
 
     def links = [
-            new Link("Contact", "mailto:sebastian@pernthaler.dev"),
-            new Link("LinkedIn", "https://www.linkedin.com/in/pernthaler"),
-            new Link("GitHub", "https://github.com/pernthaler/website")
+            new Link("Contact", "mailto:sebastian@pernthaler.dev", false),
+            new Link("LinkedIn", "https://www.linkedin.com/in/pernthaler", true),
+            new Link("GitHub", "https://github.com/pernthaler/website", true)
     ].asImmutable()
 
     @GetMapping("/")

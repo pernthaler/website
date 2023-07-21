@@ -28,7 +28,7 @@
     <ul>
         <#list links as link>
             <li>
-                <a href="${link.url()}" target="_blank" rel="noopener noreferrer">${link.name()}</a>
+                <a href="${link.url()}" target="${link.external()?then("_blank", "_self")}" rel="noopener noreferrer">${link.name()}</a>
             </li>
         </#list>
     </ul>
