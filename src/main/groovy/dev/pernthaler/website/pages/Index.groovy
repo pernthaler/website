@@ -10,9 +10,8 @@ class Index {
 
     def links = [
             new Link("Contact", "mailto:sebastian@pernthaler.dev"),
-            new Link("GitHub", "https://github.com/pernthaler/website"),
             new Link("LinkedIn", "https://www.linkedin.com/in/pernthaler"),
-            new Link("Xing", "https://www.xing.com/profile/Sebastian_Pernthaler")
+            new Link("GitHub", "https://github.com/pernthaler/website")
     ].asImmutable()
 
     @GetMapping("/")
