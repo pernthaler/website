@@ -16,16 +16,18 @@ java {
 }
 
 dependencies {
+    implementation("jakarta.servlet:jakarta.servlet-api:5.0.0")
     implementation("org.apache.groovy:groovy:4.0.13")
-    implementation("org.springframework.boot:spring-boot-starter-web:3.1.2") {
-        exclude(group: "org.springframework.boot", module: "spring-boot-starter-tomcat")
-    }
+    implementation("org.springframework.boot:spring-boot-starter-freemarker:3.1.2")
     implementation("org.springframework.boot:spring-boot-starter-jetty:3.1.2") {
         exclude(group: "jakarta.servlet", module: "jakarta.servlet-api")
     }
-    implementation("org.webjars:webjars-locator:0.47")
+    implementation("org.springframework.boot:spring-boot-starter-web:3.1.2") {
+        exclude(group: "org.springframework.boot", module: "spring-boot-starter-tomcat")
+    }
     implementation("org.webjars.npm:fontsource-variable__jetbrains-mono:5.0.6")
-    implementation("org.springframework.boot:spring-boot-starter-freemarker:3.1.2")
-    implementation("jakarta.servlet:jakarta.servlet-api:5.0.0")
+    implementation("org.webjars.npm:normalize.css:8.0.1")
+    implementation("org.webjars.npm:particles.js:2.0.0")
+    implementation("org.webjars:webjars-locator:0.47")
     runtimeOnly("org.springframework.boot:spring-boot-devtools:3.1.2")
 }
