@@ -10,7 +10,7 @@ class Index {
 
     def links = [
             new Link("Contact", "mailto:sebastian@pernthaler.dev", false),
-            new Link("LinkedIn", "https://www.linkedin.com/in/pernthaler", true),
+            new Link("LinkedIn", "https://www.linkedin.com/in/pernthaler/", true),
             new Link("GitHub", "https://github.com/pernthaler/website", true)
     ].asImmutable()
 
