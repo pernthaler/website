@@ -6,7 +6,7 @@
     <a href="https://github.com/pernthaler/website/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/pernthaler/website?label=License"></a>
 </div>
 
-## Java
+## JVM
 
 [Releases](https://github.com/pernthaler/website/releases)
 
