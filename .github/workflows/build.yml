@@ -1,16 +1,45 @@
 name: Build
 
 on:
-  push:
-    branches:
-      - master
+    push:
+        branches:
+            - master
 
 jobs:
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
 
-  github:
-    uses: ./.github/workflows/github.yml
-    secrets: inherit
+            - name: Checkout
+              uses: actions/checkout@v3
 
-  docker:
-    uses: ./.github/workflows/docker.yml
-    secrets: inherit
+            - name: Build
+              run: |
+                  chmod +x gradlew
+                  echo VERSION=$(./gradlew -q properties | grep 'version:' | cut -d ' ' -f 2) >> $GITHUB_ENV
+                  ./gradlew build
+
+            - name: Release
+              uses: softprops/action-gh-release@v1
+              with:
+                  files: build/libs/website.jar
+                  tag_name: v${{ env.VERSION }}
+                  fail_on_unmatched_files: true
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Login
+              uses: docker/login-action@v2
+              with:
+                  username: pernthaler
+                  password: ${{ secrets.DOCKER_PASSWORD }}
+
+            - name: Push
+              uses: docker/build-push-action@v3
+              with:
+                  context: .
+                  push: true
+                  tags: |
+                      pernthaler/website:${{ env.VERSION }}
+                      pernthaler/website:latest
