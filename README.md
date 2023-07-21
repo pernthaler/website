@@ -21,8 +21,8 @@ $ docker run -it -p 8080:8080 pernthaler/website:latest
 ```bash
 $ git clone https://github.com/pernthaler/website.git
 $ cd website
-$ pnpm install
-$ pnpm build
+$ chmod +x gradlew
+$ ./gradlew build
 ```
 
 ## License
