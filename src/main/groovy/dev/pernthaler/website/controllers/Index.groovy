@@ -2,7 +2,7 @@ package dev.pernthaler.website.controllers
 
 import dev.pernthaler.website.entities.Link
 import org.springframework.stereotype.Controller
-import org.springframework.ui.ModelMap
+import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 
@@ -17,7 +17,7 @@ class Index {
     ]
 
     @GetMapping
-    def getIndex(ModelMap model) {
+    def getIndex(Model model) {
         model["links"] = links
         "index"
     }
