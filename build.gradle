@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "dev.pernthaler"
-version = "5.0.3"
+version = "5.0.4"
 
 repositories {
     mavenCentral()
@@ -26,7 +26,6 @@ bootJar {
 dependencies {
     implementation("org.apache.groovy:groovy:4.0.13")
     implementation("org.springframework.boot:spring-boot-starter-freemarker:3.1.2")
-    implementation("org.springframework.boot:spring-boot-starter-jetty:3.1.2")
     implementation("org.springframework.boot:spring-boot-starter-web:3.1.2")
     implementation("org.webjars.npm:fontsource-variable__jetbrains-mono:5.0.6")
     implementation("org.webjars.npm:normalize.css:8.0.1")
