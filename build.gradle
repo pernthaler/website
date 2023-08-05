@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "dev.pernthaler"
-version = "5.0.4"
+version = "5.0.5"
 
 repositories {
     mavenCentral()
@@ -30,6 +30,6 @@ dependencies {
     implementation("org.webjars.npm:fontsource-variable__jetbrains-mono:5.0.6")
     implementation("org.webjars.npm:normalize.css:8.0.1")
     implementation("org.webjars.npm:particles.js:2.0.0")
-    implementation("org.webjars:webjars-locator:0.47")
+    implementation("org.webjars:webjars-locator-core:0.53")
     runtimeOnly("org.springframework.boot:spring-boot-devtools:3.1.2")
 }
