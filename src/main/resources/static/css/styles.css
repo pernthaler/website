@@ -10,6 +10,11 @@
     --background-dark:  #1a1e23;
 }
 
+::selection {
+    color: var(--card);
+    background-color: var(--primary);
+}
+
 html {
     display: flex;
     height: 100%;
