@@ -4,8 +4,9 @@ stages:
 docker:
     stage: docker
     image: docker:latest
+    tags:
+        - remote
     services:
         - docker:dind
     script:
         - docker build -t pernthaler .
-        - docker restart Pernthaler
