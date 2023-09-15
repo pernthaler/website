@@ -10,3 +10,5 @@ docker:
         - docker:dind
     script:
         - docker build -t pernthaler .
+        - cd /root
+        - docker compose up -d pernthaler
