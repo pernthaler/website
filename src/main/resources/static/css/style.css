@@ -40,6 +40,10 @@ main {
     border: 0.25rem solid var(--primary);
 }
 
+h2 {
+    font-weight: normal;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
