@@ -1,9 +1,8 @@
-FROM azul/zulu-openjdk:17-jre-latest AS build
-WORKDIR /build
+FROM eclipse-temurin:17-jdk AS build
 COPY . .
 RUN chmod +x gradlew
 RUN ./gradlew build
 
-FROM azul/zulu-openjdk:17-jre-latest
-COPY --from=build /build/build/libs/website.jar .
+FROM eclipse-temurin:17-jre
+COPY --from=build build/libs/website.jar .
 ENTRYPOINT [ "java", "-jar", "website.jar" ]

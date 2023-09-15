@@ -1,8 +1,1 @@
 .git
-.github
-.gradle
-.idea
-build
-.gitlab-ci.yml
-Dockerfile
-README.md
