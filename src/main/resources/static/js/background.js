@@ -1,1 +1,0 @@
-particlesJS.load("background", "/js/particles.json");

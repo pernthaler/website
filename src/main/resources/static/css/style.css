@@ -1,17 +1,16 @@
 :root {
-    --font:             "JetBrains Mono Variable";
-    --font-fallback:    "JetBrains Mono";
+    --font:             "Rubik Variable";
 
     --primary:          #e06c75;
     --primary-dark:     #be5046;
     --foreground:       #abb2bf;
-    --card:             #282c34;
+    --surface:          #282c34;
     --background:       #21252c;
     --background-dark:  #1a1e23;
 }
 
 ::selection {
-    color: var(--card);
+    color: var(--surface);
     background-color: var(--primary);
 }
 
@@ -26,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
-    font-family: var(--font), var(--font-fallback), monospace;
+    font-family: var(--font), sans-serif;
     background: radial-gradient(var(--background), var(--background-dark));
 }
 
@@ -37,7 +36,7 @@ main {
     word-break: break-word;
     border-radius: 0.5rem;
     color: var(--foreground);
-    background-color: var(--card);
+    background-color: var(--surface);
     border: 0.25rem solid var(--primary);
 }
 

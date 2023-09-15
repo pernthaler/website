@@ -28,9 +28,12 @@
     <link rel="icon" href="/img/icon.png">
     <link rel="author" href="/humans.txt">
 
-    <link rel="stylesheet" href="/webjars/fontsource-variable__jetbrains-mono/index.css">
+    <link rel="stylesheet" href="/webjars/fontsource-variable__rubik/index.css">
+    <link rel="stylesheet" href="/webjars/fortawesome__fontawesome-free/css/brands.css">
+    <link rel="stylesheet" href="/webjars/fortawesome__fontawesome-free/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/webjars/fortawesome__fontawesome-free/css/solid.min.css">
     <link rel="stylesheet" href="/webjars/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <script type="text/javascript" src="/webjars/particles.js/particles.js"></script>
 
@@ -41,17 +44,18 @@
     <h1>Sebastian Pernthaler</h1>
     <h2>Software Developer</h2>
     <ul>
-        <#list links as link>
-            <li>
-                <a href="${link.url()}" target="${link.external()?then("_blank", "_self")}" rel="noopener noreferrer">${link.name()}</a>
-            </li>
-        </#list>
+        <li th:each="link: ${links}">
+            <a th:href="${link.href()}" th:target="${link.target()}" rel="noopener noreferrer">
+                <i th:class="${link.icon()}"></i>
+                <span th:text="${link.text()}"></span>
+            </a>
+        </li>
     </ul>
 </main>
 
 <div id="background"></div>
 
-<script type="text/javascript" src="/js/background.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
 
 </body>
 </html>
