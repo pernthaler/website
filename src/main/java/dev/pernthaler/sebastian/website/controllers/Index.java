@@ -1,7 +1,7 @@
 package dev.pernthaler.sebastian.website.controllers;
 
 import dev.pernthaler.sebastian.website.entities.Link;
-import dev.pernthaler.sebastian.website.entities.Target;
+import dev.pernthaler.sebastian.website.entities.LinkTarget;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,15 +13,15 @@ import java.util.List;
 @RequestMapping("/")
 public class Index {
 
-    private final List<Link> links = List.of(
+    private static final List<Link> LINKS = List.of(
             new Link("Contact", "mailto:sebastian@pernthaler.dev", "fa-solid fa-envelope"),
-            new Link("LinkedIn", "https://www.linkedin.com/in/pernthaler/", "fa-brands fa-linkedin", Target.BLANK),
-            new Link("GitHub", "https://github.com/pernthaler/website", "fa-brands fa-github", Target.BLANK)
+            new Link("LinkedIn", "https://www.linkedin.com/in/pernthaler/", "fa-brands fa-linkedin", LinkTarget.BLANK),
+            new Link("GitHub", "https://github.com/pernthaler/website", "fa-brands fa-github", LinkTarget.BLANK)
     );
 
     @GetMapping
     public String getIndex(@NotNull Model model) {
-        model.addAttribute("links", links);
+        model.addAttribute("links", LINKS);
         return "index";
     }
 

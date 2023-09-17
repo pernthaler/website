@@ -44,10 +44,10 @@
     <h1>Sebastian Pernthaler</h1>
     <h2>Software Developer</h2>
     <ul>
-        <li th:each="link: ${links}">
-            <a th:href="${link.href()}" th:target="${link.target()}" rel="noopener noreferrer">
-                <i th:class="${link.icon()}"></i>
-                <span th:text="${link.text()}"></span>
+        <li th:each="link: ${links}" th:object="${link}">
+            <a th:href="*{href()}" th:target="|_*{target().name().toLowerCase()}|" rel="noopener noreferrer">
+                <i th:class="*{icon()}"></i>
+                <span th:text="*{text()}"></span>
             </a>
         </li>
     </ul>
