@@ -2,6 +2,8 @@ package dev.pernthaler.sebastian.website.controllers;
 
 import dev.pernthaler.sebastian.website.entities.Link;
 import dev.pernthaler.sebastian.website.entities.LinkTarget;
+import dev.pernthaler.sebastian.website.utils.RequestUtil;
+import jakarta.servlet.http.HttpServletRequest;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,7 +22,8 @@ public class Index {
     );
 
     @GetMapping
-    public String getIndex(@NotNull Model model) {
+    public String getIndex(HttpServletRequest request, @NotNull Model model) {
+        model.addAttribute("url", RequestUtil.getURL(request));
         model.addAttribute("links", LINKS);
         return "index";
     }
