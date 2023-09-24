@@ -8,7 +8,13 @@ import org.jetbrains.annotations.NotNull;
 public class RequestUtil {
 
     public static @NotNull String getURL(@NotNull HttpServletRequest request) {
-        return request.getRequestURL().substring(0, request.getRequestURL().length() - request.getServletPath().length());
+        int i = request.getRequestURL().indexOf(":");
+        String protocol = request.getHeader("X-Forwarded-Proto");
+        if (protocol == null)
+            protocol = request.getRequestURL().substring(0, i);
+        return "%s:%s".formatted(protocol, request.getRequestURL().substring(i + 1,
+                request.getRequestURL().length() - request.getRequestURI().length()
+        ));
     }
 
 }
