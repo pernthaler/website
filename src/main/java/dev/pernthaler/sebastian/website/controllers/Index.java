@@ -24,6 +24,8 @@ public class Index {
     @GetMapping
     public String getIndex(HttpServletRequest request, @NotNull Model model) {
         model.addAttribute("url", RequestUtil.getURL(request));
+        model.addAttribute("domain", request.getServerName());
+        model.addAttribute("plausible", System.getenv("PLAUSIBLE"));
         model.addAttribute("links", LINKS);
         return "index";
     }

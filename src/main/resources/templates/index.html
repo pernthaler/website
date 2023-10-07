@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <script type="text/javascript" src="/webjars/particles.js/particles.js"></script>
+    <script defer th:if="${plausible}" th:data-domain="${domain}" th:src="|${plausible}/js/script.js|"></script>
 
 </head>
 <body>
