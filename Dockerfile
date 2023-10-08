@@ -1,8 +1,8 @@
-FROM eclipse-temurin:17-jdk AS build
+FROM azul/zulu-openjdk-alpine:21-latest AS build
 COPY . .
 RUN chmod +x gradlew
 RUN ./gradlew build
 
-FROM eclipse-temurin:17-jre
+FROM azul/zulu-openjdk-alpine:21-jre-latest
 COPY --from=build build/libs/website.jar .
 ENTRYPOINT [ "java", "-jar", "website.jar" ]
